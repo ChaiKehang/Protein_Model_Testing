@@ -1,0 +1,161 @@
+{
+  "status": "complete",
+  "stages": {
+    "esm3": {
+      "adopted_existing": true,
+      "returncode": 0
+    },
+    "standard": {
+      "returncode": 0,
+      "argv": [
+        "/root/autodl-tmp/envs/esm3/bin/python",
+        "scripts/run_proteingym_panel.py",
+        "--dataset",
+        "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009",
+        "--output",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard",
+        "--device",
+        "cuda:0"
+      ],
+      "elapsed_seconds": 206.44676971435547
+    },
+    "fitness": {
+      "returncode": 0,
+      "argv": [
+        "/root/autodl-tmp/envs/esm3/bin/python",
+        "scripts/proteingym_dms.py",
+        "--dataset",
+        "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009",
+        "--output",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_fitness",
+        "--device",
+        "cuda:0"
+      ],
+      "elapsed_seconds": 56.93766498565674
+    },
+    "batch": {
+      "returncode": 0,
+      "argv": [
+        "/root/autodl-tmp/envs/esm3/bin/python",
+        "scripts/check_proteingym_batch.py",
+        "--inputs",
+        "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009/performance_panel.jsonl",
+        "--sample-ids",
+        "pg_AMFR_HUMAN",
+        "pg_RPC1_LAMBD",
+        "pg_ADRB2_HUMAN",
+        "pg_A0A192B1T2_9HIV1",
+        "--output",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_batch_fp32",
+        "--device",
+        "cuda:0"
+      ],
+      "elapsed_seconds": 18.86911368370056
+    },
+    "openfold": {
+      "returncode": 0,
+      "argv": [
+        "/root/autodl-tmp/envs/openfold-cuda/bin/python",
+        "/root/autodl-tmp/musa-/scripts/openfold_baseline.py",
+        "--weights",
+        "/root/autodl-tmp/openfold-cache/params/finetuning_no_templ_ptm_1.pt",
+        "--fasta",
+        "/root/autodl-tmp/references/openfold/examples/monomer/fasta_dir/6kwc.fasta",
+        "--alignments",
+        "/root/autodl-tmp/references/openfold/examples/monomer/alignments/6KWC_1",
+        "--device",
+        "cuda:0",
+        "--output",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold",
+        "--profile"
+      ],
+      "elapsed_seconds": 203.67609572410583
+    },
+    "openfold_quality": {
+      "returncode": 0,
+      "argv": [
+        "/root/autodl-tmp/envs/openfold-cuda/bin/python",
+        "scripts/openfold_structure_quality.py",
+        "--run",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold",
+        "--reference",
+        "/root/autodl-tmp/musa-/inputs/openfold/6KWC.cif",
+        "--chain",
+        "A"
+      ],
+      "elapsed_seconds": 2.7858572006225586
+    },
+    "openfold_cpu_comparison": {
+      "returncode": 0,
+      "argv": [
+        "/root/autodl-tmp/envs/openfold-cuda/bin/python",
+        "scripts/compare_openfold.py",
+        "--reference",
+        "outputs/openfold_cpu_torch_20261009_02",
+        "--candidate",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold",
+        "--output",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold_cpu_comparison.json"
+      ],
+      "elapsed_seconds": 1.959113359451294
+    },
+    "openfold_nsight": {
+      "returncode": 0,
+      "argv": [
+        "/root/autodl-tmp/envs/openfold-cuda/bin/python",
+        "scripts/run_openfold_nsight.py",
+        "--reference",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold",
+        "--device",
+        "cuda:0",
+        "--output",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold_nsight"
+      ],
+      "elapsed_seconds": 48.04504108428955
+    },
+    "openfold_pipeline": {
+      "returncode": 0,
+      "argv": [
+        "/root/autodl-tmp/envs/openfold-cuda/bin/python",
+        "scripts/run_openfold_nsight.py",
+        "--reference",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold",
+        "--device",
+        "cuda:0",
+        "--scope",
+        "pipeline",
+        "--output",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold_pipeline"
+      ],
+      "elapsed_seconds": 40.68285274505615
+    },
+    "standard_nsight": {
+      "returncode": 0,
+      "argv": [
+        "/root/autodl-tmp/envs/esm3/bin/python",
+        "scripts/run_nsight.py",
+        "--suite",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard",
+        "--config",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/standard_nsight_config.json",
+        "--output",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/nsight"
+      ],
+      "elapsed_seconds": 30.293927907943726
+    },
+    "operator_diagnostics": {
+      "returncode": 0,
+      "argv": [
+        "/root/autodl-tmp/envs/esm3/bin/python",
+        "scripts/portable_operator_bench.py",
+        "--shapes",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L256/operator_shapes.json",
+        "--device",
+        "cuda:0",
+        "--output",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/operator_diagnostics"
+      ],
+      "elapsed_seconds": 2.81599760055542
+    }
+  }
+}

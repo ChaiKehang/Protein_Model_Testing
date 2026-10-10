@@ -1,0 +1,129 @@
+{
+  "status": "pass",
+  "metadata": {
+    "DMS_index": "DMS_sub_182",
+    "DMS_id": "SPG1_STRSG_Wu_2016",
+    "DMS_filename": "SPG1_STRSG_Wu_2016.csv",
+    "UniProt_ID": "SPG1_STRSG",
+    "taxon": "Prokaryote",
+    "source_organism": "Streptococcus sp. group G",
+    "target_seq": "MEKEKKVKYFLRKSAFGLASVSAAFLVGSTVFAVDSPIEDTPIIRNGGELTNLLGNSETTLALRNEESATADLTAAAVADTVAAAAAENAGAAAWEAAAAADALAKAKADALKEFNKYGVSDYYKNLINNAKTVEGIKDLQAQVVESAKKARISEATDGLSDFLKSQTPAEDTVKSIELAEAKVLANRELDKYGVSDYHKNLINNAKTVEGVKELIDEILAALPKTDQYKLILNGKTLKGETTTEAVDAATAEKVFKQYANDNGVDGEWTYDDATKTFTVTEKPEVIDASELTPAVTTYKLVINGKTLKGETTTKAVDAETAEKAFKQYANDNGVDGVWTYDDATKTFTVTEMVTEVPGDAPTEPEKPEASIPLVPLTPATPIAKDDAKKDDTKKEDAKKPEAKKDDAKKAETLPTTGEGSNPFFTAAALAVMAGAGALAVASKRKED",
+    "seq_len": "448",
+    "includes_multiple_mutants": "TRUE",
+    "DMS_total_number_mutants": "149360",
+    "DMS_number_single_mutants": "76",
+    "DMS_number_multiple_mutants": "149284",
+    "DMS_binarization_cutoff": "0.1224388752",
+    "DMS_binarization_method": "median",
+    "first_author": "Wu",
+    "title": "Adaptation in protein fitness landscapes is facilitated by indirect paths",
+    "year": "2016",
+    "jo": "10.7554/eLife.16965",
+    "region_mutated": "265-280",
+    "molecule_name": "GB1",
+    "selection_assay": "Binding (IgG)",
+    "selection_type": "binding",
+    "MSA_filename": "SPG1_STRSG_full_b0.1.a2m",
+    "MSA_start": "1",
+    "MSA_end": "448",
+    "MSA_len": "448",
+    "MSA_bitscore": "0.1",
+    "MSA_theta": "0.2",
+    "MSA_num_seqs": "3109",
+    "MSA_perc_cov": "1",
+    "MSA_num_cov": "448",
+    "MSA_N_eff": "601.3",
+    "MSA_Neff_L": "1.34",
+    "MSA_Neff_L_category": "Medium",
+    "MSA_num_significant": "97",
+    "MSA_num_significant_L": "0.22",
+    "raw_DMS_filename": "SPG1_STRSG_Wu_2016.csv",
+    "raw_DMS_phenotype_name": "Fitness",
+    "raw_DMS_directionality": "1",
+    "raw_DMS_mutant_column": "Variants",
+    "weight_file_name": "SPG1_STRSG_b01_theta_0.2.npy",
+    "pdb_file": "SPG1_STRSG.pdb",
+    "pdb_range": "1-448",
+    "ProteinGym_version": "1",
+    "raw_mut_offset": "",
+    "coarse_selection_type": "Binding"
+  },
+  "input_sha256": "d8faee338a3a53ba89b9ddc4be8dbdc244d3d2c84ddbc1ccc00ff4418ae71fcc",
+  "rows": 149360,
+  "positions": [
+    265,
+    266,
+    267,
+    280
+  ],
+  "masked_contexts": 4,
+  "target_residues": 448,
+  "prepared_assay_seconds": 1.7607647329568863,
+  "latency_seconds": {
+    "count": 3,
+    "mean": 0.20486891021331152,
+    "median": 0.2049352452158928,
+    "p90": 0.20496824234724045,
+    "stdev": 0.00015202140428132366,
+    "min": 0.20469499379396439,
+    "max": 0.20497649163007736,
+    "cv_percent": 0.07420423339150752
+  },
+  "samples_seconds": [
+    0.20469499379396439,
+    0.20497649163007736,
+    0.2049352452158928
+  ],
+  "timing_scope": "Warmed complete masked-context sweep, including logits gathering/CPU table transfer; excludes CSV parse and variant lookup/ranking/artifacts",
+  "throughput_scope": "Masked contexts, not variants; many variants reuse one context prediction",
+  "masked_contexts_per_second": 19.52468042044623,
+  "cpu_lookup_and_metric_seconds": 1.948194570839405,
+  "batch_check": {
+    "positions": [
+      265,
+      267,
+      280
+    ],
+    "atol": 0.001,
+    "rtol": 1e-05,
+    "max_abs": 1.33514404296875e-05,
+    "mae": 2.0278773718018783e-06,
+    "allclose": true,
+    "scope": "Three predetermined contexts validate B1 vs requested batch; all 64 sequence logits at each probe"
+  },
+  "quality": {
+    "spearman": 0.10629666698644441,
+    "auc": 0.6987677200453861,
+    "rows": 149360,
+    "positive_labels": 10756,
+    "negative_labels": 138604,
+    "direction": "Higher experimental DMS_score and predicted score mean higher fitness",
+    "null_reason": "Constant ranks or missing class where corresponding metric is null",
+    "aggregation": "This assay only; no full ProteinGym protein/function-category aggregation"
+  },
+  "memory": {
+    "allocated_peak_gib": 9.2413911819458,
+    "reserved_peak_gib": 11.609375,
+    "allocated_current_gib": 5.281879425048828
+  },
+  "precision": {
+    "weights": "torch.float32",
+    "main_compute_policy": "FP32 autocast disabled",
+    "sdk_inner_override": true,
+    "observed_first_linear": {
+      "module": "encoder.plddt_projection",
+      "input_dtype": "torch.float32",
+      "output_dtype": "torch.float32"
+    },
+    "auxiliary_parameter_dtypes": {},
+    "tf32_matmul": false,
+    "tf32_cudnn": false,
+    "tf32_mudnn": null,
+    "attention_requested": "auto",
+    "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+  },
+  "artifacts_sha256": {
+    "score_tables.pt": "d3adc490caa3269e4c639478574aae1930a2151daf10749faa6a4a56fc425b6a",
+    "predictions.csv": "048bc1c80f82385a829f8f804aff73648cad342cd689f35ee16fa782cd3e73da"
+  }
+}

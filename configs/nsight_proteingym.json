@@ -1,0 +1,21 @@
+{
+  "warmup": 3,
+  "systems_calls": 3,
+  "compute_launches": 1,
+  "compute_sections": [
+    "SpeedOfLight",
+    "Occupancy",
+    "LaunchStats",
+    "MemoryWorkloadAnalysis",
+    "ComputeWorkloadAnalysis"
+  ],
+  "cases": [
+    {
+      "name": "BRCA1_original",
+      "sample_id": "pg_BRCA1_HUMAN",
+      "inputs": "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009/performance_panel.jsonl",
+      "reference": "pg_BRCA1_HUMAN/tensors.pt",
+      "compute_top_k": 3
+    }
+  ]
+}

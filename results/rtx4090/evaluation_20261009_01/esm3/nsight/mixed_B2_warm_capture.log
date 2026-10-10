@@ -1,0 +1,8 @@
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-082b.qdstrm'
+[1/1] [0%                          ] mixed_B2_warm.nsys-repProcessing events...
+[1/1] [0%                          ] mixed_B2_warm.nsys-rep[1/1] [===========51%              ] mixed_B2_warm.nsys-rep[1/1] [========================99% ] mixed_B2_warm.nsys-rep[1/1] [5%                          ] mixed_B2_warm.nsys-rep[1/1] [==================75%       ] mixed_B2_warm.nsys-rep[1/1] [========================100%] mixed_B2_warm.nsys-rep[1/1] [========================100%] mixed_B2_warm.nsys-rep
+PROFILE_WORKLOAD_PASS forward warm
+Generated:
+    /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/mixed_B2_warm.nsys-rep

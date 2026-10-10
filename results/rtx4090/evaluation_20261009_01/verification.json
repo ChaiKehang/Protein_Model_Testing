@@ -1,0 +1,581 @@
+{
+  "status": "pass",
+  "html_local_links": 155,
+  "missing_local_files": [],
+  "source_or_figure_hash_mismatches": [],
+  "native_reports": [
+    {
+      "path": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/L256_warm.nsys-rep",
+      "sha256_matches": true,
+      "status": "pass"
+    },
+    {
+      "path": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/L1024_warm.nsys-rep",
+      "sha256_matches": true,
+      "status": "pass"
+    },
+    {
+      "path": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/mixed_B2_warm.nsys-rep",
+      "sha256_matches": true,
+      "status": "pass"
+    },
+    {
+      "path": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/sequence_warm.nsys-rep",
+      "sha256_matches": true,
+      "status": "pass"
+    },
+    {
+      "path": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/structure_warm.nsys-rep",
+      "sha256_matches": true,
+      "status": "pass"
+    },
+    {
+      "path": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/inverse_warm.nsys-rep",
+      "sha256_matches": true,
+      "status": "pass"
+    },
+    {
+      "path": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/L256_pipeline.nsys-rep",
+      "sha256_matches": true,
+      "status": "pass"
+    },
+    {
+      "path": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/sequence_pipeline.nsys-rep",
+      "sha256_matches": true,
+      "status": "pass"
+    },
+    {
+      "path": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/structure_pipeline.nsys-rep",
+      "sha256_matches": true,
+      "status": "pass"
+    },
+    {
+      "path": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/inverse_pipeline.nsys-rep",
+      "sha256_matches": true,
+      "status": "pass"
+    },
+    {
+      "path": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/nsight/BRCA1_original.nsys-rep",
+      "sha256_matches": true,
+      "status": "pass"
+    },
+    {
+      "path": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold_nsight/openfold_warm.nsys-rep",
+      "sha256_matches": true,
+      "status": "pass"
+    },
+    {
+      "path": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold_pipeline/openfold_pipeline.nsys-rep",
+      "sha256_matches": true,
+      "status": "pass"
+    }
+  ],
+  "unit_test_log": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/unit_tests.log",
+  "unit_test_sha256": "c6ac54b0923f8a79936b4b817aa156807ae248782e0c61cbf69a317500977bab",
+  "browser_render_test": null,
+  "inference_source_checks": [
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L256/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L256/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L256/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L256/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L1024/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L1024/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L1024/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L1024/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L2048/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L2048/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L2048/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L2048/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/mixed_B2/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/mixed_B2/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/mixed_B2/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/mixed_B2/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/sequence/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/sequence/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/sequence/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/sequence/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/structure/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/structure/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/structure/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/structure/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/inverse/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/inverse/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/inverse/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/inverse/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/ubiquitin_fp32/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/ubiquitin_fp32/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/ubiquitin_fp32/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/ubiquitin_fp32/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/ubiquitin_cpu_fp32/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/ubiquitin_cpu_fp32/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/ubiquitin_cpu_fp32/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/ubiquitin_cpu_fp32/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_forward/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_forward/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_forward/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_forward/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_sequence/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_sequence/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_sequence/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_sequence/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_structure/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_structure/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_structure/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_structure/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_inverse/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_inverse/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_inverse/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_inverse/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_AMFR_HUMAN/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_AMFR_HUMAN/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_AMFR_HUMAN/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_AMFR_HUMAN/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_BBC1_YEAST/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_BBC1_YEAST/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_BBC1_YEAST/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_BBC1_YEAST/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_A0A1I9GEU1_NEIME/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_A0A1I9GEU1_NEIME/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_A0A1I9GEU1_NEIME/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_A0A1I9GEU1_NEIME/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_RPC1_LAMBD/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_RPC1_LAMBD/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_RPC1_LAMBD/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_RPC1_LAMBD/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_ADRB2_HUMAN/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_ADRB2_HUMAN/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_ADRB2_HUMAN/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_ADRB2_HUMAN/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_GCN4_YEAST/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_GCN4_YEAST/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_GCN4_YEAST/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_GCN4_YEAST/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_Q837P4_ENTFA/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_Q837P4_ENTFA/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_Q837P4_ENTFA/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_Q837P4_ENTFA/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_A0A192B1T2_9HIV1/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_A0A192B1T2_9HIV1/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_A0A192B1T2_9HIV1/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_A0A192B1T2_9HIV1/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_BRCA1_HUMAN/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_BRCA1_HUMAN/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_BRCA1_HUMAN/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_BRCA1_HUMAN/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_UBE4B_MOUSE/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_UBE4B_MOUSE/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_UBE4B_MOUSE/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_UBE4B_MOUSE/report.json",
+      "source": "main.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/mixed_B4/report.json",
+      "source": "models/esm3_adapter.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/mixed_B4/report.json",
+      "source": "common/backend.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/mixed_B4/report.json",
+      "source": "common/reporting.py",
+      "matches_current": true
+    },
+    {
+      "report": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/mixed_B4/report.json",
+      "source": "main.py",
+      "matches_current": true
+    }
+  ],
+  "openfold_artifact_checks": [
+    {
+      "artifact": "features.pt",
+      "sha256_matches": true
+    },
+    {
+      "artifact": "tensors.pt",
+      "sha256_matches": true
+    },
+    {
+      "artifact": "prediction_unrelaxed.pdb",
+      "sha256_matches": true
+    }
+  ],
+  "experiment_index_checks": {
+    "experiment_count": 53,
+    "formal_case_count": 24,
+    "native_report_count": 13,
+    "errors": []
+  },
+  "browser_note": "HTML structure, links, source hashes and exported figures checked; no browser screenshot claimed",
+  "evaluation_failures_preserved": "BF16 batch checks may remain partial; verification PASS is delivery integrity, not all numerical gates",
+  "current_scope": "4090 reference evaluation only; no optimization or future-hardware acceptance"
+}

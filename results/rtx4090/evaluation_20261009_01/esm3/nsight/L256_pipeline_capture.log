@@ -1,0 +1,8 @@
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-1922.qdstrm'
+[1/1] [0%                          ] L256_pipeline.nsys-repProcessing events...
+[1/1] [0%                          ] L256_pipeline.nsys-rep[1/1] [9%                          ] L256_pipeline.nsys-rep[1/1] [==19%                       ] L256_pipeline.nsys-rep[1/1] [=============59%            ] L256_pipeline.nsys-rep[1/1] [========================99% ] L256_pipeline.nsys-rep[1/1] [6%                          ] L256_pipeline.nsys-rep[1/1] [================70%         ] L256_pipeline.nsys-rep[1/1] [========================100%] L256_pipeline.nsys-rep[1/1] [========================100%] L256_pipeline.nsys-rep
+PROFILE_WORKLOAD_PASS forward pipeline
+Generated:
+    /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/L256_pipeline.nsys-rep

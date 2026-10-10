@@ -1,0 +1,16 @@
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:05,  1.36it/s] 62%|██████▎   | 5/8 [00:00<00:00,  7.34it/s]100%|██████████| 8/8 [00:00<00:00,  8.38it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 50%|█████     | 4/8 [00:00<00:00, 32.15it/s]100%|██████████| 8/8 [00:00<00:00, 32.22it/s]100%|██████████| 8/8 [00:00<00:00, 32.18it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 50%|█████     | 4/8 [00:00<00:00, 33.33it/s]100%|██████████| 8/8 [00:00<00:00, 33.38it/s]100%|██████████| 8/8 [00:00<00:00, 33.35it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 25%|██▌       | 2/8 [00:00<00:00, 19.00it/s] 62%|██████▎   | 5/8 [00:00<00:00, 22.93it/s]100%|██████████| 8/8 [00:00<00:00, 24.33it/s]100%|██████████| 8/8 [00:00<00:00, 23.59it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 38%|███▊      | 3/8 [00:00<00:00, 26.06it/s] 75%|███████▌  | 6/8 [00:00<00:00, 25.96it/s]100%|██████████| 8/8 [00:00<00:00, 25.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 38%|███▊      | 3/8 [00:00<00:00, 25.29it/s] 75%|███████▌  | 6/8 [00:00<00:00, 25.13it/s]100%|██████████| 8/8 [00:00<00:00, 25.30it/s]
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-17dc.qdstrm'
+[1/1] [0%                          ] structure_warm.nsys-repProcessing events...
+[1/1] [0%                          ] structure_warm.nsys-rep[1/1] [===========51%              ] structure_warm.nsys-rep[1/1] [========================99% ] structure_warm.nsys-rep[1/1] [5%                          ] structure_warm.nsys-rep[1/1] [0%                          ] structure_warm.nsys-rep[1/1] [10%                         ] structure_warm.nsys-rep[1/1] [==20%                       ] structure_warm.nsys-rep[1/1] [=====30%                    ] structure_warm.nsys-rep[1/1] [=======39%                  ] structure_warm.nsys-rep[1/1] [==========49%               ] structure_warm.nsys-rep[1/1] [=============59%            ] structure_warm.nsys-rep[1/1] [================69%         ] structure_warm.nsys-rep[1/1] [==================75%       ] structure_warm.nsys-rep[1/1] [========================100%] structure_warm.nsys-rep[1/1] [========================100%] structure_warm.nsys-rep
+/root/autodl-tmp/esm-baseline/esm/esm/utils/structure/protein_complex.py:298: UserWarning: Entity ID not found in metadata, using None as default
+  warnings.warn("Entity ID not found in metadata, using None as default")
+PROFILE_WORKLOAD_PASS structure warm
+Generated:
+    /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/structure_warm.nsys-rep

@@ -1,0 +1,872 @@
+{
+  "status": "pass",
+  "parameters": {
+    "inputs": "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009/performance_panel.jsonl",
+    "output": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_batch_fp32",
+    "sample_ids": [
+      "pg_AMFR_HUMAN",
+      "pg_RPC1_LAMBD",
+      "pg_ADRB2_HUMAN",
+      "pg_A0A192B1T2_9HIV1"
+    ],
+    "device": "cuda:0",
+    "weights": "/root/autodl-tmp/esm-baseline/model_snapshot.json"
+  },
+  "checks": {
+    "pg_AMFR_HUMAN": {
+      "unpadded_vs_padded_B1": {
+        "logits": {
+          "status": "pass",
+          "atol": 0.001,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "logits": {
+              "shape": [
+                1,
+                49,
+                64
+              ],
+              "valid_positions": 47,
+              "mae": 2.9689065286220284e-06,
+              "max_abs": 2.47955322265625e-05,
+              "rmse": 4.1561565922165755e-06,
+              "relative_l2": 2.437631110296934e-07,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        },
+        "embeddings": {
+          "status": "pass",
+          "atol": 0.01,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "embeddings": {
+              "shape": [
+                1,
+                49,
+                1536
+              ],
+              "valid_positions": 47,
+              "mae": 0.00021264638053253293,
+              "max_abs": 0.005859375,
+              "rmse": 0.0002759606868494302,
+              "relative_l2": 9.734135346661787e-07,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        }
+      },
+      "unpadded_B1_vs_B4": {
+        "logits": {
+          "status": "pass",
+          "atol": 0.001,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "logits": {
+              "shape": [
+                1,
+                49,
+                64
+              ],
+              "valid_positions": 47,
+              "mae": 3.755112402359373e-06,
+              "max_abs": 2.6702880859375e-05,
+              "rmse": 4.93426750836079e-06,
+              "relative_l2": 2.8940016250089684e-07,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        },
+        "embeddings": {
+          "status": "pass",
+          "atol": 0.01,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "embeddings": {
+              "shape": [
+                1,
+                49,
+                1536
+              ],
+              "valid_positions": 47,
+              "mae": 0.00024529319489374757,
+              "max_abs": 0.0107421875,
+              "rmse": 0.00032634774106554687,
+              "relative_l2": 1.1511472166603198e-06,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        }
+      },
+      "padded_B1_vs_B4": {
+        "logits": {
+          "status": "pass",
+          "atol": 0.001,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "logits": {
+              "shape": [
+                1,
+                49,
+                64
+              ],
+              "valid_positions": 47,
+              "mae": 3.993866812379565e-06,
+              "max_abs": 3.0517578125e-05,
+              "rmse": 5.437841991806636e-06,
+              "relative_l2": 3.1893532081994636e-07,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        },
+        "embeddings": {
+          "status": "pass",
+          "atol": 0.01,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "embeddings": {
+              "shape": [
+                1,
+                49,
+                1536
+              ],
+              "valid_positions": 47,
+              "mae": 0.0002610613591969013,
+              "max_abs": 0.009765625,
+              "rmse": 0.0003462429449427873,
+              "relative_l2": 1.2213248510306585e-06,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        }
+      },
+      "padding_value_isolation": {
+        "status": "pass",
+        "atol": 0,
+        "rtol": 0,
+        "min_top1": 0.0,
+        "metrics": {
+          "logits": {
+            "shape": [
+              1,
+              854,
+              64
+            ],
+            "valid_positions": 47,
+            "mae": 0.0,
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_l2": 0.0,
+            "cosine": 1.0,
+            "close_fraction": 1.0,
+            "all_close": true,
+            "top1_agreement": 1.0
+          },
+          "embeddings": {
+            "shape": [
+              1,
+              854,
+              1536
+            ],
+            "valid_positions": 47,
+            "mae": 0.0,
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_l2": 0.0,
+            "cosine": 1.0,
+            "close_fraction": 1.0,
+            "all_close": true,
+            "top1_agreement": 1.0
+          }
+        },
+        "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+      }
+    },
+    "pg_RPC1_LAMBD": {
+      "unpadded_vs_padded_B1": {
+        "logits": {
+          "status": "pass",
+          "atol": 0.001,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "logits": {
+              "shape": [
+                1,
+                239,
+                64
+              ],
+              "valid_positions": 237,
+              "mae": 2.6242778403684497e-06,
+              "max_abs": 2.288818359375e-05,
+              "rmse": 3.7124966638657497e-06,
+              "relative_l2": 2.1336512645575567e-07,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        },
+        "embeddings": {
+          "status": "pass",
+          "atol": 0.01,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "embeddings": {
+              "shape": [
+                1,
+                239,
+                1536
+              ],
+              "valid_positions": 237,
+              "mae": 0.00021117473079357296,
+              "max_abs": 0.0078125,
+              "rmse": 0.0002794725587591529,
+              "relative_l2": 1.0836550927706412e-06,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        }
+      },
+      "unpadded_B1_vs_B4": {
+        "logits": {
+          "status": "pass",
+          "atol": 0.001,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "logits": {
+              "shape": [
+                1,
+                239,
+                64
+              ],
+              "valid_positions": 237,
+              "mae": 3.7561608223768417e-06,
+              "max_abs": 4.9591064453125e-05,
+              "rmse": 5.1604224609036464e-06,
+              "relative_l2": 2.965805379062658e-07,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        },
+        "embeddings": {
+          "status": "pass",
+          "atol": 0.01,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "embeddings": {
+              "shape": [
+                1,
+                239,
+                1536
+              ],
+              "valid_positions": 237,
+              "mae": 0.00025240378454327583,
+              "max_abs": 0.01171875,
+              "rmse": 0.00033871305640786886,
+              "relative_l2": 1.313348889198096e-06,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        }
+      },
+      "padded_B1_vs_B4": {
+        "logits": {
+          "status": "pass",
+          "atol": 0.001,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "logits": {
+              "shape": [
+                1,
+                239,
+                64
+              ],
+              "valid_positions": 237,
+              "mae": 3.849423592328094e-06,
+              "max_abs": 4.1961669921875e-05,
+              "rmse": 5.425240942713572e-06,
+              "relative_l2": 3.1180024961940944e-07,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        },
+        "embeddings": {
+          "status": "pass",
+          "atol": 0.01,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "embeddings": {
+              "shape": [
+                1,
+                239,
+                1536
+              ],
+              "valid_positions": 237,
+              "mae": 0.0002610618539620191,
+              "max_abs": 0.009765625,
+              "rmse": 0.00034826292539946735,
+              "relative_l2": 1.3503738500730833e-06,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        }
+      },
+      "padding_value_isolation": {
+        "status": "pass",
+        "atol": 0,
+        "rtol": 0,
+        "min_top1": 0.0,
+        "metrics": {
+          "logits": {
+            "shape": [
+              1,
+              854,
+              64
+            ],
+            "valid_positions": 237,
+            "mae": 0.0,
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_l2": 0.0,
+            "cosine": 1.0,
+            "close_fraction": 1.0,
+            "all_close": true,
+            "top1_agreement": 1.0
+          },
+          "embeddings": {
+            "shape": [
+              1,
+              854,
+              1536
+            ],
+            "valid_positions": 237,
+            "mae": 0.0,
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_l2": 0.0,
+            "cosine": 1.0,
+            "close_fraction": 1.0,
+            "all_close": true,
+            "top1_agreement": 1.0
+          }
+        },
+        "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+      }
+    },
+    "pg_ADRB2_HUMAN": {
+      "unpadded_vs_padded_B1": {
+        "logits": {
+          "status": "pass",
+          "atol": 0.001,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "logits": {
+              "shape": [
+                1,
+                415,
+                64
+              ],
+              "valid_positions": 413,
+              "mae": 2.91402261609619e-06,
+              "max_abs": 3.24249267578125e-05,
+              "rmse": 4.039251052745385e-06,
+              "relative_l2": 2.431096959298884e-07,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        },
+        "embeddings": {
+          "status": "pass",
+          "atol": 0.01,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "embeddings": {
+              "shape": [
+                1,
+                415,
+                1536
+              ],
+              "valid_positions": 413,
+              "mae": 0.00018378440290689468,
+              "max_abs": 0.0068359375,
+              "rmse": 0.00024828562163747847,
+              "relative_l2": 1.005757667371654e-06,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        }
+      },
+      "unpadded_B1_vs_B4": {
+        "logits": {
+          "status": "pass",
+          "atol": 0.001,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "logits": {
+              "shape": [
+                1,
+                415,
+                64
+              ],
+              "valid_positions": 413,
+              "mae": 3.6743069813383045e-06,
+              "max_abs": 3.62396240234375e-05,
+              "rmse": 5.026394319429528e-06,
+              "relative_l2": 3.0252263627517095e-07,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        },
+        "embeddings": {
+          "status": "pass",
+          "atol": 0.01,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "embeddings": {
+              "shape": [
+                1,
+                415,
+                1536
+              ],
+              "valid_positions": 413,
+              "mae": 0.00022412771068047732,
+              "max_abs": 0.0166015625,
+              "rmse": 0.0003077825822401792,
+              "relative_l2": 1.2467720580389141e-06,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        }
+      },
+      "padded_B1_vs_B4": {
+        "logits": {
+          "status": "pass",
+          "atol": 0.001,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "logits": {
+              "shape": [
+                1,
+                415,
+                64
+              ],
+              "valid_positions": 413,
+              "mae": 3.609190343922819e-06,
+              "max_abs": 4.38690185546875e-05,
+              "rmse": 4.948327841702849e-06,
+              "relative_l2": 2.978241013806837e-07,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        },
+        "embeddings": {
+          "status": "pass",
+          "atol": 0.01,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "embeddings": {
+              "shape": [
+                1,
+                415,
+                1536
+              ],
+              "valid_positions": 413,
+              "mae": 0.0002305827511008829,
+              "max_abs": 0.01416015625,
+              "rmse": 0.0003164203080814332,
+              "relative_l2": 1.2817652077501407e-06,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        }
+      },
+      "padding_value_isolation": {
+        "status": "pass",
+        "atol": 0,
+        "rtol": 0,
+        "min_top1": 0.0,
+        "metrics": {
+          "logits": {
+            "shape": [
+              1,
+              854,
+              64
+            ],
+            "valid_positions": 413,
+            "mae": 0.0,
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_l2": 0.0,
+            "cosine": 1.0,
+            "close_fraction": 1.0,
+            "all_close": true,
+            "top1_agreement": 1.0
+          },
+          "embeddings": {
+            "shape": [
+              1,
+              854,
+              1536
+            ],
+            "valid_positions": 413,
+            "mae": 0.0,
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_l2": 0.0,
+            "cosine": 1.0,
+            "close_fraction": 1.0,
+            "all_close": true,
+            "top1_agreement": 1.0
+          }
+        },
+        "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+      }
+    },
+    "pg_A0A192B1T2_9HIV1": {
+      "unpadded_vs_padded_B1": {
+        "logits": {
+          "status": "pass",
+          "atol": 0.001,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "logits": {
+              "shape": [
+                1,
+                854,
+                64
+              ],
+              "valid_positions": 852,
+              "mae": 0.0,
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_l2": 0.0,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        },
+        "embeddings": {
+          "status": "pass",
+          "atol": 0.01,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "embeddings": {
+              "shape": [
+                1,
+                854,
+                1536
+              ],
+              "valid_positions": 852,
+              "mae": 0.0,
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_l2": 0.0,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        }
+      },
+      "unpadded_B1_vs_B4": {
+        "logits": {
+          "status": "pass",
+          "atol": 0.001,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "logits": {
+              "shape": [
+                1,
+                854,
+                64
+              ],
+              "valid_positions": 852,
+              "mae": 2.7055975806433707e-06,
+              "max_abs": 2.09808349609375e-05,
+              "rmse": 3.88937314710347e-06,
+              "relative_l2": 2.3235439527979906e-07,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        },
+        "embeddings": {
+          "status": "pass",
+          "atol": 0.01,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "embeddings": {
+              "shape": [
+                1,
+                854,
+                1536
+              ],
+              "valid_positions": 852,
+              "mae": 0.00011852115130750462,
+              "max_abs": 0.01171875,
+              "rmse": 0.00016927254910115153,
+              "relative_l2": 6.258521807467332e-07,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        }
+      },
+      "padded_B1_vs_B4": {
+        "logits": {
+          "status": "pass",
+          "atol": 0.001,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "logits": {
+              "shape": [
+                1,
+                854,
+                64
+              ],
+              "valid_positions": 852,
+              "mae": 2.7055975806433707e-06,
+              "max_abs": 2.09808349609375e-05,
+              "rmse": 3.88937314710347e-06,
+              "relative_l2": 2.3235439527979906e-07,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        },
+        "embeddings": {
+          "status": "pass",
+          "atol": 0.01,
+          "rtol": 1e-05,
+          "min_top1": 0.0,
+          "metrics": {
+            "embeddings": {
+              "shape": [
+                1,
+                854,
+                1536
+              ],
+              "valid_positions": 852,
+              "mae": 0.00011852115130750462,
+              "max_abs": 0.01171875,
+              "rmse": 0.00016927254910115153,
+              "relative_l2": 6.258521807467332e-07,
+              "cosine": 1.0,
+              "close_fraction": 1.0,
+              "all_close": true,
+              "top1_agreement": 1.0
+            }
+          },
+          "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+        }
+      },
+      "padding_value_isolation": {
+        "status": "pass",
+        "atol": 0,
+        "rtol": 0,
+        "min_top1": 0.0,
+        "metrics": {
+          "logits": {
+            "shape": [
+              1,
+              854,
+              64
+            ],
+            "valid_positions": 852,
+            "mae": 0.0,
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_l2": 0.0,
+            "cosine": 1.0,
+            "close_fraction": 1.0,
+            "all_close": true,
+            "top1_agreement": 1.0
+          },
+          "embeddings": {
+            "shape": [
+              1,
+              854,
+              1536
+            ],
+            "valid_positions": 852,
+            "mae": 0.0,
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_l2": 0.0,
+            "cosine": 1.0,
+            "close_fraction": 1.0,
+            "all_close": true,
+            "top1_agreement": 1.0
+          }
+        },
+        "scope": "valid residues only; BOS/EOS/padding/chainbreak excluded"
+      }
+    }
+  },
+  "source_sha256": {
+    "scripts/check_proteingym_batch.py": "fc65b0227c9e5ac60107cc0a8eded6101ee3f5deca08c498b2bf4ee096ec7448",
+    "models/esm3_adapter.py": "fd7ea999e337aa620479c61aff958a3302102b98c90bd809a6eaff05c227f62e",
+    "common/backend.py": "b3e21f041380d2865f883a3037baf1cb8cfa1ddc9af12e205a1c2896711da6a6",
+    "compare_outputs.py": "a7c9b0ef4a74b373d880e87a9c2c6e6fb0b7de786c03bfa89ee4e660e0f618e4"
+  },
+  "scope": "FP32 numerical diagnosis only. BF16 panel and its frozen thresholds remain unchanged.",
+  "thresholds": {
+    "logits": {
+      "atol": 0.001,
+      "rtol": 1e-05
+    },
+    "embeddings": {
+      "atol": 0.01,
+      "rtol": 1e-05
+    },
+    "padding_value_isolation": {
+      "atol": 0,
+      "rtol": 0
+    }
+  },
+  "weights_revision": "47f0545b2b6daf26a93439a3cd610f4f7f3d5478",
+  "input_sha256": "f0100c65c6f4e5da91fdc0a79f8368f6f11349ac22509c77688fb993d3e857d0",
+  "device": {
+    "type": "cuda",
+    "index": 0,
+    "name": "NVIDIA GeForce RTX 4090",
+    "visible_devices": null,
+    "properties_repr": "_CudaDeviceProperties(name='NVIDIA GeForce RTX 4090', major=8, minor=9, total_memory=24091MB, multi_processor_count=128)",
+    "total_memory": 25262096384,
+    "major": 8,
+    "minor": 9,
+    "multi_processor_count": 128,
+    "warp_size": null,
+    "uuid": null,
+    "total_memory_gib": 23.52716064453125
+  },
+  "precision": {
+    "weights": "torch.float32",
+    "main_compute_policy": "FP32 autocast disabled",
+    "sdk_inner_override": true,
+    "observed_first_linear": {
+      "module": "encoder.plddt_projection",
+      "input_dtype": "torch.float32",
+      "output_dtype": "torch.float32"
+    },
+    "auxiliary_parameter_dtypes": {},
+    "tf32_matmul": false,
+    "tf32_cudnn": false,
+    "tf32_mudnn": null,
+    "attention_requested": "auto",
+    "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+  },
+  "lengths": [
+    47,
+    237,
+    413,
+    852
+  ]
+}

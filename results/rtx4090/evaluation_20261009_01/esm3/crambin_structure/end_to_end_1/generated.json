@@ -1,0 +1,17 @@
+{
+  "reference_sequence": "TTCCPSIVARSNFNVCRLPGTPEAICATYTGCIIIPGATCPGDYAN",
+  "generated_sequence": "TTCCPSIVARSNFNVCRLPGTPEAICATYTGCIIIPGATCPGDYAN",
+  "coordinate_condition": false,
+  "coordinates_shape": [
+    46,
+    37,
+    3
+  ],
+  "finite_ca_count": 46,
+  "finite_ca_fraction": 1.0,
+  "ca_rmsd_angstrom": 5.960295440092692,
+  "rmsd_matched_residues": 46,
+  "rmsd_scope": "1CRN A; one-to-one sequence mapping; Kabsch CA alignment",
+  "plddt_mean": 0.7797789573669434,
+  "ptm_mean": 0.5193936228752136
+}

@@ -1,0 +1,1 @@
+PASS forward bf16 B=1 ['random_L2048']: median=269.576ms allocated=20.78382968902588GiB; /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L2048

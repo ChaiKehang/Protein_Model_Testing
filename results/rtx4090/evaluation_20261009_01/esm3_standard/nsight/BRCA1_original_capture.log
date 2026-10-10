@@ -1,0 +1,8 @@
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-c8d1.qdstrm'
+[1/1] [0%                          ] BRCA1_original.nsys-repProcessing events...
+[1/1] [0%                          ] BRCA1_original.nsys-rep[1/1] [7%                          ] BRCA1_original.nsys-rep[1/1] [14%                         ] BRCA1_original.nsys-rep[1/1] [============57%             ] BRCA1_original.nsys-rep[1/1] [========================99% ] BRCA1_original.nsys-rep[1/1] [6%                          ] BRCA1_original.nsys-rep[1/1] [==================75%       ] BRCA1_original.nsys-rep[1/1] [========================100%] BRCA1_original.nsys-rep[1/1] [========================100%] BRCA1_original.nsys-rep
+PROFILE_WORKLOAD_PASS forward warm
+Generated:
+    /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/nsight/BRCA1_original.nsys-rep

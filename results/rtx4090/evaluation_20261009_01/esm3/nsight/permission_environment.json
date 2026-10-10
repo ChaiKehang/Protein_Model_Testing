@@ -1,0 +1,7 @@
+{
+  "driver_profiling_policy": [
+    "RmProfilingAdminOnly: 1"
+  ],
+  "effective_uid": 0,
+  "cap_sys_admin": false
+}

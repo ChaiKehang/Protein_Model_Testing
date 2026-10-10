@@ -1,0 +1,24 @@
+{
+  "reference_sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG",
+  "generated_sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG",
+  "coordinate_condition": true,
+  "known_positions_retained": true,
+  "masked_positions": [
+    {
+      "position": 4,
+      "reference": "F",
+      "generated": "F"
+    },
+    {
+      "position": 5,
+      "reference": "V",
+      "generated": "V"
+    },
+    {
+      "position": 13,
+      "reference": "I",
+      "generated": "I"
+    }
+  ],
+  "masked_recovery_fraction": 1.0
+}

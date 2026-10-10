@@ -1,0 +1,32 @@
+{
+  "argv": [
+    "/opt/nvidia/nsight-compute/2025.1.1/host/target-linux-x64/nsys",
+    "profile",
+    "--trace=cuda,nvtx,osrt",
+    "--sample=none",
+    "--cpuctxsw=none",
+    "--capture-range=cudaProfilerApi",
+    "--capture-range-end=stop",
+    "--force-overwrite=false",
+    "--output=/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold_nsight/openfold_warm",
+    "/root/autodl-tmp/envs/openfold-cuda/bin/python",
+    "/root/autodl-tmp/musa-/scripts/openfold_nsight_workload.py",
+    "--reference",
+    "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold",
+    "--output",
+    "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold_nsight/workload",
+    "--device",
+    "cuda:0",
+    "--warmup",
+    "1",
+    "--scope",
+    "warm"
+  ],
+  "cwd": "/root/autodl-tmp/musa-",
+  "timestamp_utc": "2026-10-09T05:47:16.126251+00:00",
+  "timeout_seconds": 1200,
+  "env_overrides": {
+    "HF_HUB_OFFLINE": "1",
+    "TOKENIZERS_PARALLELISM": "false"
+  }
+}

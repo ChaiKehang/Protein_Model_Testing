@@ -1,0 +1,16 @@
+{
+  "status": "collecting",
+  "selector": "GPU-62d5b712-7fd8-64ca-33d1-a36c46f51168",
+  "logical_device": "cuda:0",
+  "mapping": "CUDA driver logical ordinal -> device UUID, respecting visibility",
+  "command": [
+    "/usr/bin/nvidia-smi",
+    "--query-gpu=timestamp,uuid,name,utilization.gpu,memory.used,power.draw,temperature.gpu,clocks.sm",
+    "--format=csv",
+    "-lms",
+    "500",
+    "-i",
+    "GPU-62d5b712-7fd8-64ca-33d1-a36c46f51168"
+  ],
+  "probe": "uuid, name\nGPU-62d5b712-7fd8-64ca-33d1-a36c46f51168, NVIDIA GeForce RTX 4090\n"
+}

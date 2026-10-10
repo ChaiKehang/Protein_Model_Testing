@@ -1,0 +1,1 @@
+PASS forward bf16 B=1 ['pg_A0A1I9GEU1_NEIME']: median=26.310ms allocated=2.764988899230957GiB; /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_A0A1I9GEU1_NEIME

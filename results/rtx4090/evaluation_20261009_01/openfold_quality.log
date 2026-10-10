@@ -1,0 +1,6 @@
+{
+  "ca_rmsd_angstrom": 1.1524738538489765,
+  "ca_lddt": 0.9623699775647563,
+  "official_openfold_ca_lddt": 0.962369978427887,
+  "directed_neighbor_pairs": 9806
+}

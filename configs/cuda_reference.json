@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "device": "cuda:0",
+  "precision": "bf16",
+  "seed": 7,
+  "warmup": 5,
+  "runs": 30,
+  "end_to_end_runs": 3,
+  "generation_warmup": 3,
+  "generation_runs": 10,
+  "batch_lengths": [64, 256, 512, 1024],
+  "batch_sizes": [2, 4],
+  "independent_ubiquitin_runs": 3,
+  "observational_comparison": {
+    "atol": 0.1,
+    "rtol": 0.02,
+    "note": "Provisional diagnostic tolerance frozen before measurements; not a final MUSA acceptance threshold. Report errors even if outside."
+  },
+  "scope": "CUDA ESM3 four tasks, all 19 sequence inputs, true uniform/mixed batches, precision, SDPA ablation, profiles and operator microbenchmarks. No real MUSA/OpenFold/multi-GPU execution."
+}

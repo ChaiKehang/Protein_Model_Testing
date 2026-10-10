@@ -1,0 +1,26 @@
+{
+  "warmup": 5,
+  "systems_calls": 5,
+  "compute_launches": 1,
+  "compute_sections": [
+    "SpeedOfLight",
+    "Occupancy",
+    "LaunchStats",
+    "MemoryWorkloadAnalysis",
+    "ComputeWorkloadAnalysis"
+  ],
+  "cases": [
+    {
+      "name": "L256_original",
+      "sample_id": "random_L256",
+      "reference": "cases/forward_random_L256_b1_bf16/tensors.pt",
+      "compute_top_k": 1
+    },
+    {
+      "name": "L1024_original",
+      "sample_id": "random_L1024",
+      "reference": "cases/forward_random_L1024_b1_bf16/tensors.pt",
+      "compute_top_k": 2
+    }
+  ]
+}

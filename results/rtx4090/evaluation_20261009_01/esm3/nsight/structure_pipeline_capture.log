@@ -1,0 +1,11 @@
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:05,  1.19it/s] 50%|█████     | 4/8 [00:00<00:00,  5.24it/s] 88%|████████▊ | 7/8 [00:01<00:00,  9.15it/s]100%|██████████| 8/8 [00:01<00:00,  7.18it/s]
+/root/autodl-tmp/esm-baseline/esm/esm/utils/structure/protein_complex.py:298: UserWarning: Entity ID not found in metadata, using None as default
+  warnings.warn("Entity ID not found in metadata, using None as default")
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-cbcf.qdstrm'
+[1/1] [0%                          ] structure_pipeline.nsys-repProcessing events...
+[1/1] [0%                          ] structure_pipeline.nsys-rep[1/1] [===========51%              ] structure_pipeline.nsys-rep[1/1] [========================98% ] structure_pipeline.nsys-rep[1/1] [========================99% ] structure_pipeline.nsys-rep[1/1] [5%                          ] structure_pipeline.nsys-rep[1/1] [==19%                       ] structure_pipeline.nsys-rep[1/1] [========41%                 ] structure_pipeline.nsys-rep[1/1] [==============63%           ] structure_pipeline.nsys-rep[1/1] [=================73%        ] structure_pipeline.nsys-rep[1/1] [========================100%] structure_pipeline.nsys-rep[1/1] [========================100%] structure_pipeline.nsys-rep
+PROFILE_WORKLOAD_PASS structure pipeline
+Generated:
+    /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/structure_pipeline.nsys-rep

@@ -1,0 +1,1 @@
+PASS forward bf16 B=1 ['pg_GCN4_YEAST']: median=27.539ms allocated=2.9990949630737305GiB; /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_GCN4_YEAST

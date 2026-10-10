@@ -1,0 +1,5 @@
+pg_AMFR_HUMAN {'unpadded_vs_padded_B1': {'logits': 'pass', 'embeddings': 'pass'}, 'unpadded_B1_vs_B4': {'logits': 'pass', 'embeddings': 'pass'}, 'padded_B1_vs_B4': {'logits': 'pass', 'embeddings': 'pass'}, 'padding_value_isolation': 'pass'}
+pg_RPC1_LAMBD {'unpadded_vs_padded_B1': {'logits': 'pass', 'embeddings': 'pass'}, 'unpadded_B1_vs_B4': {'logits': 'pass', 'embeddings': 'pass'}, 'padded_B1_vs_B4': {'logits': 'pass', 'embeddings': 'pass'}, 'padding_value_isolation': 'pass'}
+pg_ADRB2_HUMAN {'unpadded_vs_padded_B1': {'logits': 'pass', 'embeddings': 'pass'}, 'unpadded_B1_vs_B4': {'logits': 'pass', 'embeddings': 'pass'}, 'padded_B1_vs_B4': {'logits': 'pass', 'embeddings': 'pass'}, 'padding_value_isolation': 'pass'}
+pg_A0A192B1T2_9HIV1 {'unpadded_vs_padded_B1': {'logits': 'pass', 'embeddings': 'pass'}, 'unpadded_B1_vs_B4': {'logits': 'pass', 'embeddings': 'pass'}, 'padded_B1_vs_B4': {'logits': 'pass', 'embeddings': 'pass'}, 'padding_value_isolation': 'pass'}
+PASS /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_batch_fp32

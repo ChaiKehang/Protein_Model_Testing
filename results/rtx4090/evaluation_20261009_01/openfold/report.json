@@ -1,0 +1,1102 @@
+{
+  "status": "pass",
+  "source_sha256": {
+    "models/openfold_adapter.py": "a7604ba44202342307e8eedd6e0fde0dd63d819b27f567bc822c027030cbf703",
+    "scripts/openfold_baseline.py": "9f239c4d094d8c644c499dad084791751d0c10cc30c9b47784580566435d5263",
+    "common/backend.py": "b3e21f041380d2865f883a3037baf1cb8cfa1ddc9af12e205a1c2896711da6a6",
+    "common/reporting.py": "587c1834f36e14bf654ad40e8bd484e3c07d2770fbc7a015170b98501e7fdf2a"
+  },
+  "parameters": {
+    "weights": "/root/autodl-tmp/openfold-cache/params/finetuning_no_templ_ptm_1.pt",
+    "fasta": "/root/autodl-tmp/references/openfold/examples/monomer/fasta_dir/6kwc.fasta",
+    "alignments": "/root/autodl-tmp/references/openfold/examples/monomer/alignments/6KWC_1",
+    "features": null,
+    "device": "cuda:0",
+    "output": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold",
+    "chunk_size": 64,
+    "seed": 42,
+    "attention_kernel": "upstream",
+    "cpu_threads": 8,
+    "warmup": 1,
+    "runs": 5,
+    "profile": true,
+    "numerical_only": false
+  },
+  "model": "OpenFold model_3_ptm, finetuning_no_templ_ptm_1",
+  "precision": "FP32; TF32 disabled; no mixed-precision wrapper",
+  "scope": "precomputed MSA; template-free monomer; unrelaxed PDB; includes all default layers and three recycling steps",
+  "evaluation_policy": "Reference-only measurement; no optimization applied.",
+  "environment": {
+    "timestamp_utc": "2026-10-09T05:43:49.408205+00:00",
+    "host": {
+      "platform": "Linux-5.15.0-143-generic-x86_64-with-glibc2.35",
+      "machine": "x86_64",
+      "cpu_count": 208,
+      "cpu_affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207
+      ]
+    },
+    "python": "3.10.22 (main, Oct  1 2026, 20:14:04) [GCC 14.3.0]",
+    "interpreter": "/root/autodl-tmp/envs/openfold-cuda/bin/python",
+    "versions": {
+      "torch": "2.5.1",
+      "esm": null,
+      "numpy": "1.26.4",
+      "transformers": null,
+      "huggingface-hub": null,
+      "biotite": null,
+      "torch_musa": null,
+      "openfold": "2.2.0",
+      "scipy": "1.15.3",
+      "biopython": "1.88",
+      "ml-collections": "1.1.0",
+      "dm-tree": "0.1.10"
+    },
+    "repo_commit": "8363a78a49b2fe66afbd46c1e893db34254ba48a",
+    "repo_dirty": true,
+    "source_sha256": {
+      "common/__init__.py": "1b488fb948e9f333d99c0d2ba2a8f64505af138529c39780df0d949dae5bd899",
+      "common/backend.py": "b3e21f041380d2865f883a3037baf1cb8cfa1ddc9af12e205a1c2896711da6a6",
+      "common/reporting.py": "587c1834f36e14bf654ad40e8bd484e3c07d2770fbc7a015170b98501e7fdf2a",
+      "common/telemetry.py": "edf508e2d50f37de5581974a659aa1a02e25a0c081716c92bd00ec4325a8310a",
+      "common/variant_scoring.py": "0455603b7a9fa0323cc25f157d57b92283b74e74758e3a5811199c3b90ad50a0",
+      "common/profiler_permissions.py": "132f59840b7a483098115ac1875130b64023e3e05f7cefd026693b1afd91511f",
+      "models/__init__.py": "ab06ac0640a33e022b949eea7b5340059a48d7c3f25cd13f339912b797c5fa42",
+      "models/esm3_adapter.py": "fd7ea999e337aa620479c61aff958a3302102b98c90bd809a6eaff05c227f62e",
+      "models/openfold_adapter.py": "a7604ba44202342307e8eedd6e0fde0dd63d819b27f567bc822c027030cbf703",
+      "scripts/__init__.py": "f1a2eb300bb60b0ccde553b0b5f40da190442b812172891894ec7dec54ddbefe",
+      "scripts/profile_model.py": "dc50ac5d62d33b410ac6070eba48924c8c7a631b69a69482e2c25a27ba65b9b0",
+      "scripts/operator_bench.py": "fc7b51d180f2a943e6ca095d05e51e7b9ddaad4cfac7aa2caef3d1a47d147923",
+      "scripts/run_suite.py": "286da310edbc94fb07752b47da6b1562c9cd0fd45e9d033a608a90ca03668f08",
+      "scripts/run_quality_extension.py": "541f75937ed8a21e742f699cfc46f0fdd064af1fa2f5188b934b98dc3c45452f",
+      "scripts/figure_style.py": "1da743509919c22371171e62ff11edfc2d43ad16a8bfb634996f2bc9c161aaea",
+      "scripts/nsight_workload.py": "f77167767b378965c3dbd513ba3866ad7c7c9296a2b3bfdf9718c55b2cb1cd42",
+      "scripts/nsight_analysis.py": "b98e4b53635b8b14705f5632f36ae0828d5536c34e348c989ed63bbea624dde6",
+      "scripts/run_nsight.py": "058e130df131cb8ddcc1dfba30cd96302771887f69bb34dc5273ce73e49ab431",
+      "scripts/portable_audit.py": "fc44109bf556dddb67942536b0f740a2fd373fb1356660c7246c694afdd9d7e6",
+      "scripts/portable_operator_bench.py": "973596dea90d074d6cf7ad7d789a635a30e3cd6c894c30f807c9bea829ef28b8",
+      "scripts/openfold_baseline.py": "9f239c4d094d8c644c499dad084791751d0c10cc30c9b47784580566435d5263",
+      "scripts/openfold_structure_quality.py": "dd0caec3b3f21648b8f390a8623bf01c884d0e96e54d4c7754d0c9d3c6404115",
+      "scripts/openfold_nsight_workload.py": "ce61b8c3a4f486c3cacd55043c398816fbbaf5c01eaebf19667732fcda39a406",
+      "scripts/compare_openfold.py": "7ddb659f3478e1fbca067699de3c8913deba720075f17f44e1f1167679ad2763",
+      "scripts/run_openfold_nsight.py": "41f9306546753363d9b3618e21ea0239c39eaa2d0f39ed9c9b76e0a87e8e85a0",
+      "scripts/prepare_proteingym.py": "79a82c6bc88eb33d082a8cc866d7d50bb631ab484160b4456e5845c38a89c39d",
+      "scripts/run_proteingym_panel.py": "0110091a327ef303915c8fe5887f1a42b87380b064ba554514b864b95f270df6",
+      "scripts/proteingym_dms.py": "4d1178c809f3f5e7a77f258b0f3dc24f92907864bb97ee3f2a31e1383a1b4d17",
+      "scripts/check_proteingym_batch.py": "fc65b0227c9e5ac60107cc0a8eded6101ee3f5deca08c498b2bf4ee096ec7448",
+      "scripts/run_evaluation.py": "b582a2341f514901f9e8133c04247b8a796b22083bbb353f1136532155947c32",
+      "scripts/build_evaluation_report.py": "fd6470119dcbeeb552e126a1b0b3b6539721e7f484080bf06bd29800644e0217",
+      "scripts/finalize_evaluation.py": "abba64c2b348d5cc048924245a0c7df0a32206e1f20fc00289121d4db529dec9",
+      "tests/test_correctness.py": "5209a7f55b860f74207a589af91ca68072386c61340bd44cc676b2f5afdb23bc",
+      "tests/test_nsight_analysis.py": "8ca25d2f67828c465104f199cae89647a3094c7e5864aa451e4ccc5de3d0547c",
+      "tests/test_structure_quality.py": "664b6de0d5a50b146a86d277ac4aa4a1cfaaf05cf0c6e3decdf5dfc359fcb838",
+      "tests/openfold_checks.py": "7b7f180c8d1fcacacd22754f1417e2500721023a6c1a60ba40f98eb0a130fa78",
+      "tests/test_counter_policy.py": "65217fc972e951e96bbbae79fe91384acf39314c46900e64bfccec85d374ab4f",
+      "tests/test_variant_scoring.py": "19f1a0608e22be6fd7f622f364779057bb92e7b1dd10fc354e48438e58453ad6",
+      "main.py": "a223aaf16aa4bc967148d4c5f3259b7f11aba60629f8874279704ee4a5d7bacb",
+      "compare_outputs.py": "a7c9b0ef4a74b373d880e87a9c2c6e6fb0b7de786c03bfa89ee4e660e0f618e4"
+    },
+    "esm_source": null,
+    "esm_commit": null
+  },
+  "device": {
+    "type": "cuda",
+    "index": 0,
+    "name": "NVIDIA GeForce RTX 4090",
+    "visible_devices": null,
+    "properties_repr": "_CudaDeviceProperties(name='NVIDIA GeForce RTX 4090', major=8, minor=9, total_memory=24091MB, multi_processor_count=128, uuid=62d5b712-7fd8-64ca-33d1-a36c46f51168, L2_cache_size=72MB)",
+    "total_memory": 25262096384,
+    "major": 8,
+    "minor": 9,
+    "multi_processor_count": 128,
+    "warp_size": 32,
+    "uuid": "62d5b712-7fd8-64ca-33d1-a36c46f51168",
+    "total_memory_gib": 23.52716064453125
+  },
+  "weights": {
+    "path": "/root/autodl-tmp/openfold-cache/params/finetuning_no_templ_ptm_1.pt",
+    "sha256": "1a179937a6f61143c41f8b6a0b763ac1f4762c9dc63d2fb151240930c110bee1"
+  },
+  "input_sha256": {
+    "fasta": "b247679c36ec63f89aa5b849caac450e9368cee99e3082951303698a73f33166",
+    "alignments": {
+      "bfd_uniref_hits.a3m": "2057eebb4d7555f9647b5582a3e43ffa303773b2aec30d0e20772a1b34e016d3",
+      "hhsearch_output.hhr": "17a98fd8ff043aaf0fe536091088fb03ce603f6d9d65072456eea550301d74cb",
+      "mgnify_hits.sto": "fe69609c90f99dd65d7ba9f6fb4ec49d63d39c68b801dafd20df50443a9835d6",
+      "uniref90_hits.sto": "0ce40892e11ec8553f06e5ba0f9a838c7c9b1ca03c77754d7c9c19b77e9ece80"
+    }
+  },
+  "phases_seconds": {
+    "model_load": 7.043990693986416,
+    "prepare": 1.2645911797881126,
+    "first_inference": 9.630824007093906,
+    "warmup_0": 9.450310066342354
+  },
+  "openfold_commit": "be2ec1841f16c966c65ae0e7599ebbadc725757d",
+  "attention_implementation": {
+    "policy": "upstream",
+    "explicit_torch_hooks": 0,
+    "note": "torch selects pinned upstream matmul/softmax Attention and non-inplace IPA branches; not a CPU device fallback. Numerical aggregation order differs from native CUDA branches."
+  },
+  "config": {
+    "data": {
+      "common": {
+        "block_delete_msa": {
+          "msa_fraction_per_block": 0.3,
+          "num_blocks": 5,
+          "randomize_num_blocks": false
+        },
+        "feat": {
+          "aatype": [
+            "num residues placeholder"
+          ],
+          "all_atom_mask": [
+            "num residues placeholder",
+            null
+          ],
+          "all_atom_positions": [
+            "num residues placeholder",
+            null,
+            null
+          ],
+          "alt_chi_angles": [
+            "num residues placeholder",
+            null
+          ],
+          "atom14_alt_gt_exists": [
+            "num residues placeholder",
+            null
+          ],
+          "atom14_alt_gt_positions": [
+            "num residues placeholder",
+            null,
+            null
+          ],
+          "atom14_atom_exists": [
+            "num residues placeholder",
+            null
+          ],
+          "atom14_atom_is_ambiguous": [
+            "num residues placeholder",
+            null
+          ],
+          "atom14_gt_exists": [
+            "num residues placeholder",
+            null
+          ],
+          "atom14_gt_positions": [
+            "num residues placeholder",
+            null,
+            null
+          ],
+          "atom37_atom_exists": [
+            "num residues placeholder",
+            null
+          ],
+          "backbone_rigid_mask": [
+            "num residues placeholder"
+          ],
+          "backbone_rigid_tensor": [
+            "num residues placeholder",
+            null,
+            null
+          ],
+          "bert_mask": [
+            "msa placeholder",
+            "num residues placeholder"
+          ],
+          "chi_angles_sin_cos": [
+            "num residues placeholder",
+            null,
+            null
+          ],
+          "chi_mask": [
+            "num residues placeholder",
+            null
+          ],
+          "extra_deletion_value": [
+            "extra msa placeholder",
+            "num residues placeholder"
+          ],
+          "extra_has_deletion": [
+            "extra msa placeholder",
+            "num residues placeholder"
+          ],
+          "extra_msa": [
+            "extra msa placeholder",
+            "num residues placeholder"
+          ],
+          "extra_msa_mask": [
+            "extra msa placeholder",
+            "num residues placeholder"
+          ],
+          "extra_msa_row_mask": [
+            "extra msa placeholder"
+          ],
+          "is_distillation": [],
+          "msa_feat": [
+            "msa placeholder",
+            "num residues placeholder",
+            null
+          ],
+          "msa_mask": [
+            "msa placeholder",
+            "num residues placeholder"
+          ],
+          "msa_row_mask": [
+            "msa placeholder"
+          ],
+          "no_recycling_iters": [],
+          "pseudo_beta": [
+            "num residues placeholder",
+            null
+          ],
+          "pseudo_beta_mask": [
+            "num residues placeholder"
+          ],
+          "residue_index": [
+            "num residues placeholder"
+          ],
+          "residx_atom14_to_atom37": [
+            "num residues placeholder",
+            null
+          ],
+          "residx_atom37_to_atom14": [
+            "num residues placeholder",
+            null
+          ],
+          "resolution": [],
+          "rigidgroups_alt_gt_frames": [
+            "num residues placeholder",
+            null,
+            null,
+            null
+          ],
+          "rigidgroups_group_exists": [
+            "num residues placeholder",
+            null
+          ],
+          "rigidgroups_group_is_ambiguous": [
+            "num residues placeholder",
+            null
+          ],
+          "rigidgroups_gt_exists": [
+            "num residues placeholder",
+            null
+          ],
+          "rigidgroups_gt_frames": [
+            "num residues placeholder",
+            null,
+            null,
+            null
+          ],
+          "seq_length": [],
+          "seq_mask": [
+            "num residues placeholder"
+          ],
+          "target_feat": [
+            "num residues placeholder",
+            null
+          ],
+          "template_aatype": [
+            "num templates placeholder",
+            "num residues placeholder"
+          ],
+          "template_all_atom_mask": [
+            "num templates placeholder",
+            "num residues placeholder",
+            null
+          ],
+          "template_all_atom_positions": [
+            "num templates placeholder",
+            "num residues placeholder",
+            null,
+            null
+          ],
+          "template_alt_torsion_angles_sin_cos": [
+            "num templates placeholder",
+            "num residues placeholder",
+            null,
+            null
+          ],
+          "template_backbone_rigid_mask": [
+            "num templates placeholder",
+            "num residues placeholder"
+          ],
+          "template_backbone_rigid_tensor": [
+            "num templates placeholder",
+            "num residues placeholder",
+            null,
+            null
+          ],
+          "template_mask": [
+            "num templates placeholder"
+          ],
+          "template_pseudo_beta": [
+            "num templates placeholder",
+            "num residues placeholder",
+            null
+          ],
+          "template_pseudo_beta_mask": [
+            "num templates placeholder",
+            "num residues placeholder"
+          ],
+          "template_sum_probs": [
+            "num templates placeholder",
+            null
+          ],
+          "template_torsion_angles_mask": [
+            "num templates placeholder",
+            "num residues placeholder",
+            null
+          ],
+          "template_torsion_angles_sin_cos": [
+            "num templates placeholder",
+            "num residues placeholder",
+            null,
+            null
+          ],
+          "true_msa": [
+            "msa placeholder",
+            "num residues placeholder"
+          ],
+          "use_clamped_fape": []
+        },
+        "masked_msa": {
+          "profile_prob": 0.1,
+          "same_prob": 0.1,
+          "uniform_prob": 0.1
+        },
+        "max_recycling_iters": 3,
+        "msa_cluster_features": true,
+        "reduce_msa_clusters_by_max_templates": false,
+        "resample_msa_in_recycling": true,
+        "template_features": [
+          "template_all_atom_positions",
+          "template_sum_probs",
+          "template_aatype",
+          "template_all_atom_mask"
+        ],
+        "unsupervised_features": [
+          "aatype",
+          "residue_index",
+          "msa",
+          "num_alignments",
+          "seq_length",
+          "between_segment_residues",
+          "deletion_matrix",
+          "no_recycling_iters"
+        ],
+        "use_template_torsion_angles": true,
+        "use_templates": false
+      },
+      "data_module": {
+        "data_loaders": {
+          "batch_size": 1,
+          "num_workers": 16,
+          "pin_memory": true
+        },
+        "use_small_bfd": false
+      },
+      "eval": {
+        "block_delete_msa": false,
+        "crop": false,
+        "crop_size": null,
+        "fixed_size": true,
+        "interface_threshold": null,
+        "masked_msa_replace_fraction": 0.15,
+        "max_extra_msa": 1024,
+        "max_msa_clusters": 128,
+        "max_template_hits": 4,
+        "max_templates": 4,
+        "spatial_crop_prob": null,
+        "subsample_templates": false,
+        "supervised": true,
+        "uniform_recycling": false
+      },
+      "predict": {
+        "block_delete_msa": false,
+        "crop": false,
+        "crop_size": null,
+        "fixed_size": true,
+        "interface_threshold": null,
+        "masked_msa_replace_fraction": 0.15,
+        "max_extra_msa": 5120,
+        "max_msa_clusters": 512,
+        "max_template_hits": 4,
+        "max_templates": 4,
+        "spatial_crop_prob": null,
+        "subsample_templates": false,
+        "supervised": false,
+        "uniform_recycling": false
+      },
+      "seqemb_mode": {
+        "enabled": false
+      },
+      "supervised": {
+        "clamp_prob": 0.9,
+        "supervised_features": [
+          "all_atom_mask",
+          "all_atom_positions",
+          "resolution",
+          "use_clamped_fape",
+          "is_distillation"
+        ]
+      },
+      "train": {
+        "block_delete_msa": true,
+        "clamp_prob": 0.9,
+        "crop": true,
+        "crop_size": 256,
+        "distillation_prob": 0.75,
+        "fixed_size": true,
+        "interface_threshold": null,
+        "masked_msa_replace_fraction": 0.15,
+        "max_distillation_msa_clusters": 1000,
+        "max_extra_msa": 5120,
+        "max_msa_clusters": 128,
+        "max_template_hits": 4,
+        "max_templates": 4,
+        "shuffle_top_k_prefiltered": 20,
+        "spatial_crop_prob": 0.0,
+        "subsample_templates": true,
+        "supervised": true,
+        "uniform_recycling": true
+      }
+    },
+    "ema": {
+      "decay": 0.999
+    },
+    "globals": {
+      "blocks_per_ckpt": null,
+      "c_e": 64,
+      "c_m": 256,
+      "c_s": 384,
+      "c_t": 64,
+      "c_z": 128,
+      "chunk_size": 64,
+      "eps": 1e-08,
+      "is_multimer": false,
+      "offload_inference": false,
+      "seqemb_mode_enabled": false,
+      "use_cuequivariance_attention": false,
+      "use_cuequivariance_multiplicative_update": false,
+      "use_deepspeed_evo_attention": false,
+      "use_flash": false,
+      "use_lma": false
+    },
+    "loss": {
+      "chain_center_of_mass": {
+        "clamp_distance": -4.0,
+        "enabled": false,
+        "eps": 1e-08,
+        "weight": 0.0
+      },
+      "distogram": {
+        "eps": 1e-08,
+        "max_bin": 21.6875,
+        "min_bin": 2.3125,
+        "no_bins": 64,
+        "weight": 0.3
+      },
+      "eps": 1e-08,
+      "experimentally_resolved": {
+        "eps": 1e-08,
+        "max_resolution": 3.0,
+        "min_resolution": 0.1,
+        "weight": 0.0
+      },
+      "fape": {
+        "backbone": {
+          "clamp_distance": 10.0,
+          "loss_unit_distance": 10.0,
+          "weight": 0.5
+        },
+        "eps": 0.0001,
+        "sidechain": {
+          "clamp_distance": 10.0,
+          "length_scale": 10.0,
+          "weight": 0.5
+        },
+        "weight": 1.0
+      },
+      "masked_msa": {
+        "eps": 1e-08,
+        "num_classes": 23,
+        "weight": 2.0
+      },
+      "plddt_loss": {
+        "cutoff": 15.0,
+        "eps": 1e-08,
+        "max_resolution": 3.0,
+        "min_resolution": 0.1,
+        "no_bins": 50,
+        "weight": 0.01
+      },
+      "supervised_chi": {
+        "angle_norm_weight": 0.01,
+        "chi_weight": 0.5,
+        "eps": 1e-08,
+        "weight": 1.0
+      },
+      "tm": {
+        "enabled": true,
+        "eps": 1e-08,
+        "max_bin": 31,
+        "max_resolution": 3.0,
+        "min_resolution": 0.1,
+        "no_bins": 64,
+        "weight": 0.1
+      },
+      "violation": {
+        "average_clashes": false,
+        "clash_overlap_tolerance": 1.5,
+        "eps": 1e-08,
+        "violation_tolerance_factor": 12.0,
+        "weight": 0.0
+      }
+    },
+    "model": {
+      "_mask_trans": false,
+      "evoformer_stack": {
+        "blocks_per_ckpt": null,
+        "c_hidden_msa_att": 32,
+        "c_hidden_mul": 128,
+        "c_hidden_opm": 32,
+        "c_hidden_pair_att": 32,
+        "c_m": 256,
+        "c_s": 384,
+        "c_z": 128,
+        "clear_cache_between_blocks": false,
+        "eps": 1e-08,
+        "fuse_projection_weights": false,
+        "inf": 1000000000.0,
+        "msa_dropout": 0.15,
+        "no_blocks": 48,
+        "no_column_attention": false,
+        "no_heads_msa": 8,
+        "no_heads_pair": 4,
+        "opm_first": false,
+        "pair_dropout": 0.25,
+        "transition_n": 4,
+        "tune_chunk_size": false
+      },
+      "extra_msa": {
+        "enabled": true,
+        "extra_msa_embedder": {
+          "c_in": 25,
+          "c_out": 64
+        },
+        "extra_msa_stack": {
+          "c_hidden_msa_att": 8,
+          "c_hidden_mul": 128,
+          "c_hidden_opm": 32,
+          "c_hidden_pair_att": 32,
+          "c_m": 64,
+          "c_z": 128,
+          "ckpt": true,
+          "clear_cache_between_blocks": false,
+          "eps": 1e-08,
+          "fuse_projection_weights": false,
+          "inf": 1000000000.0,
+          "msa_dropout": 0.15,
+          "no_blocks": 4,
+          "no_heads_msa": 8,
+          "no_heads_pair": 4,
+          "opm_first": false,
+          "pair_dropout": 0.25,
+          "transition_n": 4,
+          "tune_chunk_size": false
+        }
+      },
+      "heads": {
+        "distogram": {
+          "c_z": 128,
+          "no_bins": 64
+        },
+        "experimentally_resolved": {
+          "c_out": 37,
+          "c_s": 384
+        },
+        "lddt": {
+          "c_hidden": 128,
+          "c_in": 384,
+          "no_bins": 50
+        },
+        "masked_msa": {
+          "c_m": 256,
+          "c_out": 23
+        },
+        "tm": {
+          "c_z": 128,
+          "enabled": true,
+          "no_bins": 64
+        }
+      },
+      "input_embedder": {
+        "c_m": 256,
+        "c_z": 128,
+        "msa_dim": 49,
+        "relpos_k": 32,
+        "tf_dim": 22
+      },
+      "recycle_early_stop_tolerance": -1.0,
+      "recycling_embedder": {
+        "c_m": 256,
+        "c_z": 128,
+        "inf": 100000000.0,
+        "max_bin": 20.75,
+        "min_bin": 3.25,
+        "no_bins": 15
+      },
+      "structure_module": {
+        "c_ipa": 16,
+        "c_resnet": 128,
+        "c_s": 384,
+        "c_z": 128,
+        "dropout_rate": 0.1,
+        "epsilon": 1e-08,
+        "inf": 100000.0,
+        "no_angles": 7,
+        "no_blocks": 8,
+        "no_heads_ipa": 12,
+        "no_qk_points": 4,
+        "no_resnet_blocks": 2,
+        "no_transition_layers": 1,
+        "no_v_points": 8,
+        "trans_scale_factor": 10
+      },
+      "template": {
+        "average_templates": false,
+        "distogram": {
+          "max_bin": 50.75,
+          "min_bin": 3.25,
+          "no_bins": 39
+        },
+        "embed_angles": true,
+        "enabled": false,
+        "eps": 1e-08,
+        "inf": 100000.0,
+        "offload_templates": false,
+        "template_pair_embedder": {
+          "c_in": 88,
+          "c_out": 64
+        },
+        "template_pair_stack": {
+          "blocks_per_ckpt": null,
+          "c_hidden_tri_att": 16,
+          "c_hidden_tri_mul": 64,
+          "c_t": 64,
+          "dropout_rate": 0.25,
+          "fuse_projection_weights": false,
+          "inf": 1000000000.0,
+          "no_blocks": 2,
+          "no_heads": 4,
+          "pair_transition_n": 2,
+          "tri_mul_first": false,
+          "tune_chunk_size": false
+        },
+        "template_pointwise_attention": {
+          "c_hidden": 16,
+          "c_t": 64,
+          "c_z": 128,
+          "inf": 100000.0,
+          "no_heads": 4
+        },
+        "template_single_embedder": {
+          "c_in": 57,
+          "c_out": 256
+        },
+        "use_unit_vector": false
+      }
+    },
+    "precision": "fp32",
+    "relax": {
+      "exclude_residues": [],
+      "max_iterations": 0,
+      "max_outer_iterations": 20,
+      "stiffness": 10.0,
+      "tolerance": 10.0
+    },
+    "trt": {
+      "engine_dir": null,
+      "max_sequence_len": 640,
+      "mode": null,
+      "num_profiles": 1,
+      "optimization_level": 3
+    }
+  },
+  "features": {
+    "feature_sha256": "2470b3b18d81b80debd66b59db19825a115bef0e9379c646cf636895ef8149bf",
+    "shapes": {
+      "aatype": [
+        191,
+        4
+      ],
+      "residue_index": [
+        191,
+        4
+      ],
+      "seq_length": [
+        4
+      ],
+      "seq_mask": [
+        191,
+        4
+      ],
+      "msa_mask": [
+        512,
+        191,
+        4
+      ],
+      "msa_row_mask": [
+        512,
+        4
+      ],
+      "atom14_atom_exists": [
+        191,
+        14,
+        4
+      ],
+      "residx_atom14_to_atom37": [
+        191,
+        14,
+        4
+      ],
+      "residx_atom37_to_atom14": [
+        191,
+        37,
+        4
+      ],
+      "atom37_atom_exists": [
+        191,
+        37,
+        4
+      ],
+      "extra_msa": [
+        5120,
+        191,
+        4
+      ],
+      "extra_msa_mask": [
+        5120,
+        191,
+        4
+      ],
+      "extra_msa_row_mask": [
+        5120,
+        4
+      ],
+      "bert_mask": [
+        512,
+        191,
+        4
+      ],
+      "true_msa": [
+        512,
+        191,
+        4
+      ],
+      "extra_has_deletion": [
+        5120,
+        191,
+        4
+      ],
+      "extra_deletion_value": [
+        5120,
+        191,
+        4
+      ],
+      "msa_feat": [
+        512,
+        191,
+        49,
+        4
+      ],
+      "target_feat": [
+        191,
+        22,
+        4
+      ],
+      "use_clamped_fape": [
+        4
+      ]
+    },
+    "dtypes": {
+      "aatype": "torch.int64",
+      "residue_index": "torch.int64",
+      "seq_length": "torch.int64",
+      "seq_mask": "torch.float32",
+      "msa_mask": "torch.float32",
+      "msa_row_mask": "torch.float32",
+      "atom14_atom_exists": "torch.float32",
+      "residx_atom14_to_atom37": "torch.int64",
+      "residx_atom37_to_atom14": "torch.int64",
+      "atom37_atom_exists": "torch.float32",
+      "extra_msa": "torch.int64",
+      "extra_msa_mask": "torch.float32",
+      "extra_msa_row_mask": "torch.float32",
+      "bert_mask": "torch.float32",
+      "true_msa": "torch.int64",
+      "extra_has_deletion": "torch.float32",
+      "extra_deletion_value": "torch.float32",
+      "msa_feat": "torch.float32",
+      "target_feat": "torch.float32",
+      "use_clamped_fape": "torch.float32"
+    }
+  },
+  "first_inference_memory": {
+    "allocated_peak_gib": 2.210247039794922,
+    "reserved_peak_gib": 2.703125,
+    "allocated_current_gib": 0.6566958427429199
+  },
+  "latency_seconds": {
+    "count": 5,
+    "mean": 9.48345597833395,
+    "median": 9.483901873230934,
+    "p90": 9.48838894367218,
+    "stdev": 0.005825306533908987,
+    "min": 9.474049784243107,
+    "max": 9.489175349473953,
+    "cv_percent": 0.06142598802817847
+  },
+  "samples_seconds": [
+    9.474049784243107,
+    9.483901873230934,
+    9.482943549752235,
+    9.489175349473953,
+    9.48720933496952
+  ],
+  "timing_scope": "Warmed full model with prepared device tensors; excludes preprocessing, model load, CPU transfer, PDB and profiler",
+  "memory": {
+    "allocated_peak_gib": 2.210247039794922,
+    "reserved_peak_gib": 2.703125,
+    "allocated_current_gib": 0.6566958427429199
+  },
+  "memory_scope": "Formal full-model calls after warmup; includes prepared inputs and model, one live output; first-call peak reported separately",
+  "output": {
+    "residues": 191,
+    "positions_shape": [
+      191,
+      37,
+      3
+    ],
+    "finite_valid_atoms": true,
+    "valid_ca": 191,
+    "num_model_passes": 4,
+    "plddt_mean": 96.54531860351562,
+    "plddt_note": "Model confidence, not experimental accuracy"
+  },
+  "artifacts_sha256": {
+    "features.pt": "61771009302c2e7aef7073580021056da4d0eae10ceadb3f9906372d627a29b2",
+    "tensors.pt": "c602f9fd108639dbc7de94decf71a2ebb0109604fecf10c19d13e4ee1860575f",
+    "prediction_unrelaxed.pdb": "44690fbc2bdb78ee2b28edfb2a02a88d7e8ab5b70d9e6dc6571cc777aab54a15"
+  }
+}

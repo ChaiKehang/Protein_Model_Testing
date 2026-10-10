@@ -1,0 +1,341 @@
+{
+  "dataset": "ProteinGym v1.3",
+  "reference_commit": "144fe22b07dfaeec2b366f2346203a9838a55b4c",
+  "downloaded_utc": "2026-10-09T05:00:38.693960+00:00",
+  "sources": {
+    "reference": "https://raw.githubusercontent.com/OATML-Markslab/ProteinGym/144fe22b07dfaeec2b366f2346203a9838a55b4c/reference_files/DMS_substitutions.csv",
+    "data": "https://marks.hms.harvard.edu/proteingym/ProteinGym_v1.3/DMS_ProteinGym_substitutions.zip",
+    "upstream": "https://github.com/OATML-Markslab/ProteinGym"
+  },
+  "reference_sha256": "a8f498011532a74aa9fe556a50555a75e928c5837d19c06a87592ae04049b308",
+  "archive_sha256": "3a83766254ac9ac9984ec25cb73c6e010ea4418f5e35f143933e6b6e6473b921",
+  "archive_bytes": 43021128,
+  "hash_note": "Locally calculated; zip member CRC is also checked, not a publisher-signed digest",
+  "reference_assays": 217,
+  "reference_unique_proteins": 186,
+  "performance_panel": [
+    {
+      "id": "pg_AMFR_HUMAN",
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "uniprot": "AMFR_HUMAN",
+      "taxon": "Human",
+      "length_bin": [
+        1,
+        128
+      ],
+      "source_assay": "AMFR_HUMAN_Tsuboyama_2023_4G3O",
+      "source": "ProteinGym v1.3 assay target sequence (may be domain or engineered target, not necessarily full UniProt protein)",
+      "description": "E3 ubiquitin-protein ligase AMFR"
+    },
+    {
+      "id": "pg_BBC1_YEAST",
+      "sequence": "EVPFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFVAVQG",
+      "uniprot": "BBC1_YEAST",
+      "taxon": "Eukaryote",
+      "length_bin": [
+        1,
+        128
+      ],
+      "source_assay": "BBC1_YEAST_Tsuboyama_2023_1TG0",
+      "source": "ProteinGym v1.3 assay target sequence (may be domain or engineered target, not necessarily full UniProt protein)",
+      "description": "Myosin tail region-interacting protein MTI1"
+    },
+    {
+      "id": "pg_A0A1I9GEU1_NEIME",
+      "sequence": "FTLIELMIVIAIVGILAAVALPAYQDYTARAQVSEAILLAEGQKSAVTEYYLNHGEWPGDNSSAGVATSADIKGKYVQSVTVANGVITAQMASSNVNNEIKSKKLSLWAKRQNGSVKWFCGQPVTRTTATATDVAAANGKTDDKINTKHLPSTCRDDSSAS",
+      "uniprot": "A0A1I9GEU1_NEIME",
+      "taxon": "Prokaryote",
+      "length_bin": [
+        129,
+        256
+      ],
+      "source_assay": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "source": "ProteinGym v1.3 assay target sequence (may be domain or engineered target, not necessarily full UniProt protein)",
+      "description": "pilin (PilE)"
+    },
+    {
+      "id": "pg_RPC1_LAMBD",
+      "sequence": "MSTKKKPLTQEQLEDARRLKAIYEKKKNELGLSQESVADKMGMGQSGVGALFNGINALNAYNAALLAKILKVSVEEFSPSIAREIYEMYEAVSMQPSLRSEYEYPVFSHVQAGMFSPELRTFTKGDAERWVSTTKKASDSAFWLEVEGNSMTAPTGSKPSFPDGMLILVDPEQAVEPGDFCIARLGGDEFTFKKLIRDSGQVFLQPLNPQYPMIPCNESCSVVGKVIASQWPEETFG",
+      "uniprot": "RPC1_LAMBD",
+      "taxon": "Virus",
+      "length_bin": [
+        129,
+        256
+      ],
+      "source_assay": "RPC1_LAMBD_Li_2019_high-expression",
+      "source": "ProteinGym v1.3 assay target sequence (may be domain or engineered target, not necessarily full UniProt protein)",
+      "description": "CI"
+    },
+    {
+      "id": "pg_ADRB2_HUMAN",
+      "sequence": "MGQPGNGSAFLLAPNGSHAPDHDVTQERDEVWVVGMGIVMSLIVLAIVFGNVLVITAIAKFERLQTVTNYFITSLACADLVMGLAVVPFGAAHILMKMWTFGNFWCEFWTSIDVLCVTASIETLCVIAVDRYFAITSPFKYQSLLTKNKARVIILMVWIVSGLTSFLPIQMHWYRATHQEAINCYANETCCDFFTNQAYAIASSIVSFYVPLVIMVFVYSRVFQEAKRQLQKIDKSEGRFHVQNLSQVEQDGRTGHGLRRSSKFCLKEHKALKTLGIIMGTFTLCWLPFFIVNIVHVIQDNLIRKEVYILLNWIGYVNSGFNPLIYCRSPDFRIAFQELLCLRRSSLKAYGNGYSSNGNTGEQSGYHVEQEKENKLLCEDLPGTEDFVGHQGTVPSDNIDSQGRNCSTNDSLL",
+      "uniprot": "ADRB2_HUMAN",
+      "taxon": "Human",
+      "length_bin": [
+        257,
+        512
+      ],
+      "source_assay": "ADRB2_HUMAN_Jones_2020",
+      "source": "ProteinGym v1.3 assay target sequence (may be domain or engineered target, not necessarily full UniProt protein)",
+      "description": "ADRB2"
+    },
+    {
+      "id": "pg_GCN4_YEAST",
+      "sequence": "MSEYQPSLFALNPMGFSPLDGSKSTNENVSASTSTAKPMVGQLIFDKFIKTEEDPIIKQDTPSNLDFDFALPQTATAPDAKTVLPIPELDDAVVESFFSSSTDSTPMFEYENLEDNSKEWTSLFDNDIPVTTDDVSLADKAIESTEEVSLVPSNLEVSTTSFLPTPVLEDAKLTQTRKVKKPNSVVKKSHHVGKDDESRLDHLGVVAYNRKQRSIPLSPIVPESSDPAALKRARNTEAARRSRARKLQRMKQLEDKVEELLSKNYHLENEVARLKKLVGER",
+      "uniprot": "GCN4_YEAST",
+      "taxon": "Eukaryote",
+      "length_bin": [
+        257,
+        512
+      ],
+      "source_assay": "GCN4_YEAST_Staller_2018",
+      "source": "ProteinGym v1.3 assay target sequence (may be domain or engineered target, not necessarily full UniProt protein)",
+      "description": "Gcn4"
+    },
+    {
+      "id": "pg_Q837P4_ENTFA",
+      "sequence": "MTDLIKASKFFYHYLKRYKVSFLFIFLAIFAATYLQVKAPQFVGEAIQELAKYAVNVMQGKDDKSAFVSVIWKLLIFYVLTSAASFIYSILFTQVVGKSTNRMRIGLFNKLEKLTIRFFDSHQDGEILSRFTSDLDNIQNSLNQALLQVLTNIALLVGVLIMMFRQNVELAWATIASTPIAILIAVFVISKARKYVDLQQDEVGKLNGYMDEKISGQRVIITNGLQEETIDGFLEQNEKVRAATYKGQVYSGLLFPMMQGMSLVNTAIVIFFGGWLAINGSVDRAAALGLVVMFVQYSQQYYQPLMQISSGYSMIQLAVTGARRLNEMFDEPDEIRPENGEKLEEINKAVALNHVVFGYNPETPVLKDVSIHVDKGEMVALVGPTGSGKTTIMNLMNRFYDVNEGAVTFDGVDIREMDLDSLRSHVGIVLQESVLFSGTIRENIAFGKPEATDEEIVQAAKQANIHEFIVNLEQGYDTEITEENNLFSTGQKQLVSIARTIITNPELLILDEATSNVDTVTEAKIQKAMDEAIKGRTSFVIAHRLKTILNADRIIVLRDGEVIEEGNHHELVEQDGFYAELYKNQFVFE",
+      "uniprot": "Q837P4_ENTFA",
+      "taxon": "Prokaryote",
+      "length_bin": [
+        513,
+        1024
+      ],
+      "source_assay": "Q837P4_ENTFA_Meier_2023",
+      "source": "ProteinGym v1.3 assay target sequence (may be domain or engineered target, not necessarily full UniProt protein)",
+      "description": "EfrD ABC transporter"
+    },
+    {
+      "id": "pg_A0A192B1T2_9HIV1",
+      "sequence": "MRVKGIQMNSQHLLRWGIMILGMIMICSVAGNLWVTVYYGVPVWKDAETTLFCASDAKAYDAEVHNIWATHACVPTDPNPQEINLENVTEEFNMWKNNMVEQMHTDIISLWDQGLKPCVKLTPLCVTLDCHNVTYNITSDMKEEITNCSYNVTTVIRDKKQKVSSLFYKLDVVQIGGNNRTNSQYRLINCNTSAITQACPKVTFEPIPIHYCAPAGFAILKCKDEKFNGTGLCKNVSTVQCTHGIKPVVSTQLLLNGSLAEGEVRIRSENITNNAKNIIVQLASPVTINCIRPNNNTRKSVHLGPGQAFYATDGIIGEIRQAHCNVSKKEWNSTLQKVANQLRPYFKNNTIIKFANSSGGDLEITTHSFNCGGEFFYCNTSGLFNSTWEFNSTWNNSNSTENITLQCRIKQIINMWQRAGQAIYAPPIPGVIRCKSNITGLILTRDGGSNKNTSETFRPGGGDMRDNWRSELYKYKVVKIEPIGVAPTRAKRRVVEREKRAVGIGAVFIGFLGAAGSTMGAASVTLTVQARQLLSGIVQQQSNLLRAIEAQQHLLKLTVWGIKQLQARVLAVERYLKDQQLLGIWGCSGKLICTTNVPWNSSWSNKSQDEIWGNMTWLQWDKEVSNYTQIIYTLIEESQNQQEKNEQDLLALDKWASLWNWFNISQWLWYIKIFIIIVGGLIGLRIVFAVLSVINRVRQGYSPLSFQTRTPNPGELDRPGRIEEEGGEQDRGRSIRLVSGFLALAWDDLRSLCLFSYHRLRDFILIATRTVELLGHSSLKGLRLGWESLKYLGNLLVYWGRELKISAINLCDTIAIAVAGWTDRVIELGQRLCRAILHIPRRIRQGFERALL",
+      "uniprot": "A0A192B1T2_9HIV1",
+      "taxon": "Virus",
+      "length_bin": [
+        513,
+        1024
+      ],
+      "source_assay": "A0A192B1T2_9HIV1_Haddox_2018",
+      "source": "ProteinGym v1.3 assay target sequence (may be domain or engineered target, not necessarily full UniProt protein)",
+      "description": "HIV env (BF520)"
+    },
+    {
+      "id": "pg_BRCA1_HUMAN",
+      "sequence": "MDLSALRVEEVQNVINAMQKILECPICLELIKEPVSTKCDHIFCKFCMLKLLNQKKGPSQCPLCKNDITKRSLQESTRFSQLVEELLKIICAFQLDTGLEYANSYNFAKKENNSPEHLKDEVSIIQSMGYRNRAKRLLQSEPENPSLQETSLSVQLSNLGTVRTLRTKQRIQPQKTSVYIELGSDSSEDTVNKATYCSVGDQELLQITPQGTRDEISLDSAKKAACEFSETDVTNTEHHQPSNNDLNTTEKRAAERHPEKYQGSSVSNLHVEPCGTNTHASSLQHENSSLLLTKDRMNVEKAEFCNKSKQPGLARSQHNRWAGSKETCNDRRTPSTEKKVDLNADPLCERKEWNKQKLPCSENPRDTEDVPWITLNSSIQKVNEWFSRSDELLGSDDSHDGESESNAKVADVLDVLNEVDEYSGSSEKIDLLASDPHEALICKSERVHSKSVESNIEDKIFGKTYRKKASLPNLSHVTENLIIGAFVTEPQIIQERPLTNKLKRKRRPTSGLHPEDFIKKADLAVQKTPEMINQGTNQTEQNGQVMNITNSGHENKTKGDSIQNEKNPNPIESLEKESAFKTKAEPISSSISNMELELNIHNSKAPKKNRLRRKSSTRHIHALELVVSRNLSPPNCTELQIDSCSSSEEIKKKKYNQMPVRHSRNLQLMEGKEPATGAKKSNKPNEQTSKRHDSDTFPELKLTNAPGSFTKCSNTSELKEFVNPSLPREEKEEKLETVKVSNNAEDPKDLMLSGERVLQTERSVESSSISLVPGTDYGTQESISLLEVSTLGKAKTEPNKCVSQCAAFENPKGLIHGCSKDNRNDTEGFKYPLGHEVNHSRETSIEMEESELDAQYLQNTFKVSKRQSFAPFSNPGNAEEECATFSAHSGSLKKQSPKVTFECEQKEENQGKNESNIKPVQTVNITAGFPVVGQKDKPVDNAKCSIKGGSRFCLSSQFRGNETGLITPNKHGLLQNPYRIPPLFPIKSFVKTKCKKNLLEENFEEHSMSPEREMGNENIPSTVSTISRNNIRENVFKEASSSNINEVGSSTNEVGSSINEIGSSDENIQAELGRNRGPKLNAMLRLGVLQPEVYKQSLPGSNCKHPEIKKQEYEEVVQTVNTDFSPYLISDNLEQPMGSSHASQVCSETPDDLLDDGEIKEDTSFAENDIKESSAVFSKSVQKGELSRSPSPFTHTHLAQGYRRGAKKLESSEENLSSEDEELPCFQHLLFGKVNNIPSQSTRHSTVATECLSKNTEENLLSLKNSLNDCSNQVILAKASQEHHLSEETKCSASLFSSQCSELEDLTANTNTQDPFLIGSSKQMRHQSESQGVGLSDKELVSDDEERGTGLEENNQEEQSMDSNLGEAASGCESETSVSEDCSGLSSQSDILTTQQRDTMQHNLIKLQQEMAELEAVLEQHGSQPSNSYPSIISDSSALEDLRNPEQSTSEKAVLTSQKSSEYPISQNPEGLSADKFEVSADSSTSKNKEPGVERSSPSKCPSLDDRWYMHSCSGSLQNRNYPSQEELIKVVDVEEQQLEESGPHDLTETSYLPRQDLEGTPYLESGISLFSDDPESDPSEDRAPESARVGNIPSSTSALKVPQLKVAESAQSPAAAHTTDTAGYNAMEESVSREKPELTASTERVNKRMSMVVSGLTPEEFMLVYKFARKHHITLTNLITEETTHVVMKTDAEFVCERTLKYFLGIAGGKWVVSYFWVTQSIKERKMLNEHDFEVRGDVVNGRNHQGPKRARESQDRKIFRGLEICCYGPFTNMPTDQLEWMVQLCGASVVKELSSFTLGTGVHPIVVVQPDAWTEDNGFHAIGQMCEAPVVTREWVLDSVALYQCQELDTYLIPQIPHSHY",
+      "uniprot": "BRCA1_HUMAN",
+      "taxon": "Human",
+      "length_bin": [
+        1025,
+        2048
+      ],
+      "source_assay": "BRCA1_HUMAN_Findlay_2018",
+      "source": "ProteinGym v1.3 assay target sequence (may be domain or engineered target, not necessarily full UniProt protein)",
+      "description": "BRCA1"
+    },
+    {
+      "id": "pg_UBE4B_MOUSE",
+      "sequence": "MEELSADEIRRRRLARLAGGQTSQPTTPLTSPQRENPPGPPIAASAPGPSQSLGLNVHNMTPATSPIGAAGVAHRSQSSEGVSSLSSSPSNSLETQSQSLSRSQSMDIDGVSCEKSMSQVDVDSGIENMEVDENDRREKRSLSDKEPSSGPEVSEEQALQLVCKIFRVSWKDRDRDVIFLSSLSAQFKQNPKEVFSDFKDLIGQILMEVLMMSTQTRDENPFASLTATSQPIATAARSPDRNLMLNTGSSSGTSPMFCNMGSFSTSSLSSLGASGGASNWDSYSDHFTIETCKETDMLNYLIECFDRVGIEEKKAPKMCSQPAVSQLLSNIRSQCISHTALVLQGSLTQPRSLQQPSFLVPYMLCRNLPYGFIQELVRTTHQDEEVFKQIFIPILQGLALAAKECSLESDYFKYPLMALGELCETKFGKTHPMCNLVASLPLWLPKSLSPGSGRELQRLSYLGAFFSFSVFAEDDAKVVEKYFSGPAITLENTRVVSQSLQHYLELGRQELFKILHSILLNGETREAALSYMAALVNANMKKAQMQADDRLVSTDGFMLNLLWVLQQLSTKIKLETVDPTYIFHPRCRITLPNDETRINATMEDVNERLTELYGDQPPFSEPKFPTECFFLTLHAHHLSILPSCRRYIRRLRAIRELNRTVEDLKNNESQWKDSPLATRHREMLKRCKTQLKKLVRCKACADAGLLDESFLRRCLNFYGLLIQLMLRILDPAYPDVTLPLNSEVPKVFAALPEFYVEDVAEFLFFIVQYSPQVLYEPCTQDIVMFLVVMLCNQNYIRNPYLVAKLVEVMFMTNPSVQPRTQKFFEMIENHPLSTKLLVPSLMKFYTDVEHTGATSEFYDKFTIRYHISTIFKSLWQNIAHHGTFMEEFNSGKQFVRYINMLINDTTFLLDESLESLKRIHEVQEEMKNKEQWDQLPRDQQQARQSQLAQDERVSRSYLALATETVDMFHLLTKQVQKPFLRPELGPRLAAMLNFNLQQLCGPKCRDLKVENPEKYGFEPKKLLDQLTDIYLQLDCARFAKAIADDQRSYSKELFEEVISKMRKAGIKSTIAIEKFKLLAEKVEEIVAKNARAEIDYSDAPDEFRDPLMDTLMTDPVRLPSGTVMDRSIILRHLLNSPTDPFNRQMLTESMLEPVPELKEQIQAWMREKQSSDH",
+      "uniprot": "UBE4B_MOUSE",
+      "taxon": "Eukaryote",
+      "length_bin": [
+        1025,
+        2048
+      ],
+      "source_assay": "UBE4B_MOUSE_Starita_2013",
+      "source": "ProteinGym v1.3 assay target sequence (may be domain or engineered target, not necessarily full UniProt protein)",
+      "description": "Ube4b"
+    }
+  ],
+  "excluded": [
+    {
+      "assay": "A0A140D2T1_ZIKV_Sourisseau_2019",
+      "reason": "outside fixed current <=2048 length contract"
+    },
+    {
+      "assay": "BRCA2_HUMAN_Erwood_2022_HEK293T",
+      "reason": "outside fixed current <=2048 length contract"
+    },
+    {
+      "assay": "POLG_CXB3N_Mattenberger_2021",
+      "reason": "outside fixed current <=2048 length contract"
+    },
+    {
+      "assay": "POLG_HCVJF_Qi_2014",
+      "reason": "outside fixed current <=2048 length contract"
+    }
+  ],
+  "selection_policy": "Two distinct target sequences/proteins in each frozen length bin <=2048; sorted IDs and alternating taxon preference; no outcome-based selection",
+  "quality_assays": [
+    {
+      "id": "RL40A_YEAST_Mavor_2016",
+      "metadata": {
+        "DMS_index": "DMS_sub_161",
+        "DMS_id": "RL40A_YEAST_Mavor_2016",
+        "DMS_filename": "RL40A_YEAST_Mavor_2016.csv",
+        "UniProt_ID": "RL40A_YEAST",
+        "taxon": "Eukaryote",
+        "source_organism": "Saccharomyces cerevisiae",
+        "target_seq": "MQIFVKTLTGKTITLEVESSDTIDNVKSKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGGIIEPSLKALASKYNCDKSVCRKCYARLPPRATNCRKRKCGHTNQLRPKKKLK",
+        "seq_len": "128",
+        "includes_multiple_mutants": "FALSE",
+        "DMS_total_number_mutants": "1253",
+        "DMS_number_single_mutants": "1253",
+        "DMS_number_multiple_mutants": "0",
+        "DMS_binarization_cutoff": "-0.2",
+        "DMS_binarization_method": "manual",
+        "first_author": "Mavor",
+        "title": "Determination of ubiquitin fitness landscapes under different chemical stresses in a classroom setting",
+        "year": "2016",
+        "jo": "10.7554/eLife.15802",
+        "region_mutated": "2-76",
+        "molecule_name": "Ubiquitin",
+        "selection_assay": "Growth",
+        "selection_type": "Growth",
+        "MSA_filename": "RL40A_YEAST_full_11-26-2021_b01.a2m",
+        "MSA_start": "1",
+        "MSA_end": "128",
+        "MSA_len": "128",
+        "MSA_bitscore": "0.1",
+        "MSA_theta": "0.2",
+        "MSA_num_seqs": "16228",
+        "MSA_perc_cov": "0.695",
+        "MSA_num_cov": "89",
+        "MSA_N_eff": "3906.9",
+        "MSA_Neff_L": "30.52",
+        "MSA_Neff_L_category": "Medium",
+        "MSA_num_significant": "12",
+        "MSA_num_significant_L": "0.13",
+        "raw_DMS_filename": "RL401_YEAST_Mavor_2016.csv",
+        "raw_DMS_phenotype_name": "DMSO",
+        "raw_DMS_directionality": "1",
+        "raw_DMS_mutant_column": "mutant",
+        "weight_file_name": "RL40A_YEAST_theta_0.2.npy",
+        "pdb_file": "RL40A_YEAST.pdb",
+        "pdb_range": "1-128",
+        "ProteinGym_version": "0.1",
+        "raw_mut_offset": "",
+        "coarse_selection_type": "OrganismalFitness"
+      },
+      "path": "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009/RL40A_YEAST_Mavor_2016.csv",
+      "member": "DMS_ProteinGym_substitutions/RL40A_YEAST_Mavor_2016.csv",
+      "rows": 1253,
+      "sha256": "1a80d896cfb54909b5a47fe00a143cbe4a65579b63ff8a36972fda51b10d2b42"
+    },
+    {
+      "id": "BLAT_ECOLX_Firnberg_2014",
+      "metadata": {
+        "DMS_index": "DMS_sub_21",
+        "DMS_id": "BLAT_ECOLX_Firnberg_2014",
+        "DMS_filename": "BLAT_ECOLX_Firnberg_2014.csv",
+        "UniProt_ID": "BLAT_ECOLX",
+        "taxon": "Prokaryote",
+        "source_organism": "Escherichia coli",
+        "target_seq": "MSIQHFRVALIPFFAAFCLPVFAHPETLVKVKDAEDQLGARVGYIELDLNSGKILESFRPEERFPMMSTFKVLLCGAVLSRVDAGQEQLGRRIHYSQNDLVEYSPVTEKHLTDGMTVRELCSAAITMSDNTAANLLLTTIGGPKELTAFLHNMGDHVTRLDRWEPELNEAIPNDERDTTMPAAMATTLRKLLTGELLTLASRQQLIDWMEADKVAGPLLRSALPAGWFIADKSGAGERGSRGIIAALGPDGKPSRIVVIYTTGSQATMDERNRQIAEIGASLIKHW",
+        "seq_len": "286",
+        "includes_multiple_mutants": "FALSE",
+        "DMS_total_number_mutants": "4783",
+        "DMS_number_single_mutants": "4783",
+        "DMS_number_multiple_mutants": "0",
+        "DMS_binarization_cutoff": "0.4257",
+        "DMS_binarization_method": "median",
+        "first_author": "Firnberg",
+        "title": "A Comprehensive, High-Resolution Map of a Gene's Fitness Landscape",
+        "year": "2014",
+        "jo": "10.1093/molbev/msu081",
+        "region_mutated": "24-286",
+        "molecule_name": "Beta-lactamase TEM",
+        "selection_assay": "Growth (0.25-1024 ug/mL ampicillin) doubling",
+        "selection_type": "Growth",
+        "MSA_filename": "BLAT_ECOLX_full_11-26-2021_b02.a2m",
+        "MSA_start": "1",
+        "MSA_end": "286",
+        "MSA_len": "286",
+        "MSA_bitscore": "0.2",
+        "MSA_theta": "0.2",
+        "MSA_num_seqs": "209644",
+        "MSA_perc_cov": "0.752",
+        "MSA_num_cov": "215",
+        "MSA_N_eff": "50901.4",
+        "MSA_Neff_L": "177.98",
+        "MSA_Neff_L_category": "High",
+        "MSA_num_significant": "446",
+        "MSA_num_significant_L": "2.07",
+        "raw_DMS_filename": "BLAT_ECOLX_Firnberg_2014.csv",
+        "raw_DMS_phenotype_name": "linear",
+        "raw_DMS_directionality": "1",
+        "raw_DMS_mutant_column": "mutant",
+        "weight_file_name": "BLAT_ECOLX_theta_0.2.npy",
+        "pdb_file": "BLAT_ECOLX.pdb",
+        "pdb_range": "1-286",
+        "ProteinGym_version": "0.1",
+        "raw_mut_offset": "",
+        "coarse_selection_type": "OrganismalFitness"
+      },
+      "path": "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009/BLAT_ECOLX_Firnberg_2014.csv",
+      "member": "DMS_ProteinGym_substitutions/BLAT_ECOLX_Firnberg_2014.csv",
+      "rows": 4783,
+      "sha256": "cfb814a5a5f81ad3f86d3203ac7f04dee3fd996e7c2c624b75656712ab5e54df"
+    },
+    {
+      "id": "SPG1_STRSG_Wu_2016",
+      "metadata": {
+        "DMS_index": "DMS_sub_182",
+        "DMS_id": "SPG1_STRSG_Wu_2016",
+        "DMS_filename": "SPG1_STRSG_Wu_2016.csv",
+        "UniProt_ID": "SPG1_STRSG",
+        "taxon": "Prokaryote",
+        "source_organism": "Streptococcus sp. group G",
+        "target_seq": "MEKEKKVKYFLRKSAFGLASVSAAFLVGSTVFAVDSPIEDTPIIRNGGELTNLLGNSETTLALRNEESATADLTAAAVADTVAAAAAENAGAAAWEAAAAADALAKAKADALKEFNKYGVSDYYKNLINNAKTVEGIKDLQAQVVESAKKARISEATDGLSDFLKSQTPAEDTVKSIELAEAKVLANRELDKYGVSDYHKNLINNAKTVEGVKELIDEILAALPKTDQYKLILNGKTLKGETTTEAVDAATAEKVFKQYANDNGVDGEWTYDDATKTFTVTEKPEVIDASELTPAVTTYKLVINGKTLKGETTTKAVDAETAEKAFKQYANDNGVDGVWTYDDATKTFTVTEMVTEVPGDAPTEPEKPEASIPLVPLTPATPIAKDDAKKDDTKKEDAKKPEAKKDDAKKAETLPTTGEGSNPFFTAAALAVMAGAGALAVASKRKED",
+        "seq_len": "448",
+        "includes_multiple_mutants": "TRUE",
+        "DMS_total_number_mutants": "149360",
+        "DMS_number_single_mutants": "76",
+        "DMS_number_multiple_mutants": "149284",
+        "DMS_binarization_cutoff": "0.1224388752",
+        "DMS_binarization_method": "median",
+        "first_author": "Wu",
+        "title": "Adaptation in protein fitness landscapes is facilitated by indirect paths",
+        "year": "2016",
+        "jo": "10.7554/eLife.16965",
+        "region_mutated": "265-280",
+        "molecule_name": "GB1",
+        "selection_assay": "Binding (IgG)",
+        "selection_type": "binding",
+        "MSA_filename": "SPG1_STRSG_full_b0.1.a2m",
+        "MSA_start": "1",
+        "MSA_end": "448",
+        "MSA_len": "448",
+        "MSA_bitscore": "0.1",
+        "MSA_theta": "0.2",
+        "MSA_num_seqs": "3109",
+        "MSA_perc_cov": "1",
+        "MSA_num_cov": "448",
+        "MSA_N_eff": "601.3",
+        "MSA_Neff_L": "1.34",
+        "MSA_Neff_L_category": "Medium",
+        "MSA_num_significant": "97",
+        "MSA_num_significant_L": "0.22",
+        "raw_DMS_filename": "SPG1_STRSG_Wu_2016.csv",
+        "raw_DMS_phenotype_name": "Fitness",
+        "raw_DMS_directionality": "1",
+        "raw_DMS_mutant_column": "Variants",
+        "weight_file_name": "SPG1_STRSG_b01_theta_0.2.npy",
+        "pdb_file": "SPG1_STRSG.pdb",
+        "pdb_range": "1-448",
+        "ProteinGym_version": "1",
+        "raw_mut_offset": "",
+        "coarse_selection_type": "Binding"
+      },
+      "path": "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009/SPG1_STRSG_Wu_2016.csv",
+      "member": "DMS_ProteinGym_substitutions/SPG1_STRSG_Wu_2016.csv",
+      "rows": 149360,
+      "sha256": "d8faee338a3a53ba89b9ddc4be8dbdc244d3d2c84ddbc1ccc00ff4418ae71fcc"
+    }
+  ],
+  "limitations": [
+    "Bounded engineering/quality panel, not full 217-assay leaderboard",
+    "No verified training-data isolation; zero-shot means no label fitting here, not guaranteed absence from pretraining",
+    "Assay targets can be domains or engineered proteins; taxonomy and length alone do not prove population representativeness",
+    "OpenFold structure benchmark is a separate requirement"
+  ],
+  "preparer_sha256": "79a82c6bc88eb33d082a8cc866d7d50bb631ab484160b4456e5845c38a89c39d"
+}

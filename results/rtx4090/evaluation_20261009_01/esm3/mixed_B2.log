@@ -1,0 +1,4 @@
+STAGE:2026-10-09 13:28:43 10180:10180 ActivityProfilerController.cpp:314] Completed Stage: Warm Up
+STAGE:2026-10-09 13:28:43 10180:10180 ActivityProfilerController.cpp:320] Completed Stage: Collection
+STAGE:2026-10-09 13:28:43 10180:10180 ActivityProfilerController.cpp:324] Completed Stage: Post Processing
+PASS forward bf16 B=2 ['insulin_a_chain_human', 'ubiquitin_human']: median=28.477ms allocated=2.7026419639587402GiB; /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/mixed_B2

@@ -1,0 +1,24 @@
+{
+  "reference_sequence": "TTCCPSIVARSNFNVCRLPGTPEAICATYTGCIIIPGATCPGDYAN",
+  "generated_sequence": "TTCCPSIVARSNWNVCRLPGTPEAICATYTGCIIIPGATCPGDYAN",
+  "coordinate_condition": true,
+  "known_positions_retained": true,
+  "masked_positions": [
+    {
+      "position": 4,
+      "reference": "C",
+      "generated": "C"
+    },
+    {
+      "position": 5,
+      "reference": "P",
+      "generated": "P"
+    },
+    {
+      "position": 13,
+      "reference": "F",
+      "generated": "W"
+    }
+  ],
+  "masked_recovery_fraction": 0.6666666666666666
+}

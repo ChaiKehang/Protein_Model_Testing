@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "reference_report_sha256": "846992762e523bb050092952efacbb98b64aa189cb35df7e4c7ac92b8b7cf928",
+  "feature_sha256": "2470b3b18d81b80debd66b59db19825a115bef0e9379c646cf636895ef8149bf",
+  "capture": "warm",
+  "phases": [
+    {
+      "name": "task_0",
+      "instrumented_seconds": 9.565881662070751
+    }
+  ],
+  "scope_note": "warm: prepared model; pipeline: load, actual MSA feature preparation, prediction and CPU/PDB delivery; excludes MSA search/templates/relaxation",
+  "exact_valid_positions": true,
+  "max_abs_coordinate_difference": 0.0,
+  "source_sha256": {
+    "scripts/openfold_nsight_workload.py": "ce61b8c3a4f486c3cacd55043c398816fbbaf5c01eaebf19667732fcda39a406",
+    "models/openfold_adapter.py": "a7604ba44202342307e8eedd6e0fde0dd63d819b27f567bc822c027030cbf703"
+  }
+}

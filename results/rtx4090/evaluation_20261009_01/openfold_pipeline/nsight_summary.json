@@ -1,0 +1,141 @@
+{
+  "status": "partial",
+  "source_sha256": {
+    "scripts/run_openfold_nsight.py": "41f9306546753363d9b3618e21ea0239c39eaa2d0f39ed9c9b76e0a87e8e85a0",
+    "scripts/openfold_nsight_workload.py": "ce61b8c3a4f486c3cacd55043c398816fbbaf5c01eaebf19667732fcda39a406",
+    "scripts/nsight_analysis.py": "b98e4b53635b8b14705f5632f36ae0828d5536c34e348c989ed63bbea624dde6",
+    "scripts/run_nsight.py": "058e130df131cb8ddcc1dfba30cd96302771887f69bb34dc5273ce73e49ab431",
+    "models/openfold_adapter.py": "a7604ba44202342307e8eedd6e0fde0dd63d819b27f567bc822c027030cbf703",
+    "common/backend.py": "b3e21f041380d2865f883a3037baf1cb8cfa1ddc9af12e205a1c2896711da6a6",
+    "common/reporting.py": "587c1834f36e14bf654ad40e8bd484e3c07d2770fbc7a015170b98501e7fdf2a",
+    "common/profiler_permissions.py": "132f59840b7a483098115ac1875130b64023e3e05f7cefd026693b1afd91511f"
+  },
+  "reference_report_sha256": "846992762e523bb050092952efacbb98b64aa189cb35df7e4c7ac92b8b7cf928",
+  "counter_policy": {
+    "RmProfilingAdminOnly": "1",
+    "CAP_SYS_ADMIN": false,
+    "collection_allowed": false
+  },
+  "compute": [
+    {
+      "selection": {
+        "name": "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+        "status": "planned",
+        "filtered_launch_skip": 6,
+        "grid": [
+          72962,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers_per_thread": 16,
+        "static_shared_bytes": 0,
+        "dynamic_shared_bytes": 0,
+        "family_kernel_sum_percent": 18.676142358586535,
+        "selection": "highest aggregate-duration launch variant of this family in the first operation",
+        "nvtx_operation_range": "openfold_phase_task_0",
+        "verification_required": "native NCU launch metadata must match; not yet counter evidence"
+      },
+      "status": "blocked_permission",
+      "collection_attempted": false,
+      "selected_metrics": {
+        "compute_percent": null,
+        "memory_percent": null,
+        "dram_percent": null,
+        "occupancy_percent": null,
+        "dram_read_bytes": null,
+        "dram_write_bytes": null
+      }
+    },
+    {
+      "selection": {
+        "name": "ampere_sgemm_128x128_nn",
+        "status": "planned",
+        "filtered_launch_skip": 0,
+        "grid": [
+          1,
+          2,
+          512
+        ],
+        "block": [
+          256,
+          1,
+          1
+        ],
+        "registers_per_thread": 118,
+        "static_shared_bytes": 16640,
+        "dynamic_shared_bytes": 0,
+        "family_kernel_sum_percent": 17.891152311535237,
+        "selection": "highest aggregate-duration launch variant of this family in the first operation",
+        "nvtx_operation_range": "openfold_phase_task_0",
+        "verification_required": "native NCU launch metadata must match; not yet counter evidence"
+      },
+      "status": "blocked_permission",
+      "collection_attempted": false,
+      "selected_metrics": {
+        "compute_percent": null,
+        "memory_percent": null,
+        "dram_percent": null,
+        "occupancy_percent": null,
+        "dram_read_bytes": null,
+        "dram_write_bytes": null
+      }
+    },
+    {
+      "selection": {
+        "name": "ampere_sgemm_128x64_tn",
+        "status": "planned",
+        "filtered_launch_skip": 51,
+        "grid": [
+          2,
+          191,
+          3
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers_per_thread": 122,
+        "static_shared_bytes": 12800,
+        "dynamic_shared_bytes": 0,
+        "family_kernel_sum_percent": 11.377646071282104,
+        "selection": "highest aggregate-duration launch variant of this family in the first operation",
+        "nvtx_operation_range": "openfold_phase_task_0",
+        "verification_required": "native NCU launch metadata must match; not yet counter evidence"
+      },
+      "status": "blocked_permission",
+      "collection_attempted": false,
+      "selected_metrics": {
+        "compute_percent": null,
+        "memory_percent": null,
+        "dram_percent": null,
+        "occupancy_percent": null,
+        "dram_read_bytes": null,
+        "dram_write_bytes": null
+      }
+    }
+  ],
+  "scope": "pipeline OpenFold native diagnostic; no formal timing claim",
+  "tools": {
+    "nsys": {
+      "path": "/opt/nvidia/nsight-compute/2025.1.1/host/target-linux-x64/nsys",
+      "returncode": 0,
+      "elapsed_seconds": 0.11436688899993896,
+      "log": "nsys_version.log",
+      "command": "nsys_version.command.json"
+    },
+    "ncu": {
+      "path": "/usr/local/cuda-12.8/bin/ncu",
+      "returncode": 0,
+      "elapsed_seconds": 0.032455816864967346,
+      "log": "ncu_version.log",
+      "command": "ncu_version.command.json"
+    }
+  },
+  "systems": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold_pipeline/systems_summary.json"
+}

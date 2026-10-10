@@ -1,0 +1,3453 @@
+{
+  "schema_version": 1,
+  "scope": "RTX4090 reference evaluation; no new model runs",
+  "counts": {
+    "core": 13,
+    "standard": 11,
+    "diagnostic": 4,
+    "fitness": 3,
+    "openfold": 1,
+    "operator": 8,
+    "systems": 13
+  },
+  "experiment_count": 53,
+  "records": [
+    {
+      "id": "esm3/L256",
+      "group": "core",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        256
+      ],
+      "token_width": 258,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_logits_only",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "random_L256"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/test_sequences.jsonl",
+        "generation": null,
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {},
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L256/report.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L256/report.json"
+      ]
+    },
+    {
+      "id": "esm3/L1024",
+      "group": "core",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        1024
+      ],
+      "token_width": 1026,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_logits_only",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "random_L1024"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/test_sequences.jsonl",
+        "generation": null,
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {},
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L1024/report.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L1024/report.json"
+      ]
+    },
+    {
+      "id": "esm3/L2048",
+      "group": "core",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        2048
+      ],
+      "token_width": 2050,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_logits_only",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "random_L2048"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/test_sequences.jsonl",
+        "generation": null,
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {},
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L2048/report.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L2048/report.json"
+      ]
+    },
+    {
+      "id": "esm3/mixed_B2",
+      "group": "core",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 2,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        21,
+        76
+      ],
+      "token_width": 78,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_logits_only",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "insulin_a_chain_human",
+          "ubiquitin_human"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/test_sequences.jsonl",
+        "generation": null,
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {},
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/mixed_B2/report.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/mixed_B2/report.json"
+      ]
+    },
+    {
+      "id": "esm3/sequence",
+      "group": "core",
+      "model": "ESM3",
+      "task": "sequence",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        76
+      ],
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_generate_including_SDK_encode_decode",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "ubiquitin_human"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/test_sequences.jsonl",
+        "generation": {
+          "schedule": "linear",
+          "strategy": "entropy",
+          "temperature": 0.7,
+          "temperature_annealing": false,
+          "condition_on_coordinates_only": false,
+          "track": "sequence",
+          "num_steps": 3,
+          "masked_positions": [
+            4,
+            5,
+            13
+          ],
+          "coordinate_condition": false,
+          "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/source/models/esm3_adapter.py",
+          "source_sha256": "fd7ea999e337aa620479c61aff958a3302102b98c90bd809a6eaff05c227f62e",
+          "origin": "effective settings recovered from hash-matched historical source + recorded config"
+        },
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {
+            "_structure_decoder": "torch.float32",
+            "_function_decoder": "torch.float32"
+          },
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/sequence/report.json",
+      "input": "部分序列；指定位置设为 _；无坐标条件",
+      "output": "补全后的序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/sequence/report.json"
+      ]
+    },
+    {
+      "id": "esm3/structure",
+      "group": "core",
+      "model": "ESM3",
+      "task": "structure",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        76
+      ],
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_generate_including_SDK_encode_decode",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "ubiquitin_human"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/test_sequences.jsonl",
+        "generation": {
+          "schedule": "linear",
+          "strategy": "entropy",
+          "temperature": 0.7,
+          "temperature_annealing": false,
+          "condition_on_coordinates_only": false,
+          "track": "structure",
+          "num_steps": 8,
+          "masked_positions": [],
+          "coordinate_condition": false,
+          "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/source/models/esm3_adapter.py",
+          "source_sha256": "fd7ea999e337aa620479c61aff958a3302102b98c90bd809a6eaff05c227f62e",
+          "origin": "effective settings recovered from hash-matched historical source + recorded config"
+        },
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {
+            "_structure_decoder": "torch.float32",
+            "_function_decoder": "torch.float32"
+          },
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2,
+        "pdb": "/root/autodl-tmp/esm-baseline/data/1UBQ.pdb",
+        "pdb_use": "仅输出质量参照；不进入生成输入"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/structure/report.json",
+      "input": "完整序列；不给实验坐标",
+      "output": "结构 token → 原子坐标 / PDB",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/structure/report.json"
+      ]
+    },
+    {
+      "id": "esm3/inverse",
+      "group": "core",
+      "model": "ESM3",
+      "task": "inverse",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        76
+      ],
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_generate_including_SDK_encode_decode",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "ubiquitin_human"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/test_sequences.jsonl",
+        "generation": {
+          "schedule": "linear",
+          "strategy": "entropy",
+          "temperature": 0.7,
+          "temperature_annealing": false,
+          "condition_on_coordinates_only": false,
+          "track": "sequence",
+          "num_steps": 3,
+          "masked_positions": [
+            4,
+            5,
+            13
+          ],
+          "coordinate_condition": true,
+          "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/source/models/esm3_adapter.py",
+          "source_sha256": "fd7ea999e337aa620479c61aff958a3302102b98c90bd809a6eaff05c227f62e",
+          "origin": "effective settings recovered from hash-matched historical source + recorded config"
+        },
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {
+            "_structure_encoder": "torch.float32",
+            "_structure_decoder": "torch.float32",
+            "_function_decoder": "torch.float32"
+          },
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2,
+        "pdb": "/root/autodl-tmp/esm-baseline/data/1UBQ.pdb",
+        "pdb_use": "输入结构条件与质量参照"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/inverse/report.json",
+      "input": "部分序列 + 实验 PDB A 链坐标",
+      "output": "带结构条件的序列补全；不是全序列逆折叠",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/inverse/report.json"
+      ]
+    },
+    {
+      "id": "esm3/ubiquitin_fp32",
+      "group": "core",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        76
+      ],
+      "token_width": 78,
+      "precision": "fp32",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_logits_only",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "ubiquitin_human"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/test_sequences.jsonl",
+        "generation": null,
+        "precision_policy": {
+          "weights": "torch.float32",
+          "main_compute_policy": "FP32 autocast disabled",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.float32"
+          },
+          "auxiliary_parameter_dtypes": {},
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/ubiquitin_fp32/report.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/ubiquitin_fp32/report.json"
+      ]
+    },
+    {
+      "id": "esm3/ubiquitin_cpu_fp32",
+      "group": "core",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        76
+      ],
+      "token_width": 78,
+      "precision": "fp32",
+      "device": "cpu",
+      "warmup": 3,
+      "runs": 3,
+      "timing_scope": "warmed_logits_only",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "ubiquitin_human"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/test_sequences.jsonl",
+        "generation": null,
+        "precision_policy": {
+          "weights": "torch.float32",
+          "main_compute_policy": "FP32 autocast disabled",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.float32"
+          },
+          "auxiliary_parameter_dtypes": {},
+          "tf32_matmul": null,
+          "tf32_cudnn": null,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/ubiquitin_cpu_fp32/report.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/ubiquitin_cpu_fp32/report.json"
+      ]
+    },
+    {
+      "id": "esm3/crambin_forward",
+      "group": "core",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        46
+      ],
+      "token_width": 48,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_logits_only",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "crambin_1CRN_A"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/task_quality_sequences.jsonl",
+        "generation": null,
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {},
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_forward/report.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_forward/report.json"
+      ]
+    },
+    {
+      "id": "esm3/crambin_sequence",
+      "group": "core",
+      "model": "ESM3",
+      "task": "sequence",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        46
+      ],
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_generate_including_SDK_encode_decode",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "crambin_1CRN_A"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/task_quality_sequences.jsonl",
+        "generation": {
+          "schedule": "linear",
+          "strategy": "entropy",
+          "temperature": 0.7,
+          "temperature_annealing": false,
+          "condition_on_coordinates_only": false,
+          "track": "sequence",
+          "num_steps": 3,
+          "masked_positions": [
+            4,
+            5,
+            13
+          ],
+          "coordinate_condition": false,
+          "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/source/models/esm3_adapter.py",
+          "source_sha256": "fd7ea999e337aa620479c61aff958a3302102b98c90bd809a6eaff05c227f62e",
+          "origin": "effective settings recovered from hash-matched historical source + recorded config"
+        },
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {
+            "_structure_decoder": "torch.float32",
+            "_function_decoder": "torch.float32"
+          },
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_sequence/report.json",
+      "input": "部分序列；指定位置设为 _；无坐标条件",
+      "output": "补全后的序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_sequence/report.json"
+      ]
+    },
+    {
+      "id": "esm3/crambin_structure",
+      "group": "core",
+      "model": "ESM3",
+      "task": "structure",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        46
+      ],
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_generate_including_SDK_encode_decode",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "crambin_1CRN_A"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/task_quality_sequences.jsonl",
+        "generation": {
+          "schedule": "linear",
+          "strategy": "entropy",
+          "temperature": 0.7,
+          "temperature_annealing": false,
+          "condition_on_coordinates_only": false,
+          "track": "structure",
+          "num_steps": 8,
+          "masked_positions": [],
+          "coordinate_condition": false,
+          "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/source/models/esm3_adapter.py",
+          "source_sha256": "fd7ea999e337aa620479c61aff958a3302102b98c90bd809a6eaff05c227f62e",
+          "origin": "effective settings recovered from hash-matched historical source + recorded config"
+        },
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {
+            "_structure_decoder": "torch.float32",
+            "_function_decoder": "torch.float32"
+          },
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2,
+        "pdb": "/root/autodl-tmp/esm-baseline/data/1CRN.pdb",
+        "pdb_use": "仅输出质量参照；不进入生成输入"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_structure/report.json",
+      "input": "完整序列；不给实验坐标",
+      "output": "结构 token → 原子坐标 / PDB",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_structure/report.json"
+      ]
+    },
+    {
+      "id": "esm3/crambin_inverse",
+      "group": "core",
+      "model": "ESM3",
+      "task": "inverse",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        46
+      ],
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_generate_including_SDK_encode_decode",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "crambin_1CRN_A"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/task_quality_sequences.jsonl",
+        "generation": {
+          "schedule": "linear",
+          "strategy": "entropy",
+          "temperature": 0.7,
+          "temperature_annealing": false,
+          "condition_on_coordinates_only": false,
+          "track": "sequence",
+          "num_steps": 3,
+          "masked_positions": [
+            4,
+            5,
+            13
+          ],
+          "coordinate_condition": true,
+          "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/source/models/esm3_adapter.py",
+          "source_sha256": "fd7ea999e337aa620479c61aff958a3302102b98c90bd809a6eaff05c227f62e",
+          "origin": "effective settings recovered from hash-matched historical source + recorded config"
+        },
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {
+            "_structure_encoder": "torch.float32",
+            "_structure_decoder": "torch.float32",
+            "_function_decoder": "torch.float32"
+          },
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2,
+        "pdb": "/root/autodl-tmp/esm-baseline/data/1CRN.pdb",
+        "pdb_use": "输入结构条件与质量参照"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_inverse/report.json",
+      "input": "部分序列 + 实验 PDB A 链坐标",
+      "output": "带结构条件的序列补全；不是全序列逆折叠",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/crambin_inverse/report.json"
+      ]
+    },
+    {
+      "id": "esm3_standard/pg_AMFR_HUMAN",
+      "group": "standard",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        47
+      ],
+      "token_width": 49,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_logits_only",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "pg_AMFR_HUMAN"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009/performance_panel.jsonl",
+        "generation": null,
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {},
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_AMFR_HUMAN/report.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_AMFR_HUMAN/report.json"
+      ]
+    },
+    {
+      "id": "esm3_standard/pg_BBC1_YEAST",
+      "group": "standard",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        64
+      ],
+      "token_width": 66,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_logits_only",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "pg_BBC1_YEAST"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009/performance_panel.jsonl",
+        "generation": null,
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {},
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_BBC1_YEAST/report.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_BBC1_YEAST/report.json"
+      ]
+    },
+    {
+      "id": "esm3_standard/pg_A0A1I9GEU1_NEIME",
+      "group": "standard",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        161
+      ],
+      "token_width": 163,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_logits_only",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "pg_A0A1I9GEU1_NEIME"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009/performance_panel.jsonl",
+        "generation": null,
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {},
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_A0A1I9GEU1_NEIME/report.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_A0A1I9GEU1_NEIME/report.json"
+      ]
+    },
+    {
+      "id": "esm3_standard/pg_RPC1_LAMBD",
+      "group": "standard",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        237
+      ],
+      "token_width": 239,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_logits_only",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "pg_RPC1_LAMBD"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009/performance_panel.jsonl",
+        "generation": null,
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {},
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_RPC1_LAMBD/report.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_RPC1_LAMBD/report.json"
+      ]
+    },
+    {
+      "id": "esm3_standard/pg_ADRB2_HUMAN",
+      "group": "standard",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        413
+      ],
+      "token_width": 415,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_logits_only",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "pg_ADRB2_HUMAN"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009/performance_panel.jsonl",
+        "generation": null,
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {},
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_ADRB2_HUMAN/report.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_ADRB2_HUMAN/report.json"
+      ]
+    },
+    {
+      "id": "esm3_standard/pg_GCN4_YEAST",
+      "group": "standard",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        281
+      ],
+      "token_width": 283,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_logits_only",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "pg_GCN4_YEAST"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009/performance_panel.jsonl",
+        "generation": null,
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {},
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_GCN4_YEAST/report.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_GCN4_YEAST/report.json"
+      ]
+    },
+    {
+      "id": "esm3_standard/pg_Q837P4_ENTFA",
+      "group": "standard",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        589
+      ],
+      "token_width": 591,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_logits_only",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "pg_Q837P4_ENTFA"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009/performance_panel.jsonl",
+        "generation": null,
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {},
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_Q837P4_ENTFA/report.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_Q837P4_ENTFA/report.json"
+      ]
+    },
+    {
+      "id": "esm3_standard/pg_A0A192B1T2_9HIV1",
+      "group": "standard",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        852
+      ],
+      "token_width": 854,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_logits_only",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "pg_A0A192B1T2_9HIV1"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009/performance_panel.jsonl",
+        "generation": null,
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {},
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_A0A192B1T2_9HIV1/report.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_A0A192B1T2_9HIV1/report.json"
+      ]
+    },
+    {
+      "id": "esm3_standard/pg_BRCA1_HUMAN",
+      "group": "standard",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        1863
+      ],
+      "token_width": 1865,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_logits_only",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "pg_BRCA1_HUMAN"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009/performance_panel.jsonl",
+        "generation": null,
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {},
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_BRCA1_HUMAN/report.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_BRCA1_HUMAN/report.json"
+      ]
+    },
+    {
+      "id": "esm3_standard/pg_UBE4B_MOUSE",
+      "group": "standard",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        1173
+      ],
+      "token_width": 1175,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_logits_only",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "pg_UBE4B_MOUSE"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009/performance_panel.jsonl",
+        "generation": null,
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {},
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_UBE4B_MOUSE/report.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_UBE4B_MOUSE/report.json"
+      ]
+    },
+    {
+      "id": "esm3_standard/mixed_B4",
+      "group": "standard",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 4,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        47,
+        237,
+        413,
+        852
+      ],
+      "token_width": 854,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 20,
+      "timing_scope": "warmed_logits_only",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "cpu_threads": 4,
+        "sample_ids": [
+          "pg_AMFR_HUMAN",
+          "pg_RPC1_LAMBD",
+          "pg_ADRB2_HUMAN",
+          "pg_A0A192B1T2_9HIV1"
+        ],
+        "input_file": "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009/performance_panel.jsonl",
+        "generation": null,
+        "precision_policy": {
+          "weights": "torch.bfloat16",
+          "main_compute_policy": "bf16 mixed precision",
+          "sdk_inner_override": true,
+          "observed_first_linear": {
+            "module": "encoder.plddt_projection",
+            "input_dtype": "torch.float32",
+            "output_dtype": "torch.bfloat16"
+          },
+          "auxiliary_parameter_dtypes": {},
+          "tf32_matmul": false,
+          "tf32_cudnn": false,
+          "tf32_mudnn": null,
+          "attention_requested": "auto",
+          "note": "FP32 computes the same checkpoint in FP32; cannot recover unavailable training precision. Auxiliary modules retain SDK policies."
+        },
+        "timing_exclusions": [
+          "model loading",
+          "input prepare",
+          "seed reset",
+          "artifact serialization",
+          "profiler"
+        ],
+        "hot_delivery_runs": 2
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/mixed_B4/report.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/mixed_B4/report.json"
+      ]
+    },
+    {
+      "id": "diagnostic/esm3_cpu_cuda",
+      "group": "diagnostic",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        76
+      ],
+      "token_width": null,
+      "precision": "fp32",
+      "device": "cpu ↔ cuda:0",
+      "warmup": null,
+      "runs": null,
+      "timing_scope": "数值比较；不使用 profiler 时间",
+      "settings": {
+        "atol": 0.001,
+        "rtol": 0.001,
+        "compared": "所有有效 logits / embeddings，排除 BOS/EOS/padding",
+        "cpu_threads": 4
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/audit_summary.json",
+      "input": "同一泛素序列与 tokens",
+      "output": "CPU/CUDA 完整有效张量误差",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/audit_summary.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/ubiquitin_cpu_fp32/report.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/ubiquitin_fp32/report.json"
+      ]
+    },
+    {
+      "id": "diagnostic/fp32_padding_batch",
+      "group": "diagnostic",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": [
+        1,
+        4
+      ],
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        47,
+        237,
+        413,
+        852
+      ],
+      "token_width": null,
+      "precision": "fp32",
+      "device": "cuda:0",
+      "warmup": null,
+      "runs": null,
+      "timing_scope": "数值诊断；不是正式性能样本",
+      "settings": {
+        "thresholds": {
+          "logits": {
+            "atol": 0.001,
+            "rtol": 1e-05
+          },
+          "embeddings": {
+            "atol": 0.01,
+            "rtol": 1e-05
+          },
+          "padding_value_isolation": {
+            "atol": 0,
+            "rtol": 0
+          }
+        },
+        "seed": 7,
+        "sample_ids": [
+          "pg_AMFR_HUMAN",
+          "pg_RPC1_LAMBD",
+          "pg_ADRB2_HUMAN",
+          "pg_A0A192B1T2_9HIV1"
+        ],
+        "padding_width": 854,
+        "comparisons": [
+          "原长 B1 ↔ padding B1",
+          "原长 B1 ↔ padding B4",
+          "改变 padding token 内容后有效输出"
+        ]
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_batch_fp32/batch_diagnostic.json",
+      "input": "四个固定标准 target；原长或补齐到相同宽度",
+      "output": "全有效 logits / embeddings 与 padding 隔离检查",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_batch_fp32/batch_diagnostic.json"
+      ]
+    },
+    {
+      "id": "diagnostic/bf16_B1_B4",
+      "group": "diagnostic",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": [
+        1,
+        4
+      ],
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        47,
+        237,
+        413,
+        852
+      ],
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": null,
+      "runs": null,
+      "timing_scope": "从正式运行保存的输出做完整数值比较；不另造性能样本",
+      "settings": {
+        "atol": 0.1,
+        "rtol": 0.02,
+        "sample_ids": [
+          "pg_AMFR_HUMAN",
+          "pg_RPC1_LAMBD",
+          "pg_ADRB2_HUMAN",
+          "pg_A0A192B1T2_9HIV1"
+        ],
+        "padding_width": 854,
+        "failed_checks": 4,
+        "compared": "相同精度下原长B1与变长padding B4的完整有效logits/embeddings"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/panel_summary.json",
+      "input": "四个固定标准target；B1与padding B4",
+      "output": "逐target数值误差；执行PASS与比较失败分别保存",
+      "status": "fail",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/panel_summary.json"
+      ]
+    },
+    {
+      "id": "esm3_fitness/RL40A_YEAST_Mavor_2016",
+      "group": "fitness",
+      "model": "ESM3",
+      "task": "masked_forward",
+      "batch_size": 8,
+      "batch_unit": "masked 上下文；不是变体数",
+      "residue_lengths": [
+        128
+      ],
+      "token_width": 130,
+      "precision": "fp32",
+      "device": "cuda:0",
+      "warmup": 1,
+      "runs": 3,
+      "timing_scope": "Warmed complete masked-context sweep, including logits gathering/CPU table transfer; excludes CSV parse and variant lookup/ranking/artifacts",
+      "settings": {
+        "seed": 7,
+        "context_batch_sizes": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          3
+        ],
+        "masked_positions": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76
+        ],
+        "masked_contexts": 75,
+        "variant_rows": 1253,
+        "scoring": "Sum over substitutions of mutant minus WT logits from a WT sequence masking only that position; equivalent to same-context log-softmax differences",
+        "mutation_mode": "FALSE",
+        "probe": {
+          "positions": [
+            2,
+            39,
+            76
+          ],
+          "atol": 0.001,
+          "rtol": 1e-05,
+          "max_abs": 7.62939453125e-06,
+          "mae": 3.257456000937964e-06,
+          "allclose": true,
+          "scope": "Three predetermined contexts validate B1 vs requested batch; all 64 sequence logits at each probe"
+        },
+        "cpu_threads": 4
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_fitness/dms_summary.json",
+      "input": "完整 WT context；每个 context 只 mask 一个实验位置",
+      "output": "突变 fitness 评分 CSV；Spearman / AUC",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_fitness/dms_summary.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_fitness/RL40A_YEAST_Mavor_2016/predictions.csv"
+      ]
+    },
+    {
+      "id": "esm3_fitness/BLAT_ECOLX_Firnberg_2014",
+      "group": "fitness",
+      "model": "ESM3",
+      "task": "masked_forward",
+      "batch_size": 8,
+      "batch_unit": "masked 上下文；不是变体数",
+      "residue_lengths": [
+        286
+      ],
+      "token_width": 288,
+      "precision": "fp32",
+      "device": "cuda:0",
+      "warmup": 1,
+      "runs": 3,
+      "timing_scope": "Warmed complete masked-context sweep, including logits gathering/CPU table transfer; excludes CSV parse and variant lookup/ranking/artifacts",
+      "settings": {
+        "seed": 7,
+        "context_batch_sizes": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          7
+        ],
+        "masked_positions": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190,
+          191,
+          192,
+          193,
+          194,
+          195,
+          196,
+          197,
+          198,
+          199,
+          200,
+          201,
+          202,
+          203,
+          204,
+          205,
+          206,
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          213,
+          214,
+          215,
+          216,
+          217,
+          218,
+          219,
+          220,
+          221,
+          222,
+          223,
+          224,
+          225,
+          226,
+          227,
+          228,
+          229,
+          230,
+          231,
+          232,
+          233,
+          234,
+          235,
+          236,
+          237,
+          238,
+          239,
+          240,
+          241,
+          242,
+          243,
+          244,
+          245,
+          246,
+          247,
+          248,
+          249,
+          250,
+          251,
+          252,
+          253,
+          254,
+          255,
+          256,
+          257,
+          258,
+          259,
+          260,
+          261,
+          262,
+          263,
+          264,
+          265,
+          266,
+          267,
+          268,
+          269,
+          270,
+          271,
+          272,
+          273,
+          274,
+          275,
+          276,
+          277,
+          278,
+          279,
+          280,
+          281,
+          282,
+          283,
+          284,
+          285,
+          286
+        ],
+        "masked_contexts": 263,
+        "variant_rows": 4783,
+        "scoring": "Sum over substitutions of mutant minus WT logits from a WT sequence masking only that position; equivalent to same-context log-softmax differences",
+        "mutation_mode": "FALSE",
+        "probe": {
+          "positions": [
+            24,
+            155,
+            286
+          ],
+          "atol": 0.001,
+          "rtol": 1e-05,
+          "max_abs": 9.5367431640625e-06,
+          "mae": 2.766920488284086e-06,
+          "allclose": true,
+          "scope": "Three predetermined contexts validate B1 vs requested batch; all 64 sequence logits at each probe"
+        },
+        "cpu_threads": 4
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_fitness/dms_summary.json",
+      "input": "完整 WT context；每个 context 只 mask 一个实验位置",
+      "output": "突变 fitness 评分 CSV；Spearman / AUC",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_fitness/dms_summary.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_fitness/BLAT_ECOLX_Firnberg_2014/predictions.csv"
+      ]
+    },
+    {
+      "id": "esm3_fitness/SPG1_STRSG_Wu_2016",
+      "group": "fitness",
+      "model": "ESM3",
+      "task": "masked_forward",
+      "batch_size": 8,
+      "batch_unit": "masked 上下文；不是变体数",
+      "residue_lengths": [
+        448
+      ],
+      "token_width": 450,
+      "precision": "fp32",
+      "device": "cuda:0",
+      "warmup": 1,
+      "runs": 3,
+      "timing_scope": "Warmed complete masked-context sweep, including logits gathering/CPU table transfer; excludes CSV parse and variant lookup/ranking/artifacts",
+      "settings": {
+        "seed": 7,
+        "context_batch_sizes": [
+          4
+        ],
+        "masked_positions": [
+          265,
+          266,
+          267,
+          280
+        ],
+        "masked_contexts": 4,
+        "variant_rows": 149360,
+        "scoring": "Sum over substitutions of mutant minus WT logits from a WT sequence masking only that position; equivalent to same-context log-softmax differences",
+        "mutation_mode": "TRUE",
+        "probe": {
+          "positions": [
+            265,
+            267,
+            280
+          ],
+          "atol": 0.001,
+          "rtol": 1e-05,
+          "max_abs": 1.33514404296875e-05,
+          "mae": 2.0278773718018783e-06,
+          "allclose": true,
+          "scope": "Three predetermined contexts validate B1 vs requested batch; all 64 sequence logits at each probe"
+        },
+        "cpu_threads": 4
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_fitness/dms_summary.json",
+      "input": "完整 WT context；每个 context 只 mask 一个实验位置",
+      "output": "突变 fitness 评分 CSV；Spearman / AUC",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_fitness/dms_summary.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_fitness/SPG1_STRSG_Wu_2016/predictions.csv"
+      ]
+    },
+    {
+      "id": "openfold/6KWC",
+      "group": "openfold",
+      "model": "OpenFold",
+      "task": "structure",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        191
+      ],
+      "token_width": null,
+      "precision": "fp32",
+      "device": "cuda:0",
+      "warmup": 1,
+      "runs": 5,
+      "timing_scope": "Warmed full model with prepared device tensors; excludes preprocessing, model load, CPU transfer, PDB and profiler",
+      "settings": {
+        "seed": 42,
+        "cpu_threads": 8,
+        "model": "OpenFold model_3_ptm, finetuning_no_templ_ptm_1",
+        "chunk_size": 64,
+        "evoformer_blocks": 48,
+        "extra_msa_blocks": 4,
+        "recycles": 3,
+        "model_passes": 4,
+        "msa_shape": [
+          512,
+          191,
+          49,
+          4
+        ],
+        "extra_msa_shape": [
+          5120,
+          191,
+          4
+        ],
+        "templates": false,
+        "relaxation": false,
+        "attention": {
+          "policy": "upstream",
+          "explicit_torch_hooks": 0,
+          "note": "torch selects pinned upstream matmul/softmax Attention and non-inplace IPA branches; not a CPU device fallback. Numerical aggregation order differs from native CUDA branches."
+        },
+        "fasta": "/root/autodl-tmp/references/openfold/examples/monomer/fasta_dir/6kwc.fasta",
+        "alignments": "/root/autodl-tmp/references/openfold/examples/monomer/alignments/6KWC_1"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold/report.json",
+      "input": "6KWC 单体序列 + 预计算真实 MSA；无模板",
+      "output": "完整原子坐标 / pLDDT / 未松弛 PDB",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold/report.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold/structure_quality.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold/prediction_unrelaxed.pdb"
+      ]
+    },
+    {
+      "id": "diagnostic/openfold_cpu_cuda",
+      "group": "diagnostic",
+      "model": "OpenFold",
+      "task": "structure",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        191
+      ],
+      "token_width": null,
+      "precision": "fp32",
+      "device": "cpu ↔ cuda:0",
+      "warmup": null,
+      "runs": null,
+      "timing_scope": "复用真实 CPU 完整参考做数值比较；不是新 CPU 性能实验",
+      "settings": {
+        "reference": "outputs/openfold_cpu_torch_20261009_02",
+        "thresholds": {
+          "identical_feature_sha256": true,
+          "identical_atom_mask": true,
+          "ca_aligned_rmsd_angstrom": 0.05,
+          "plddt_max_abs": 0.5,
+          "note": "Frozen exploratory CPU-FP32/CUDA-FP32 thresholds before reference execution; not final MUSA acceptance or experimental accuracy thresholds"
+        },
+        "branch_difference": "CPU 官方 torch Attention / IPA；CUDA upstream 扩展"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold_cpu_comparison.json",
+      "input": "同一冻结 MSA features / 权重 / 配置",
+      "output": "全有效原子坐标与 pLDDT 误差",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold_cpu_comparison.json"
+      ]
+    },
+    {
+      "id": "operator/linear",
+      "group": "operator",
+      "model": "算子",
+      "task": "linear",
+      "batch_size": null,
+      "batch_unit": "算子 tensor shape；不按蛋白定义 B/L",
+      "residue_lengths": null,
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 5,
+      "runs": 30,
+      "timing_scope": "同步单算子调用；不是完整蛋白推理",
+      "settings": {
+        "input_shapes": [
+          [
+            1,
+            258,
+            1536
+          ],
+          [
+            4608,
+            1536
+          ],
+          [
+            4608
+          ]
+        ],
+        "input_strides": [
+          [
+            396288,
+            1536,
+            1
+          ],
+          [
+            1536,
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "input_dtypes": [
+          "torch.bfloat16",
+          "torch.bfloat16",
+          "torch.bfloat16"
+        ],
+        "source_shapes": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L256/operator_shapes.json",
+        "input_seed": 7,
+        "simplified": true,
+        "warmup_source": "/root/autodl-tmp/musa-/scripts/portable_operator_bench.py"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/operator_diagnostics/microbench.json",
+      "input": "CPU 固定种子合成输入；shape 来自模型 hooks",
+      "output": "算子 wall/Event 延迟、显存及 FP32 描述性误差",
+      "status": "measured",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/operator_diagnostics/microbench.json"
+      ]
+    },
+    {
+      "id": "operator/layer_norm",
+      "group": "operator",
+      "model": "算子",
+      "task": "layer_norm",
+      "batch_size": null,
+      "batch_unit": "算子 tensor shape；不按蛋白定义 B/L",
+      "residue_lengths": null,
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 5,
+      "runs": 30,
+      "timing_scope": "同步单算子调用；不是完整蛋白推理",
+      "settings": {
+        "input_shapes": [
+          [
+            1,
+            258,
+            1536
+          ]
+        ],
+        "input_strides": [
+          [
+            396288,
+            1536,
+            1
+          ]
+        ],
+        "input_dtypes": [
+          "torch.bfloat16"
+        ],
+        "source_shapes": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L256/operator_shapes.json",
+        "input_seed": 7,
+        "simplified": true,
+        "warmup_source": "/root/autodl-tmp/musa-/scripts/portable_operator_bench.py"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/operator_diagnostics/microbench.json",
+      "input": "CPU 固定种子合成输入；shape 来自模型 hooks",
+      "output": "算子 wall/Event 延迟、显存及 FP32 描述性误差",
+      "status": "measured",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/operator_diagnostics/microbench.json"
+      ]
+    },
+    {
+      "id": "operator/softmax",
+      "group": "operator",
+      "model": "算子",
+      "task": "softmax",
+      "batch_size": null,
+      "batch_unit": "算子 tensor shape；不按蛋白定义 B/L",
+      "residue_lengths": null,
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 5,
+      "runs": 30,
+      "timing_scope": "同步单算子调用；不是完整蛋白推理",
+      "settings": {
+        "input_shapes": [
+          [
+            1,
+            258,
+            1536
+          ]
+        ],
+        "input_strides": [
+          [
+            396288,
+            1536,
+            1
+          ]
+        ],
+        "input_dtypes": [
+          "torch.bfloat16"
+        ],
+        "source_shapes": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L256/operator_shapes.json",
+        "input_seed": 7,
+        "simplified": true,
+        "warmup_source": "/root/autodl-tmp/musa-/scripts/portable_operator_bench.py"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/operator_diagnostics/microbench.json",
+      "input": "CPU 固定种子合成输入；shape 来自模型 hooks",
+      "output": "算子 wall/Event 延迟、显存及 FP32 描述性误差",
+      "status": "measured",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/operator_diagnostics/microbench.json"
+      ]
+    },
+    {
+      "id": "operator/vector_norm",
+      "group": "operator",
+      "model": "算子",
+      "task": "vector_norm",
+      "batch_size": null,
+      "batch_unit": "算子 tensor shape；不按蛋白定义 B/L",
+      "residue_lengths": null,
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 5,
+      "runs": 30,
+      "timing_scope": "同步单算子调用；不是完整蛋白推理",
+      "settings": {
+        "input_shapes": [
+          [
+            1,
+            258,
+            1536
+          ]
+        ],
+        "input_strides": [
+          [
+            396288,
+            1536,
+            1
+          ]
+        ],
+        "input_dtypes": [
+          "torch.bfloat16"
+        ],
+        "source_shapes": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L256/operator_shapes.json",
+        "input_seed": 7,
+        "simplified": true,
+        "warmup_source": "/root/autodl-tmp/musa-/scripts/portable_operator_bench.py"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/operator_diagnostics/microbench.json",
+      "input": "CPU 固定种子合成输入；shape 来自模型 hooks",
+      "output": "算子 wall/Event 延迟、显存及 FP32 描述性误差",
+      "status": "measured",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/operator_diagnostics/microbench.json"
+      ]
+    },
+    {
+      "id": "operator/topk",
+      "group": "operator",
+      "model": "算子",
+      "task": "topk",
+      "batch_size": null,
+      "batch_unit": "算子 tensor shape；不按蛋白定义 B/L",
+      "residue_lengths": null,
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 5,
+      "runs": 30,
+      "timing_scope": "同步单算子调用；不是完整蛋白推理",
+      "settings": {
+        "input_shapes": [
+          [
+            1,
+            258,
+            1536
+          ]
+        ],
+        "input_strides": [
+          [
+            396288,
+            1536,
+            1
+          ]
+        ],
+        "input_dtypes": [
+          "torch.bfloat16"
+        ],
+        "source_shapes": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L256/operator_shapes.json",
+        "input_seed": 7,
+        "simplified": true,
+        "warmup_source": "/root/autodl-tmp/musa-/scripts/portable_operator_bench.py"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/operator_diagnostics/microbench.json",
+      "input": "CPU 固定种子合成输入；shape 来自模型 hooks",
+      "output": "算子 wall/Event 延迟、显存及 FP32 描述性误差",
+      "status": "measured",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/operator_diagnostics/microbench.json"
+      ]
+    },
+    {
+      "id": "operator/embedding",
+      "group": "operator",
+      "model": "算子",
+      "task": "embedding",
+      "batch_size": null,
+      "batch_unit": "算子 tensor shape；不按蛋白定义 B/L",
+      "residue_lengths": null,
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 5,
+      "runs": 30,
+      "timing_scope": "同步单算子调用；不是完整蛋白推理",
+      "settings": {
+        "input_shapes": [
+          [
+            64,
+            1536
+          ],
+          [
+            1,
+            258
+          ]
+        ],
+        "input_strides": [
+          [
+            1536,
+            1
+          ],
+          [
+            258,
+            1
+          ]
+        ],
+        "input_dtypes": [
+          "torch.bfloat16",
+          "torch.int64"
+        ],
+        "source_shapes": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L256/operator_shapes.json",
+        "input_seed": 7,
+        "simplified": true,
+        "warmup_source": "/root/autodl-tmp/musa-/scripts/portable_operator_bench.py"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/operator_diagnostics/microbench.json",
+      "input": "CPU 固定种子合成输入；shape 来自模型 hooks",
+      "output": "算子 wall/Event 延迟、显存及 FP32 描述性误差",
+      "status": "measured",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/operator_diagnostics/microbench.json"
+      ]
+    },
+    {
+      "id": "operator/batch_gemm",
+      "group": "operator",
+      "model": "算子",
+      "task": "batch_gemm",
+      "batch_size": null,
+      "batch_unit": "算子 tensor shape；不按蛋白定义 B/L",
+      "residue_lengths": null,
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 5,
+      "runs": 30,
+      "timing_scope": "同步单算子调用；不是完整蛋白推理",
+      "settings": {
+        "input_shapes": [
+          [
+            1,
+            24,
+            258,
+            64
+          ],
+          [
+            1,
+            24,
+            258,
+            64
+          ]
+        ],
+        "input_strides": [
+          [
+            396288,
+            16512,
+            64,
+            1
+          ],
+          [
+            396288,
+            16512,
+            64,
+            1
+          ]
+        ],
+        "input_dtypes": [
+          "torch.bfloat16",
+          "torch.bfloat16"
+        ],
+        "source_shapes": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L256/operator_shapes.json",
+        "input_seed": 7,
+        "simplified": true,
+        "warmup_source": "/root/autodl-tmp/musa-/scripts/portable_operator_bench.py"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/operator_diagnostics/microbench.json",
+      "input": "CPU 固定种子合成输入；shape 来自模型 hooks",
+      "output": "算子 wall/Event 延迟、显存及 FP32 描述性误差",
+      "status": "measured",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/operator_diagnostics/microbench.json"
+      ]
+    },
+    {
+      "id": "operator/sdpa",
+      "group": "operator",
+      "model": "算子",
+      "task": "sdpa",
+      "batch_size": null,
+      "batch_unit": "算子 tensor shape；不按蛋白定义 B/L",
+      "residue_lengths": null,
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 5,
+      "runs": 30,
+      "timing_scope": "同步单算子调用；不是完整蛋白推理",
+      "settings": {
+        "input_shapes": [
+          [
+            1,
+            24,
+            258,
+            64
+          ],
+          [
+            1,
+            24,
+            258,
+            64
+          ],
+          [
+            1,
+            24,
+            258,
+            64
+          ]
+        ],
+        "input_strides": [
+          [
+            396288,
+            16512,
+            64,
+            1
+          ],
+          [
+            396288,
+            16512,
+            64,
+            1
+          ],
+          [
+            396288,
+            16512,
+            64,
+            1
+          ]
+        ],
+        "input_dtypes": [
+          "torch.bfloat16",
+          "torch.bfloat16",
+          "torch.bfloat16"
+        ],
+        "source_shapes": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L256/operator_shapes.json",
+        "input_seed": 7,
+        "simplified": true,
+        "warmup_source": "/root/autodl-tmp/musa-/scripts/portable_operator_bench.py"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/operator_diagnostics/microbench.json",
+      "input": "CPU 固定种子合成输入；shape 来自模型 hooks",
+      "output": "算子 wall/Event 延迟、显存及 FP32 描述性误差",
+      "status": "measured",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/operator_diagnostics/microbench.json"
+      ]
+    },
+    {
+      "id": "esm3/nsight/L256_warm",
+      "group": "systems",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        256
+      ],
+      "token_width": 258,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 3,
+      "timing_scope": "warm: prepared operation only; pipeline: model load + prepare + operation + CPU artifacts/PDB, excluding .pt serialization",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "capture_scope": "warm",
+        "mask_positions": [],
+        "sample_ids": [
+          "random_L256"
+        ],
+        "generation": null,
+        "cpu_threads": 4,
+        "trace": [
+          "CUDA",
+          "NVTX",
+          "OSRT"
+        ],
+        "cpu_sampling": false,
+        "cpu_context_switch": false,
+        "reference": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L256/tensors.pt"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/L256_warm_workload/workload.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/L256_warm_workload/workload.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/L256_warm.nsys-rep"
+      ]
+    },
+    {
+      "id": "esm3/nsight/L1024_warm",
+      "group": "systems",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        1024
+      ],
+      "token_width": 1026,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 3,
+      "timing_scope": "warm: prepared operation only; pipeline: model load + prepare + operation + CPU artifacts/PDB, excluding .pt serialization",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "capture_scope": "warm",
+        "mask_positions": [],
+        "sample_ids": [
+          "random_L1024"
+        ],
+        "generation": null,
+        "cpu_threads": 4,
+        "trace": [
+          "CUDA",
+          "NVTX",
+          "OSRT"
+        ],
+        "cpu_sampling": false,
+        "cpu_context_switch": false,
+        "reference": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L1024/tensors.pt"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/L1024_warm_workload/workload.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/L1024_warm_workload/workload.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/L1024_warm.nsys-rep"
+      ]
+    },
+    {
+      "id": "esm3/nsight/mixed_B2_warm",
+      "group": "systems",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 2,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        21,
+        76
+      ],
+      "token_width": 78,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 3,
+      "timing_scope": "warm: prepared operation only; pipeline: model load + prepare + operation + CPU artifacts/PDB, excluding .pt serialization",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "capture_scope": "warm",
+        "mask_positions": [],
+        "sample_ids": [
+          "insulin_a_chain_human",
+          "ubiquitin_human"
+        ],
+        "generation": null,
+        "cpu_threads": 4,
+        "trace": [
+          "CUDA",
+          "NVTX",
+          "OSRT"
+        ],
+        "cpu_sampling": false,
+        "cpu_context_switch": false,
+        "reference": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/mixed_B2/tensors.pt"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/mixed_B2_warm_workload/workload.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/mixed_B2_warm_workload/workload.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/mixed_B2_warm.nsys-rep"
+      ]
+    },
+    {
+      "id": "esm3/nsight/sequence_warm",
+      "group": "systems",
+      "model": "ESM3",
+      "task": "sequence",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        76
+      ],
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 3,
+      "timing_scope": "warm: prepared operation only; pipeline: model load + prepare + operation + CPU artifacts/PDB, excluding .pt serialization",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "capture_scope": "warm",
+        "mask_positions": [
+          4,
+          5,
+          13
+        ],
+        "sample_ids": [
+          "ubiquitin_human"
+        ],
+        "generation": {
+          "schedule": "linear",
+          "strategy": "entropy",
+          "temperature": 0.7,
+          "temperature_annealing": false,
+          "condition_on_coordinates_only": false,
+          "track": "sequence",
+          "num_steps": 3,
+          "masked_positions": [
+            4,
+            5,
+            13
+          ],
+          "coordinate_condition": false,
+          "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/source/models/esm3_adapter.py",
+          "source_sha256": "fd7ea999e337aa620479c61aff958a3302102b98c90bd809a6eaff05c227f62e",
+          "origin": "effective settings recovered from hash-matched historical source + recorded config"
+        },
+        "cpu_threads": 4,
+        "trace": [
+          "CUDA",
+          "NVTX",
+          "OSRT"
+        ],
+        "cpu_sampling": false,
+        "cpu_context_switch": false,
+        "reference": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/sequence/tensors.pt"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/sequence_warm_workload/workload.json",
+      "input": "部分序列；指定位置设为 _；无坐标条件",
+      "output": "补全后的序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/sequence_warm_workload/workload.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/sequence_warm.nsys-rep"
+      ]
+    },
+    {
+      "id": "esm3/nsight/structure_warm",
+      "group": "systems",
+      "model": "ESM3",
+      "task": "structure",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        76
+      ],
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 3,
+      "timing_scope": "warm: prepared operation only; pipeline: model load + prepare + operation + CPU artifacts/PDB, excluding .pt serialization",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "capture_scope": "warm",
+        "mask_positions": [],
+        "sample_ids": [
+          "ubiquitin_human"
+        ],
+        "generation": {
+          "schedule": "linear",
+          "strategy": "entropy",
+          "temperature": 0.7,
+          "temperature_annealing": false,
+          "condition_on_coordinates_only": false,
+          "track": "structure",
+          "num_steps": 8,
+          "masked_positions": [],
+          "coordinate_condition": false,
+          "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/source/models/esm3_adapter.py",
+          "source_sha256": "fd7ea999e337aa620479c61aff958a3302102b98c90bd809a6eaff05c227f62e",
+          "origin": "effective settings recovered from hash-matched historical source + recorded config"
+        },
+        "cpu_threads": 4,
+        "trace": [
+          "CUDA",
+          "NVTX",
+          "OSRT"
+        ],
+        "cpu_sampling": false,
+        "cpu_context_switch": false,
+        "reference": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/structure/tensors.pt"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/structure_warm_workload/workload.json",
+      "input": "完整序列；不给实验坐标",
+      "output": "结构 token → 原子坐标 / PDB",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/structure_warm_workload/workload.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/structure_warm.nsys-rep"
+      ]
+    },
+    {
+      "id": "esm3/nsight/inverse_warm",
+      "group": "systems",
+      "model": "ESM3",
+      "task": "inverse",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        76
+      ],
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 3,
+      "timing_scope": "warm: prepared operation only; pipeline: model load + prepare + operation + CPU artifacts/PDB, excluding .pt serialization",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "capture_scope": "warm",
+        "mask_positions": [
+          4,
+          5,
+          13
+        ],
+        "sample_ids": [
+          "ubiquitin_human"
+        ],
+        "generation": {
+          "schedule": "linear",
+          "strategy": "entropy",
+          "temperature": 0.7,
+          "temperature_annealing": false,
+          "condition_on_coordinates_only": false,
+          "track": "sequence",
+          "num_steps": 3,
+          "masked_positions": [
+            4,
+            5,
+            13
+          ],
+          "coordinate_condition": true,
+          "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/source/models/esm3_adapter.py",
+          "source_sha256": "fd7ea999e337aa620479c61aff958a3302102b98c90bd809a6eaff05c227f62e",
+          "origin": "effective settings recovered from hash-matched historical source + recorded config"
+        },
+        "cpu_threads": 4,
+        "trace": [
+          "CUDA",
+          "NVTX",
+          "OSRT"
+        ],
+        "cpu_sampling": false,
+        "cpu_context_switch": false,
+        "reference": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/inverse/tensors.pt"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/inverse_warm_workload/workload.json",
+      "input": "部分序列 + 实验 PDB A 链坐标",
+      "output": "带结构条件的序列补全；不是全序列逆折叠",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/inverse_warm_workload/workload.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/inverse_warm.nsys-rep"
+      ]
+    },
+    {
+      "id": "esm3/nsight/L256_pipeline",
+      "group": "systems",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        256
+      ],
+      "token_width": 258,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 0,
+      "runs": 1,
+      "timing_scope": "warm: prepared operation only; pipeline: model load + prepare + operation + CPU artifacts/PDB, excluding .pt serialization",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "capture_scope": "pipeline",
+        "mask_positions": [],
+        "sample_ids": [
+          "random_L256"
+        ],
+        "generation": null,
+        "cpu_threads": 4,
+        "trace": [
+          "CUDA",
+          "NVTX",
+          "OSRT"
+        ],
+        "cpu_sampling": false,
+        "cpu_context_switch": false,
+        "reference": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L256/tensors.pt"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/L256_pipeline_workload/workload.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/L256_pipeline_workload/workload.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/L256_pipeline.nsys-rep"
+      ]
+    },
+    {
+      "id": "esm3/nsight/sequence_pipeline",
+      "group": "systems",
+      "model": "ESM3",
+      "task": "sequence",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        76
+      ],
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 0,
+      "runs": 1,
+      "timing_scope": "warm: prepared operation only; pipeline: model load + prepare + operation + CPU artifacts/PDB, excluding .pt serialization",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "capture_scope": "pipeline",
+        "mask_positions": [
+          4,
+          5,
+          13
+        ],
+        "sample_ids": [
+          "ubiquitin_human"
+        ],
+        "generation": {
+          "schedule": "linear",
+          "strategy": "entropy",
+          "temperature": 0.7,
+          "temperature_annealing": false,
+          "condition_on_coordinates_only": false,
+          "track": "sequence",
+          "num_steps": 3,
+          "masked_positions": [
+            4,
+            5,
+            13
+          ],
+          "coordinate_condition": false,
+          "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/source/models/esm3_adapter.py",
+          "source_sha256": "fd7ea999e337aa620479c61aff958a3302102b98c90bd809a6eaff05c227f62e",
+          "origin": "effective settings recovered from hash-matched historical source + recorded config"
+        },
+        "cpu_threads": 4,
+        "trace": [
+          "CUDA",
+          "NVTX",
+          "OSRT"
+        ],
+        "cpu_sampling": false,
+        "cpu_context_switch": false,
+        "reference": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/sequence/tensors.pt"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/sequence_pipeline_workload/workload.json",
+      "input": "部分序列；指定位置设为 _；无坐标条件",
+      "output": "补全后的序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/sequence_pipeline_workload/workload.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/sequence_pipeline.nsys-rep"
+      ]
+    },
+    {
+      "id": "esm3/nsight/structure_pipeline",
+      "group": "systems",
+      "model": "ESM3",
+      "task": "structure",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        76
+      ],
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 0,
+      "runs": 1,
+      "timing_scope": "warm: prepared operation only; pipeline: model load + prepare + operation + CPU artifacts/PDB, excluding .pt serialization",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "capture_scope": "pipeline",
+        "mask_positions": [],
+        "sample_ids": [
+          "ubiquitin_human"
+        ],
+        "generation": {
+          "schedule": "linear",
+          "strategy": "entropy",
+          "temperature": 0.7,
+          "temperature_annealing": false,
+          "condition_on_coordinates_only": false,
+          "track": "structure",
+          "num_steps": 8,
+          "masked_positions": [],
+          "coordinate_condition": false,
+          "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/source/models/esm3_adapter.py",
+          "source_sha256": "fd7ea999e337aa620479c61aff958a3302102b98c90bd809a6eaff05c227f62e",
+          "origin": "effective settings recovered from hash-matched historical source + recorded config"
+        },
+        "cpu_threads": 4,
+        "trace": [
+          "CUDA",
+          "NVTX",
+          "OSRT"
+        ],
+        "cpu_sampling": false,
+        "cpu_context_switch": false,
+        "reference": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/structure/tensors.pt"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/structure_pipeline_workload/workload.json",
+      "input": "完整序列；不给实验坐标",
+      "output": "结构 token → 原子坐标 / PDB",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/structure_pipeline_workload/workload.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/structure_pipeline.nsys-rep"
+      ]
+    },
+    {
+      "id": "esm3/nsight/inverse_pipeline",
+      "group": "systems",
+      "model": "ESM3",
+      "task": "inverse",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        76
+      ],
+      "token_width": null,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 0,
+      "runs": 1,
+      "timing_scope": "warm: prepared operation only; pipeline: model load + prepare + operation + CPU artifacts/PDB, excluding .pt serialization",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "capture_scope": "pipeline",
+        "mask_positions": [
+          4,
+          5,
+          13
+        ],
+        "sample_ids": [
+          "ubiquitin_human"
+        ],
+        "generation": {
+          "schedule": "linear",
+          "strategy": "entropy",
+          "temperature": 0.7,
+          "temperature_annealing": false,
+          "condition_on_coordinates_only": false,
+          "track": "sequence",
+          "num_steps": 3,
+          "masked_positions": [
+            4,
+            5,
+            13
+          ],
+          "coordinate_condition": true,
+          "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/source/models/esm3_adapter.py",
+          "source_sha256": "fd7ea999e337aa620479c61aff958a3302102b98c90bd809a6eaff05c227f62e",
+          "origin": "effective settings recovered from hash-matched historical source + recorded config"
+        },
+        "cpu_threads": 4,
+        "trace": [
+          "CUDA",
+          "NVTX",
+          "OSRT"
+        ],
+        "cpu_sampling": false,
+        "cpu_context_switch": false,
+        "reference": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/inverse/tensors.pt"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/inverse_pipeline_workload/workload.json",
+      "input": "部分序列 + 实验 PDB A 链坐标",
+      "output": "带结构条件的序列补全；不是全序列逆折叠",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/inverse_pipeline_workload/workload.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/inverse_pipeline.nsys-rep"
+      ]
+    },
+    {
+      "id": "esm3_standard/nsight/BRCA1_original",
+      "group": "systems",
+      "model": "ESM3",
+      "task": "forward",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        1863
+      ],
+      "token_width": 1865,
+      "precision": "bf16",
+      "device": "cuda:0",
+      "warmup": 3,
+      "runs": 3,
+      "timing_scope": "warm: prepared operation only; pipeline: model load + prepare + operation + CPU artifacts/PDB, excluding .pt serialization",
+      "settings": {
+        "seed": 7,
+        "attention_requested": "auto",
+        "capture_scope": "warm",
+        "mask_positions": [],
+        "sample_ids": [
+          "pg_BRCA1_HUMAN"
+        ],
+        "generation": null,
+        "cpu_threads": 4,
+        "trace": [
+          "CUDA",
+          "NVTX",
+          "OSRT"
+        ],
+        "cpu_sampling": false,
+        "cpu_context_switch": false,
+        "reference": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_BRCA1_HUMAN/tensors.pt"
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/nsight/BRCA1_original_workload/workload.json",
+      "input": "已知序列；无实验坐标",
+      "output": "全位置序列 logits + embeddings；不是生成序列",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/nsight/BRCA1_original_workload/workload.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/nsight/BRCA1_original.nsys-rep"
+      ]
+    },
+    {
+      "id": "openfold_nsight/6KWC",
+      "group": "systems",
+      "model": "OpenFold",
+      "task": "structure",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        191
+      ],
+      "token_width": null,
+      "precision": "fp32",
+      "device": "cuda:0",
+      "warmup": 1,
+      "runs": 1,
+      "timing_scope": "warm: prepared model; pipeline: load, actual MSA feature preparation, prediction and CPU/PDB delivery; excludes MSA search/templates/relaxation",
+      "settings": {
+        "seed": 42,
+        "cpu_threads": 8,
+        "model": "OpenFold model_3_ptm, finetuning_no_templ_ptm_1",
+        "chunk_size": 64,
+        "evoformer_blocks": 48,
+        "extra_msa_blocks": 4,
+        "recycles": 3,
+        "model_passes": 4,
+        "msa_shape": [
+          512,
+          191,
+          49,
+          4
+        ],
+        "extra_msa_shape": [
+          5120,
+          191,
+          4
+        ],
+        "templates": false,
+        "relaxation": false,
+        "attention": {
+          "policy": "upstream",
+          "explicit_torch_hooks": 0,
+          "note": "torch selects pinned upstream matmul/softmax Attention and non-inplace IPA branches; not a CPU device fallback. Numerical aggregation order differs from native CUDA branches."
+        },
+        "fasta": "/root/autodl-tmp/references/openfold/examples/monomer/fasta_dir/6kwc.fasta",
+        "alignments": "/root/autodl-tmp/references/openfold/examples/monomer/alignments/6KWC_1",
+        "capture_scope": "warm",
+        "trace": [
+          "CUDA",
+          "NVTX",
+          "OSRT"
+        ],
+        "cpu_sampling": false,
+        "cpu_context_switch": false
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold_nsight/workload/workload.json",
+      "input": "6KWC + 预计算 MSA；warm 用冻结 features，pipeline 实际重新 prepare",
+      "output": "完整预测时间线；pipeline 额外包含加载/准备/CPU-PDB交付",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold_nsight/workload/workload.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold_nsight/openfold_warm.nsys-rep"
+      ]
+    },
+    {
+      "id": "openfold_pipeline/6KWC",
+      "group": "systems",
+      "model": "OpenFold",
+      "task": "structure",
+      "batch_size": 1,
+      "batch_unit": "蛋白请求",
+      "residue_lengths": [
+        191
+      ],
+      "token_width": null,
+      "precision": "fp32",
+      "device": "cuda:0",
+      "warmup": 0,
+      "runs": 1,
+      "timing_scope": "warm: prepared model; pipeline: load, actual MSA feature preparation, prediction and CPU/PDB delivery; excludes MSA search/templates/relaxation",
+      "settings": {
+        "seed": 42,
+        "cpu_threads": 8,
+        "model": "OpenFold model_3_ptm, finetuning_no_templ_ptm_1",
+        "chunk_size": 64,
+        "evoformer_blocks": 48,
+        "extra_msa_blocks": 4,
+        "recycles": 3,
+        "model_passes": 4,
+        "msa_shape": [
+          512,
+          191,
+          49,
+          4
+        ],
+        "extra_msa_shape": [
+          5120,
+          191,
+          4
+        ],
+        "templates": false,
+        "relaxation": false,
+        "attention": {
+          "policy": "upstream",
+          "explicit_torch_hooks": 0,
+          "note": "torch selects pinned upstream matmul/softmax Attention and non-inplace IPA branches; not a CPU device fallback. Numerical aggregation order differs from native CUDA branches."
+        },
+        "fasta": "/root/autodl-tmp/references/openfold/examples/monomer/fasta_dir/6kwc.fasta",
+        "alignments": "/root/autodl-tmp/references/openfold/examples/monomer/alignments/6KWC_1",
+        "capture_scope": "pipeline",
+        "trace": [
+          "CUDA",
+          "NVTX",
+          "OSRT"
+        ],
+        "cpu_sampling": false,
+        "cpu_context_switch": false
+      },
+      "source": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold_pipeline/workload/workload.json",
+      "input": "6KWC + 预计算 MSA；warm 用冻结 features，pipeline 实际重新 prepare",
+      "output": "完整预测时间线；pipeline 额外包含加载/准备/CPU-PDB交付",
+      "status": "pass",
+      "evidence": [
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold_pipeline/workload/workload.json",
+        "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold_pipeline/openfold_pipeline.nsys-rep"
+      ]
+    }
+  ],
+  "conventions": {
+    "B": "本次模型调用同时输入的蛋白数；DMS 改为 masked context 数，逐行说明",
+    "L": "残基数，不包含 ESM3 BOS/EOS；forward tensor width 为 max(L)+2",
+    "statuses": "模型执行 PASS、科学质量、数值一致性、profiler 权限、交付核验分别判断",
+    "source": "原报告优先；生成默认值只从 SHA 匹配的源码恢复；未知值保留 null"
+  }
+}

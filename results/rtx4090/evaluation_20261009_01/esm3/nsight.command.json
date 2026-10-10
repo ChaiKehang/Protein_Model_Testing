@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "/root/autodl-tmp/envs/esm3/bin/python",
+    "/root/autodl-tmp/musa-/scripts/run_nsight.py",
+    "--suite",
+    "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3",
+    "--output",
+    "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight",
+    "--config",
+    "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight_config.json",
+    "--manifest",
+    "/root/autodl-tmp/esm-baseline/model_snapshot.json"
+  ],
+  "cwd": "/root/autodl-tmp/musa-",
+  "timestamp_utc": "2026-10-09T05:32:20.808477+00:00",
+  "timeout_seconds": 1800,
+  "env_overrides": {
+    "HF_HUB_OFFLINE": "1",
+    "TOKENIZERS_PARALLELISM": "false"
+  }
+}

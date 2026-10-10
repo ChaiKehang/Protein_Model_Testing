@@ -1,0 +1,1 @@
+PASS forward fp32 B=1 ['ubiquitin_human']: median=21.261ms allocated=5.311775207519531GiB; /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/ubiquitin_fp32

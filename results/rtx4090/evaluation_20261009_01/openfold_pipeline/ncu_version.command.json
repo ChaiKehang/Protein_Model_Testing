@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/usr/local/cuda-12.8/bin/ncu",
+    "--version"
+  ],
+  "cwd": "/root/autodl-tmp/musa-",
+  "timestamp_utc": "2026-10-09T05:48:04.130476+00:00",
+  "timeout_seconds": 300,
+  "env_overrides": {
+    "HF_HUB_OFFLINE": "1",
+    "TOKENIZERS_PARALLELISM": "false"
+  }
+}

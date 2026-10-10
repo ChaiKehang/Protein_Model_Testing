@@ -1,0 +1,40 @@
+{
+  "argv": [
+    "/opt/nvidia/nsight-compute/2025.1.1/host/target-linux-x64/nsys",
+    "profile",
+    "--trace=cuda,nvtx,osrt",
+    "--sample=none",
+    "--cpuctxsw=none",
+    "--capture-range=cudaProfilerApi",
+    "--capture-range-end=stop",
+    "--force-overwrite=false",
+    "--output=/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/nsight/BRCA1_original",
+    "/root/autodl-tmp/envs/esm3/bin/python",
+    "/root/autodl-tmp/musa-/scripts/nsight_workload.py",
+    "--sample-id",
+    "pg_BRCA1_HUMAN",
+    "--manifest",
+    "/root/autodl-tmp/esm-baseline/model_snapshot.json",
+    "--reference",
+    "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_BRCA1_HUMAN/tensors.pt",
+    "--tool",
+    "nsys",
+    "--calls",
+    "3",
+    "--warmup",
+    "3",
+    "--output",
+    "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/nsight/BRCA1_original_workload",
+    "--device",
+    "cuda:0",
+    "--inputs",
+    "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009/performance_panel.jsonl"
+  ],
+  "cwd": "/root/autodl-tmp/musa-",
+  "timestamp_utc": "2026-10-09T06:12:17.108257+00:00",
+  "timeout_seconds": 300,
+  "env_overrides": {
+    "HF_HUB_OFFLINE": "1",
+    "TOKENIZERS_PARALLELISM": "false"
+  }
+}

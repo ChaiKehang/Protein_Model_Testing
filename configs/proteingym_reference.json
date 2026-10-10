@@ -1,0 +1,63 @@
+{
+  "dataset_version": "ProteinGym v1.3",
+  "repository_commit": "144fe22b07dfaeec2b366f2346203a9838a55b4c",
+  "performance_panel": {
+    "length_bins": [
+      [
+        1,
+        128
+      ],
+      [
+        129,
+        256
+      ],
+      [
+        257,
+        512
+      ],
+      [
+        513,
+        1024
+      ],
+      [
+        1025,
+        2048
+      ]
+    ],
+    "targets_per_bin": 2,
+    "precision": "bf16",
+    "batch": 1,
+    "warmup": 3,
+    "runs": 20,
+    "mixed_batch": "Four distinct targets; B1 versus B4 full valid logits/embedding numerical diagnostics",
+    "batch_diagnostic_atol": 0.1,
+    "batch_diagnostic_rtol": 0.02
+  },
+  "fitness_assays": [
+    "RL40A_YEAST_Mavor_2016",
+    "BLAT_ECOLX_Firnberg_2014",
+    "SPG1_STRSG_Wu_2016"
+  ],
+  "fitness_protocol": {
+    "precision": "fp32",
+    "batch_size": 8,
+    "runs": 3,
+    "scoring": "WT single-position masked marginals; sum mutant minus WT logits; additive for multi mutants",
+    "sequence_context": "Full pinned assay target sequence, no MSA and no structure; no label fitting",
+    "batch_validation": "First, middle and last mutated positions; B1 vs B8 full 64 logits",
+    "batch_validation_atol": 0.001,
+    "batch_validation_rtol": 1e-05,
+    "metrics": [
+      "Spearman",
+      "AUC with supplied DMS_score_bin"
+    ],
+    "quality_pass_threshold": null,
+    "quality_threshold_note": "Observe quality, never invent a post-hoc accuracy acceptance threshold. Engineering PASS validates execution/data/scoring checks."
+  },
+  "limitations": [
+    "Bounded panel and three full assays, not the full ProteinGym leaderboard",
+    "No verified pretraining isolation",
+    "Additive multi-mutant scoring does not model joint epistasis",
+    "OpenFold structure standard dataset remains separate"
+  ]
+}

@@ -1,0 +1,5 @@
+START standard_nsight
+FINISH standard_nsight 0
+START operator_diagnostics
+FINISH operator_diagnostics 0
+MEASUREMENTS_COMPLETE /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01

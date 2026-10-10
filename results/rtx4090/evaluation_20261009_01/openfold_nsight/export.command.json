@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/opt/nvidia/nsight-compute/2025.1.1/host/target-linux-x64/nsys",
+    "export",
+    "--type=sqlite",
+    "--force-overwrite=false",
+    "--output=/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold_nsight/openfold_warm.sqlite",
+    "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold_nsight/openfold_warm.nsys-rep"
+  ],
+  "cwd": "/root/autodl-tmp/musa-",
+  "timestamp_utc": "2026-10-09T05:47:56.508320+00:00",
+  "timeout_seconds": 300,
+  "env_overrides": {
+    "HF_HUB_OFFLINE": "1",
+    "TOKENIZERS_PARALLELISM": "false"
+  }
+}

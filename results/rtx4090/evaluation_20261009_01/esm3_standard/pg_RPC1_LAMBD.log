@@ -1,0 +1,1 @@
+PASS forward bf16 B=1 ['pg_RPC1_LAMBD']: median=25.729ms allocated=2.900272846221924GiB; /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_RPC1_LAMBD

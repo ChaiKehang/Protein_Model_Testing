@@ -1,0 +1,6017 @@
+{
+  "families": [
+    {
+      "family": "GEMM",
+      "status": "observed_ATen",
+      "evidence": {
+        "esm3/L256/operators.json": [
+          "aten::addmm",
+          "aten::linear",
+          "aten::mm"
+        ],
+        "esm3/mixed_B2/operators.json": [
+          "aten::addmm",
+          "aten::linear",
+          "aten::mm"
+        ],
+        "esm3/sequence/operators.json": [
+          "aten::addmm",
+          "aten::linear",
+          "aten::mm"
+        ],
+        "esm3/structure/operators.json": [
+          "aten::addmm",
+          "aten::linear",
+          "aten::mm"
+        ],
+        "esm3/inverse/operators.json": [
+          "aten::addmm",
+          "aten::linear",
+          "aten::mm"
+        ],
+        "openfold/operators.json": [
+          "aten::addmm",
+          "aten::linear",
+          "aten::mm"
+        ]
+      },
+      "note": "Unobserved is not unsupported; name matching does not establish composite model semantics"
+    },
+    {
+      "family": "BatchGEMM",
+      "status": "observed_ATen",
+      "evidence": {
+        "esm3/L256/operators.json": [
+          "aten::bmm"
+        ],
+        "esm3/mixed_B2/operators.json": [
+          "aten::bmm"
+        ],
+        "esm3/sequence/operators.json": [
+          "aten::bmm"
+        ],
+        "esm3/structure/operators.json": [
+          "aten::bmm"
+        ],
+        "esm3/inverse/operators.json": [
+          "aten::bmm"
+        ],
+        "openfold/operators.json": [
+          "aten::bmm"
+        ]
+      },
+      "note": "Unobserved is not unsupported; name matching does not establish composite model semantics"
+    },
+    {
+      "family": "Attention",
+      "status": "observed_ATen",
+      "evidence": {
+        "esm3/L256/operators.json": [
+          "aten::_flash_attention_forward",
+          "aten::_scaled_dot_product_flash_attention",
+          "aten::scaled_dot_product_attention"
+        ],
+        "esm3/mixed_B2/operators.json": [
+          "aten::_scaled_dot_product_efficient_attention",
+          "aten::scaled_dot_product_attention"
+        ],
+        "esm3/sequence/operators.json": [
+          "aten::_flash_attention_forward",
+          "aten::_scaled_dot_product_flash_attention",
+          "aten::scaled_dot_product_attention"
+        ],
+        "esm3/structure/operators.json": [
+          "aten::_flash_attention_forward",
+          "aten::_scaled_dot_product_efficient_attention",
+          "aten::_scaled_dot_product_flash_attention",
+          "aten::scaled_dot_product_attention"
+        ],
+        "esm3/inverse/operators.json": [
+          "aten::_flash_attention_forward",
+          "aten::_scaled_dot_product_efficient_attention",
+          "aten::_scaled_dot_product_flash_attention",
+          "aten::scaled_dot_product_attention"
+        ]
+      },
+      "note": "Unobserved is not unsupported; name matching does not establish composite model semantics"
+    },
+    {
+      "family": "Softmax",
+      "status": "observed_ATen",
+      "evidence": {
+        "esm3/L256/operators.json": [
+          "aten::_softmax",
+          "aten::softmax"
+        ],
+        "esm3/mixed_B2/operators.json": [
+          "aten::_softmax",
+          "aten::softmax"
+        ],
+        "esm3/sequence/operators.json": [
+          "aten::_log_softmax",
+          "aten::_softmax",
+          "aten::log_softmax",
+          "aten::softmax"
+        ],
+        "esm3/structure/operators.json": [
+          "aten::_log_softmax",
+          "aten::_softmax",
+          "aten::log_softmax",
+          "aten::softmax"
+        ],
+        "esm3/inverse/operators.json": [
+          "aten::_log_softmax",
+          "aten::_softmax",
+          "aten::log_softmax",
+          "aten::softmax"
+        ],
+        "openfold/operators.json": [
+          "aten::_softmax",
+          "aten::softmax"
+        ]
+      },
+      "note": "Unobserved is not unsupported; name matching does not establish composite model semantics"
+    },
+    {
+      "family": "LayerNorm",
+      "status": "observed_ATen",
+      "evidence": {
+        "esm3/L256/operators.json": [
+          "aten::layer_norm",
+          "aten::native_layer_norm"
+        ],
+        "esm3/mixed_B2/operators.json": [
+          "aten::layer_norm",
+          "aten::native_layer_norm"
+        ],
+        "esm3/sequence/operators.json": [
+          "aten::layer_norm",
+          "aten::native_layer_norm"
+        ],
+        "esm3/structure/operators.json": [
+          "aten::layer_norm",
+          "aten::native_layer_norm"
+        ],
+        "esm3/inverse/operators.json": [
+          "aten::layer_norm",
+          "aten::native_layer_norm"
+        ],
+        "openfold/operators.json": [
+          "aten::layer_norm",
+          "aten::native_layer_norm"
+        ]
+      },
+      "note": "Unobserved is not unsupported; name matching does not establish composite model semantics"
+    },
+    {
+      "family": "RMSNorm",
+      "status": "not_observed_in_profiled_configuration",
+      "evidence": {},
+      "note": "Unobserved is not unsupported; name matching does not establish composite model semantics"
+    },
+    {
+      "family": "Embedding",
+      "status": "observed_ATen",
+      "evidence": {
+        "esm3/L256/operators.json": [
+          "aten::_embedding_bag",
+          "aten::embedding",
+          "aten::embedding_bag"
+        ],
+        "esm3/mixed_B2/operators.json": [
+          "aten::_embedding_bag",
+          "aten::embedding",
+          "aten::embedding_bag"
+        ],
+        "esm3/sequence/operators.json": [
+          "aten::_embedding_bag",
+          "aten::embedding",
+          "aten::embedding_bag"
+        ],
+        "esm3/structure/operators.json": [
+          "aten::_embedding_bag",
+          "aten::embedding",
+          "aten::embedding_bag"
+        ],
+        "esm3/inverse/operators.json": [
+          "aten::_embedding_bag",
+          "aten::embedding",
+          "aten::embedding_bag"
+        ]
+      },
+      "note": "Unobserved is not unsupported; name matching does not establish composite model semantics"
+    },
+    {
+      "family": "Convolution",
+      "status": "not_observed_in_profiled_configuration",
+      "evidence": {},
+      "note": "Unobserved is not unsupported; name matching does not establish composite model semantics"
+    },
+    {
+      "family": "Reduction",
+      "status": "observed_ATen",
+      "evidence": {
+        "esm3/L256/operators.json": [
+          "aten::layer_norm",
+          "aten::linalg_vector_norm",
+          "aten::native_layer_norm",
+          "aten::sum"
+        ],
+        "esm3/mixed_B2/operators.json": [
+          "aten::layer_norm",
+          "aten::linalg_vector_norm",
+          "aten::native_layer_norm",
+          "aten::sum"
+        ],
+        "esm3/sequence/operators.json": [
+          "aten::layer_norm",
+          "aten::linalg_vector_norm",
+          "aten::native_layer_norm",
+          "aten::sum"
+        ],
+        "esm3/structure/operators.json": [
+          "aten::layer_norm",
+          "aten::linalg_vector_norm",
+          "aten::native_layer_norm",
+          "aten::sum"
+        ],
+        "esm3/inverse/operators.json": [
+          "aten::layer_norm",
+          "aten::linalg_vector_norm",
+          "aten::mean",
+          "aten::native_layer_norm",
+          "aten::sum"
+        ],
+        "openfold/operators.json": [
+          "aten::layer_norm",
+          "aten::linalg_norm",
+          "aten::linalg_vector_norm",
+          "aten::native_layer_norm",
+          "aten::sum"
+        ]
+      },
+      "note": "Unobserved is not unsupported; name matching does not establish composite model semantics"
+    },
+    {
+      "family": "Gather/Scatter",
+      "status": "observed_ATen",
+      "evidence": {
+        "esm3/L256/operators.json": [
+          "aten::index_select"
+        ],
+        "esm3/mixed_B2/operators.json": [
+          "aten::index_select"
+        ],
+        "esm3/sequence/operators.json": [
+          "aten::index_select",
+          "aten::scatter"
+        ],
+        "esm3/structure/operators.json": [
+          "aten::index_select",
+          "aten::scatter"
+        ],
+        "esm3/inverse/operators.json": [
+          "aten::index_select",
+          "aten::scatter"
+        ],
+        "openfold/operators.json": [
+          "aten::scatter_"
+        ]
+      },
+      "note": "Unobserved is not unsupported; name matching does not establish composite model semantics"
+    },
+    {
+      "family": "TopK",
+      "status": "observed_ATen",
+      "evidence": {
+        "esm3/sequence/operators.json": [
+          "aten::topk"
+        ],
+        "esm3/structure/operators.json": [
+          "aten::topk"
+        ],
+        "esm3/inverse/operators.json": [
+          "aten::topk"
+        ]
+      },
+      "note": "Unobserved is not unsupported; name matching does not establish composite model semantics"
+    },
+    {
+      "family": "Diffusion",
+      "status": "not_observed_in_profiled_configuration",
+      "evidence": {},
+      "note": "Unobserved is not unsupported; name matching does not establish composite model semantics"
+    },
+    {
+      "family": "Graph",
+      "status": "not_observed_in_profiled_configuration",
+      "evidence": {},
+      "note": "Unobserved is not unsupported; name matching does not establish composite model semantics"
+    },
+    {
+      "family": "TriangleAttention",
+      "status": "observed_model_modules",
+      "evidence": [
+        {
+          "module": "extra_msa_stack.blocks.0.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "extra_msa_stack.blocks.0.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "extra_msa_stack.blocks.1.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "extra_msa_stack.blocks.1.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "extra_msa_stack.blocks.2.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "extra_msa_stack.blocks.2.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "extra_msa_stack.blocks.3.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "extra_msa_stack.blocks.3.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.0.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.0.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.1.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.1.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.2.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.2.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.3.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.3.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.4.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.4.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.5.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.5.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.6.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.6.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.7.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.7.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.8.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.8.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.9.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.9.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.10.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.10.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.11.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.11.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.12.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.12.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.13.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.13.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.14.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.14.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.15.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.15.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.16.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.16.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.17.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.17.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.18.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.18.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.19.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.19.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.20.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.20.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.21.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.21.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.22.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.22.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.23.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.23.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.24.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.24.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.25.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.25.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.26.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.26.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.27.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.27.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.28.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.28.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.29.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.29.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.30.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.30.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.31.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.31.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.32.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.32.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.33.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.33.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.34.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.34.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.35.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.35.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.36.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.36.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.37.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.37.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.38.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.38.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.39.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.39.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.40.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.40.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.41.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.41.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.42.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.42.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.43.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.43.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.44.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.44.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.45.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.45.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.46.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.46.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.47.pair_stack.tri_att_start",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.47.pair_stack.tri_att_end",
+          "type": "TriangleAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        }
+      ]
+    },
+    {
+      "family": "TriangleMultiplication",
+      "status": "observed_model_modules",
+      "evidence": [
+        {
+          "module": "extra_msa_stack.blocks.0.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "extra_msa_stack.blocks.0.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "extra_msa_stack.blocks.1.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "extra_msa_stack.blocks.1.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "extra_msa_stack.blocks.2.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "extra_msa_stack.blocks.2.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "extra_msa_stack.blocks.3.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "extra_msa_stack.blocks.3.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.0.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.0.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.1.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.1.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.2.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.2.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.3.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.3.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.4.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.4.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.5.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.5.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.6.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.6.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.7.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.7.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.8.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.8.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.9.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.9.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.10.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.10.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.11.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.11.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.12.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.12.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.13.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.13.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.14.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.14.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.15.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.15.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.16.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.16.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.17.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.17.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.18.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.18.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.19.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.19.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.20.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.20.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.21.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.21.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.22.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.22.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.23.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.23.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.24.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.24.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.25.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.25.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.26.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.26.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.27.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.27.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.28.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.28.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.29.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.29.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.30.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.30.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.31.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.31.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.32.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.32.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.33.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.33.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.34.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.34.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.35.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.35.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.36.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.36.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.37.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.37.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.38.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.38.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.39.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.39.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.40.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.40.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.41.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.41.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.42.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.42.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.43.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.43.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.44.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.44.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.45.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.45.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.46.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.46.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.47.pair_stack.tri_mul_out",
+          "type": "TriangleMultiplicationOutgoing",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.47.pair_stack.tri_mul_in",
+          "type": "TriangleMultiplicationIncoming",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        }
+      ]
+    },
+    {
+      "family": "OuterProductMean",
+      "status": "observed_model_modules",
+      "evidence": [
+        {
+          "module": "extra_msa_stack.blocks.0.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                5120,
+                191,
+                64
+              ],
+              "stride": [
+                12224,
+                64,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "extra_msa_stack.blocks.1.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                5120,
+                191,
+                64
+              ],
+              "stride": [
+                12224,
+                64,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "extra_msa_stack.blocks.2.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                5120,
+                191,
+                64
+              ],
+              "stride": [
+                12224,
+                64,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "extra_msa_stack.blocks.3.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                5120,
+                191,
+                64
+              ],
+              "stride": [
+                12224,
+                64,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.0.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.1.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.2.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.3.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.4.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.5.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.6.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.7.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.8.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.9.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.10.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.11.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.12.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.13.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.14.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.15.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.16.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.17.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.18.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.19.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.20.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.21.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.22.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.23.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.24.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.25.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.26.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.27.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.28.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.29.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.30.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.31.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.32.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.33.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.34.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.35.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.36.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.37.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.38.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.39.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.40.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.41.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.42.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.43.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.44.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.45.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.46.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        },
+        {
+          "module": "evoformer.blocks.47.outer_product_mean",
+          "type": "OuterProductMean",
+          "inputs": [
+            {
+              "shape": [
+                512,
+                191,
+                256
+              ],
+              "stride": [
+                48896,
+                256,
+                1
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 4
+        }
+      ]
+    },
+    {
+      "family": "IPA",
+      "status": "observed_model_modules",
+      "evidence": [
+        {
+          "module": "structure_module.ipa",
+          "type": "InvariantPointAttention",
+          "inputs": [
+            {
+              "shape": [
+                191,
+                384
+              ],
+              "stride": [
+                384,
+                1
+              ],
+              "dtype": "torch.float32"
+            },
+            {
+              "shape": [
+                191,
+                191,
+                128
+              ],
+              "stride": [
+                24448,
+                128,
+                1
+              ],
+              "dtype": "torch.float32"
+            },
+            {
+              "shape": [
+                191
+              ],
+              "stride": [
+                4
+              ],
+              "dtype": "torch.float32"
+            }
+          ],
+          "calls": 32
+        }
+      ]
+    },
+    {
+      "family": "3DGeometry",
+      "status": "observed_model_submodules",
+      "evidence": [
+        {
+          "case": "L256",
+          "module": "transformer.blocks.0.geom_attn.s_norm",
+          "type": "LayerNorm",
+          "input_shape": [
+            1,
+            258,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "stride": [
+            396288,
+            1536,
+            1
+          ],
+          "normalized_shape": [
+            1536
+          ],
+          "invocations": 1
+        },
+        {
+          "case": "L256",
+          "module": "transformer.blocks.0.geom_attn.proj",
+          "type": "Linear",
+          "input_shape": [
+            1,
+            258,
+            1536
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            396288,
+            1536,
+            1
+          ],
+          "weight_shape": [
+            3840,
+            1536
+          ],
+          "invocations": 1
+        },
+        {
+          "case": "L256",
+          "module": "transformer.blocks.0.geom_attn.out_proj",
+          "type": "Linear",
+          "input_shape": [
+            1,
+            258,
+            768
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            198144,
+            768,
+            1
+          ],
+          "weight_shape": [
+            1536,
+            768
+          ],
+          "invocations": 1
+        },
+        {
+          "case": "mixed_B2",
+          "module": "transformer.blocks.0.geom_attn.s_norm",
+          "type": "LayerNorm",
+          "input_shape": [
+            2,
+            78,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "stride": [
+            119808,
+            1536,
+            1
+          ],
+          "normalized_shape": [
+            1536
+          ],
+          "invocations": 1
+        },
+        {
+          "case": "mixed_B2",
+          "module": "transformer.blocks.0.geom_attn.proj",
+          "type": "Linear",
+          "input_shape": [
+            2,
+            78,
+            1536
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            119808,
+            1536,
+            1
+          ],
+          "weight_shape": [
+            3840,
+            1536
+          ],
+          "invocations": 1
+        },
+        {
+          "case": "mixed_B2",
+          "module": "transformer.blocks.0.geom_attn.out_proj",
+          "type": "Linear",
+          "input_shape": [
+            2,
+            78,
+            768
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            59904,
+            768,
+            1
+          ],
+          "weight_shape": [
+            1536,
+            768
+          ],
+          "invocations": 1
+        },
+        {
+          "case": "sequence",
+          "module": "transformer.blocks.0.geom_attn.s_norm",
+          "type": "LayerNorm",
+          "input_shape": [
+            1,
+            78,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "stride": [
+            119808,
+            1536,
+            1
+          ],
+          "normalized_shape": [
+            1536
+          ],
+          "invocations": 3
+        },
+        {
+          "case": "sequence",
+          "module": "transformer.blocks.0.geom_attn.proj",
+          "type": "Linear",
+          "input_shape": [
+            1,
+            78,
+            1536
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            119808,
+            1536,
+            1
+          ],
+          "weight_shape": [
+            3840,
+            1536
+          ],
+          "invocations": 3
+        },
+        {
+          "case": "sequence",
+          "module": "transformer.blocks.0.geom_attn.out_proj",
+          "type": "Linear",
+          "input_shape": [
+            1,
+            78,
+            768
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            59904,
+            768,
+            1
+          ],
+          "weight_shape": [
+            1536,
+            768
+          ],
+          "invocations": 3
+        },
+        {
+          "case": "structure",
+          "module": "transformer.blocks.0.geom_attn.s_norm",
+          "type": "LayerNorm",
+          "input_shape": [
+            1,
+            78,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "stride": [
+            119808,
+            1536,
+            1
+          ],
+          "normalized_shape": [
+            1536
+          ],
+          "invocations": 8
+        },
+        {
+          "case": "structure",
+          "module": "transformer.blocks.0.geom_attn.proj",
+          "type": "Linear",
+          "input_shape": [
+            1,
+            78,
+            1536
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            119808,
+            1536,
+            1
+          ],
+          "weight_shape": [
+            3840,
+            1536
+          ],
+          "invocations": 8
+        },
+        {
+          "case": "structure",
+          "module": "transformer.blocks.0.geom_attn.out_proj",
+          "type": "Linear",
+          "input_shape": [
+            1,
+            78,
+            768
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            59904,
+            768,
+            1
+          ],
+          "weight_shape": [
+            1536,
+            768
+          ],
+          "invocations": 8
+        },
+        {
+          "case": "inverse",
+          "module": "_structure_encoder.transformer.blocks.0.geom_attn.s_norm",
+          "type": "LayerNorm",
+          "input_shape": [
+            76,
+            16,
+            1024
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            16384,
+            1024,
+            1
+          ],
+          "normalized_shape": [
+            1024
+          ],
+          "invocations": 1
+        },
+        {
+          "case": "inverse",
+          "module": "_structure_encoder.transformer.blocks.0.geom_attn.proj",
+          "type": "Linear",
+          "input_shape": [
+            76,
+            16,
+            1024
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            16384,
+            1024,
+            1
+          ],
+          "weight_shape": [
+            1920,
+            1024
+          ],
+          "invocations": 1
+        },
+        {
+          "case": "inverse",
+          "module": "_structure_encoder.transformer.blocks.0.geom_attn.out_proj",
+          "type": "Linear",
+          "input_shape": [
+            76,
+            16,
+            384
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            6144,
+            384,
+            1
+          ],
+          "weight_shape": [
+            1024,
+            384
+          ],
+          "invocations": 1
+        },
+        {
+          "case": "inverse",
+          "module": "_structure_encoder.transformer.blocks.1.geom_attn.s_norm",
+          "type": "LayerNorm",
+          "input_shape": [
+            76,
+            16,
+            1024
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            16384,
+            1024,
+            1
+          ],
+          "normalized_shape": [
+            1024
+          ],
+          "invocations": 1
+        },
+        {
+          "case": "inverse",
+          "module": "_structure_encoder.transformer.blocks.1.geom_attn.proj",
+          "type": "Linear",
+          "input_shape": [
+            76,
+            16,
+            1024
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            16384,
+            1024,
+            1
+          ],
+          "weight_shape": [
+            1920,
+            1024
+          ],
+          "invocations": 1
+        },
+        {
+          "case": "inverse",
+          "module": "_structure_encoder.transformer.blocks.1.geom_attn.out_proj",
+          "type": "Linear",
+          "input_shape": [
+            76,
+            16,
+            384
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            6144,
+            384,
+            1
+          ],
+          "weight_shape": [
+            1024,
+            384
+          ],
+          "invocations": 1
+        },
+        {
+          "case": "inverse",
+          "module": "transformer.blocks.0.geom_attn.s_norm",
+          "type": "LayerNorm",
+          "input_shape": [
+            1,
+            78,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "stride": [
+            119808,
+            1536,
+            1
+          ],
+          "normalized_shape": [
+            1536
+          ],
+          "invocations": 3
+        },
+        {
+          "case": "inverse",
+          "module": "transformer.blocks.0.geom_attn.proj",
+          "type": "Linear",
+          "input_shape": [
+            1,
+            78,
+            1536
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            119808,
+            1536,
+            1
+          ],
+          "weight_shape": [
+            3840,
+            1536
+          ],
+          "invocations": 3
+        },
+        {
+          "case": "inverse",
+          "module": "transformer.blocks.0.geom_attn.out_proj",
+          "type": "Linear",
+          "input_shape": [
+            1,
+            78,
+            768
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            59904,
+            768,
+            1
+          ],
+          "weight_shape": [
+            1536,
+            768
+          ],
+          "invocations": 3
+        }
+      ]
+    }
+  ],
+  "scope": "Observed original model calls only; no MUSA kernel or unused branch claims"
+}

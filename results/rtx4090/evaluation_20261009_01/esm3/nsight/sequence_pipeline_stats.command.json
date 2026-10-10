@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/opt/nvidia/nsight-compute/2025.1.1/host/target-linux-x64/nsys",
+    "stats",
+    "--report",
+    "cuda_gpu_kern_sum,cuda_api_sum,cuda_gpu_mem_time_sum",
+    "--format",
+    "csv",
+    "--output",
+    "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/sequence_pipeline_stats",
+    "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/sequence_pipeline.nsys-rep"
+  ],
+  "cwd": "/root/autodl-tmp/musa-",
+  "timestamp_utc": "2026-10-09T05:36:17.015637+00:00",
+  "timeout_seconds": 300,
+  "env_overrides": {
+    "HF_HUB_OFFLINE": "1",
+    "TOKENIZERS_PARALLELISM": "false"
+  }
+}

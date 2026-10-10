@@ -1,0 +1,7 @@
+Generating SQLite file /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/sequence_pipeline.sqlite from /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/sequence_pipeline.nsys-rep
+Processing [/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/sequence_pipeline.sqlite] with [/opt/nvidia/nsight-compute/2025.1.1/host/target-linux-x64/reports/cuda_gpu_kern_sum.py] to [/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/sequence_pipeline_stats_cuda_gpu_kern_sum.csv]... PROCESSED
+
+Processing [/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/sequence_pipeline.sqlite] with [/opt/nvidia/nsight-compute/2025.1.1/host/target-linux-x64/reports/cuda_api_sum.py] to [/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/sequence_pipeline_stats_cuda_api_sum.csv]... PROCESSED
+
+Processing [/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/sequence_pipeline.sqlite] with [/opt/nvidia/nsight-compute/2025.1.1/host/target-linux-x64/reports/cuda_gpu_mem_time_sum.py] to [/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/sequence_pipeline_stats_cuda_gpu_mem_time_sum.csv]... PROCESSED
+

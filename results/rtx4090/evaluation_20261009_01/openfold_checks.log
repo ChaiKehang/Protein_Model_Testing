@@ -1,0 +1,7 @@
+/root/autodl-tmp/references/openfold/openfold/utils/precision_utils.py:72: DeprecationWarning: torch.get_autocast_gpu_dtype() is deprecated. Please use torch.get_autocast_dtype('cuda') instead. (Triggered internally at ../torch/csrc/autograd/init.cpp:787.)
+  fp16_enabled = torch.get_autocast_gpu_dtype() == torch.float16
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.110s
+
+OK

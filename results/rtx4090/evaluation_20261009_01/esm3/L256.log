@@ -1,0 +1,4 @@
+STAGE:2026-10-09 13:27:40 9783:9783 ActivityProfilerController.cpp:314] Completed Stage: Warm Up
+STAGE:2026-10-09 13:27:41 9783:9783 ActivityProfilerController.cpp:320] Completed Stage: Collection
+STAGE:2026-10-09 13:27:41 9783:9783 ActivityProfilerController.cpp:324] Completed Stage: Post Processing
+PASS forward bf16 B=1 ['random_L256']: median=26.164ms allocated=2.943161964416504GiB; /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/L256

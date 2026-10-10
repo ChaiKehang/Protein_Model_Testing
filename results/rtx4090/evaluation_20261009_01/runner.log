@@ -1,0 +1,18 @@
+Waiting for existing ESM3 collector to finish, before any GPU launch
+START standard
+FINISH standard 0
+START fitness
+FINISH fitness 0
+START batch
+FINISH batch 0
+START openfold
+FINISH openfold 0
+START openfold_quality
+FINISH openfold_quality 0
+START openfold_cpu_comparison
+FINISH openfold_cpu_comparison 0
+START openfold_nsight
+FINISH openfold_nsight 0
+START openfold_pipeline
+FINISH openfold_pipeline 0
+MEASUREMENTS_COMPLETE /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01

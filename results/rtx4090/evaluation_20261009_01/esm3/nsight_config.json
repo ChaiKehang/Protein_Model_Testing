@@ -1,0 +1,138 @@
+{
+  "warmup": 3,
+  "systems_calls": 3,
+  "compute_launches": 1,
+  "compute_sections": [
+    "SpeedOfLight",
+    "Occupancy",
+    "LaunchStats",
+    "MemoryWorkloadAnalysis",
+    "ComputeWorkloadAnalysis"
+  ],
+  "cases": [
+    {
+      "name": "L256_warm",
+      "task": "forward",
+      "sample_id": "random_L256",
+      "scope": "warm",
+      "device": "cuda:0",
+      "precision": "bf16",
+      "reference": "L256/tensors.pt",
+      "compute_top_k": 3,
+      "batch_size": 1,
+      "pdb": "/root/autodl-tmp/esm-baseline/data/1UBQ.pdb"
+    },
+    {
+      "name": "L1024_warm",
+      "task": "forward",
+      "sample_id": "random_L1024",
+      "scope": "warm",
+      "device": "cuda:0",
+      "precision": "bf16",
+      "reference": "L1024/tensors.pt",
+      "compute_top_k": 3,
+      "batch_size": 1,
+      "pdb": "/root/autodl-tmp/esm-baseline/data/1UBQ.pdb"
+    },
+    {
+      "name": "mixed_B2_warm",
+      "task": "forward",
+      "sample_id": "ubiquitin_human",
+      "scope": "warm",
+      "device": "cuda:0",
+      "precision": "bf16",
+      "reference": "mixed_B2/tensors.pt",
+      "compute_top_k": 3,
+      "batch_size": 2,
+      "pdb": "/root/autodl-tmp/esm-baseline/data/1UBQ.pdb",
+      "sample_ids": [
+        "insulin_a_chain_human",
+        "ubiquitin_human"
+      ]
+    },
+    {
+      "name": "sequence_warm",
+      "task": "sequence",
+      "sample_id": "ubiquitin_human",
+      "scope": "warm",
+      "device": "cuda:0",
+      "precision": "bf16",
+      "reference": "sequence/tensors.pt",
+      "compute_top_k": 3,
+      "batch_size": 1,
+      "pdb": "/root/autodl-tmp/esm-baseline/data/1UBQ.pdb"
+    },
+    {
+      "name": "structure_warm",
+      "task": "structure",
+      "sample_id": "ubiquitin_human",
+      "scope": "warm",
+      "device": "cuda:0",
+      "precision": "bf16",
+      "reference": "structure/tensors.pt",
+      "compute_top_k": 3,
+      "batch_size": 1,
+      "pdb": "/root/autodl-tmp/esm-baseline/data/1UBQ.pdb"
+    },
+    {
+      "name": "inverse_warm",
+      "task": "inverse",
+      "sample_id": "ubiquitin_human",
+      "scope": "warm",
+      "device": "cuda:0",
+      "precision": "bf16",
+      "reference": "inverse/tensors.pt",
+      "compute_top_k": 3,
+      "batch_size": 1,
+      "pdb": "/root/autodl-tmp/esm-baseline/data/1UBQ.pdb"
+    },
+    {
+      "name": "L256_pipeline",
+      "task": "forward",
+      "sample_id": "random_L256",
+      "scope": "pipeline",
+      "device": "cuda:0",
+      "precision": "bf16",
+      "reference": "L256/tensors.pt",
+      "compute_top_k": 3,
+      "batch_size": 1,
+      "pdb": "/root/autodl-tmp/esm-baseline/data/1UBQ.pdb"
+    },
+    {
+      "name": "sequence_pipeline",
+      "task": "sequence",
+      "sample_id": "ubiquitin_human",
+      "scope": "pipeline",
+      "device": "cuda:0",
+      "precision": "bf16",
+      "reference": "sequence/tensors.pt",
+      "compute_top_k": 3,
+      "batch_size": 1,
+      "pdb": "/root/autodl-tmp/esm-baseline/data/1UBQ.pdb"
+    },
+    {
+      "name": "structure_pipeline",
+      "task": "structure",
+      "sample_id": "ubiquitin_human",
+      "scope": "pipeline",
+      "device": "cuda:0",
+      "precision": "bf16",
+      "reference": "structure/tensors.pt",
+      "compute_top_k": 3,
+      "batch_size": 1,
+      "pdb": "/root/autodl-tmp/esm-baseline/data/1UBQ.pdb"
+    },
+    {
+      "name": "inverse_pipeline",
+      "task": "inverse",
+      "sample_id": "ubiquitin_human",
+      "scope": "pipeline",
+      "device": "cuda:0",
+      "precision": "bf16",
+      "reference": "inverse/tensors.pt",
+      "compute_top_k": 3,
+      "batch_size": 1,
+      "pdb": "/root/autodl-tmp/esm-baseline/data/1UBQ.pdb"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "status": "pass",
+  "scope": "Frozen exploratory CPU-FP32/CUDA-FP32 thresholds before reference execution; not final MUSA acceptance or experimental accuracy thresholds",
+  "attention_implementations": {
+    "reference": "torch",
+    "candidate": "upstream"
+  },
+  "implementation_note": "Model config/weights/features match; attention kernel policy may differ explicitly. This is numerical validation, not an identical-kernel replay.",
+  "reference": "outputs/openfold_cpu_torch_20261009_02",
+  "candidate": "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/openfold",
+  "reference_report_sha256": "a16e9d0d30d43ab7d0638ecb2c94e952198a6e1ae73366a99d71e04e6ebe669e",
+  "candidate_report_sha256": "846992762e523bb050092952efacbb98b64aa189cb35df7e4c7ac92b8b7cf928",
+  "feature_sha256": "2470b3b18d81b80debd66b59db19825a115bef0e9379c646cf636895ef8149bf",
+  "thresholds": {
+    "identical_feature_sha256": true,
+    "identical_atom_mask": true,
+    "ca_aligned_rmsd_angstrom": 0.05,
+    "plddt_max_abs": 0.5,
+    "note": "Frozen exploratory CPU-FP32/CUDA-FP32 thresholds before reference execution; not final MUSA acceptance or experimental accuracy thresholds"
+  },
+  "ca_aligned_rmsd_angstrom": 1.92098839782448e-06,
+  "metrics": {
+    "final_atom_positions": {
+      "mae": 1.6802006257421453e-06,
+      "max_abs": 1.1444091796875e-05,
+      "relative_l2": 2.453553520354035e-07
+    },
+    "plddt": {
+      "mae": 1.0205812941421755e-05,
+      "max_abs": 3.0517578125e-05,
+      "relative_l2": 1.3532739728816523e-07
+    },
+    "distogram_logits": {
+      "mae": 1.0250727200400434e-06,
+      "max_abs": 0.0001220703125,
+      "relative_l2": 2.3768333790030738e-07
+    },
+    "predicted_aligned_error": {
+      "mae": 7.440295348715154e-07,
+      "max_abs": 2.193450927734375e-05,
+      "relative_l2": 3.657185061456403e-07
+    }
+  },
+  "exact_atom_mask": true,
+  "same_config_weights_features_commit": true,
+  "comparison_source_sha256": "7ddb659f3478e1fbca067699de3c8913deba720075f17f44e1f1167679ad2763"
+}

@@ -1,0 +1,37 @@
+{
+  "argv": [
+    "/root/autodl-tmp/envs/esm3/bin/python",
+    "/root/autodl-tmp/musa-/main.py",
+    "--task",
+    "forward",
+    "--inputs",
+    "/root/autodl-tmp/musa-/inputs/proteingym_v1.3_20261009/performance_panel.jsonl",
+    "--sample-ids",
+    "pg_GCN4_YEAST",
+    "--batch-size",
+    "1",
+    "--precision",
+    "bf16",
+    "--device",
+    "cuda:0",
+    "--warmup",
+    "3",
+    "--runs",
+    "20",
+    "--end-to-end-runs",
+    "2",
+    "--cpu-threads",
+    "4",
+    "--manifest",
+    "/root/autodl-tmp/esm-baseline/model_snapshot.json",
+    "--output",
+    "/root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_GCN4_YEAST"
+  ],
+  "cwd": "/root/autodl-tmp/musa-",
+  "timestamp_utc": "2026-10-09T05:40:32.635087+00:00",
+  "timeout_seconds": 600,
+  "env_overrides": {
+    "HF_HUB_OFFLINE": "1",
+    "TOKENIZERS_PARALLELISM": "false"
+  }
+}

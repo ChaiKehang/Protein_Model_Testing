@@ -1,0 +1,1 @@
+PASS forward bf16 B=1 ['pg_Q837P4_ENTFA']: median=38.589ms allocated=4.170698642730713GiB; /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/pg_Q837P4_ENTFA

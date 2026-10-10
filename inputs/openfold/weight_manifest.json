@@ -1,0 +1,11 @@
+{
+  "source": "https://openfold.s3.amazonaws.com/openfold_params/finetuning_no_templ_ptm_1.pt",
+  "source_script": "https://github.com/aqlaboratory/openfold/blob/be2ec1841f16c966c65ae0e7599ebbadc725757d/scripts/download_openfold_params.sh",
+  "repository_commit": "be2ec1841f16c966c65ae0e7599ebbadc725757d",
+  "weight_path": "/root/autodl-tmp/openfold-cache/params/finetuning_no_templ_ptm_1.pt",
+  "bytes": 373259620,
+  "sha256": "1a179937a6f61143c41f8b6a0b763ac1f4762c9dc63d2fb151240930c110bee1",
+  "sha_note": "Locally calculated content checksum, not a publisher-provided signed checksum",
+  "server_etag": "a970b49c621daaaa498351fc4183ac78-45",
+  "timestamp_utc": "2026-10-08T13:23:41.524671+00:00"
+}

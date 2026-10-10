@@ -1,0 +1,91 @@
+[
+  {
+    "name": "L256",
+    "task": "forward",
+    "sample": "random_L256",
+    "profile": true
+  },
+  {
+    "name": "L1024",
+    "task": "forward",
+    "sample": "random_L1024",
+    "profile": false
+  },
+  {
+    "name": "L2048",
+    "task": "forward",
+    "sample": "random_L2048",
+    "profile": false
+  },
+  {
+    "name": "mixed_B2",
+    "task": "forward",
+    "sample": "ubiquitin_human",
+    "ids": [
+      "insulin_a_chain_human",
+      "ubiquitin_human"
+    ],
+    "batch": 2,
+    "profile": true
+  },
+  {
+    "name": "sequence",
+    "task": "sequence",
+    "sample": "ubiquitin_human",
+    "profile": true
+  },
+  {
+    "name": "structure",
+    "task": "structure",
+    "sample": "ubiquitin_human",
+    "profile": true
+  },
+  {
+    "name": "inverse",
+    "task": "inverse",
+    "sample": "ubiquitin_human",
+    "profile": true
+  },
+  {
+    "name": "ubiquitin_fp32",
+    "task": "forward",
+    "sample": "ubiquitin_human",
+    "precision": "fp32"
+  },
+  {
+    "name": "ubiquitin_cpu_fp32",
+    "task": "forward",
+    "sample": "ubiquitin_human",
+    "precision": "fp32",
+    "device": "cpu",
+    "runs": 3
+  },
+  {
+    "name": "crambin_forward",
+    "task": "forward",
+    "sample": "crambin_1CRN_A",
+    "inputs": "/root/autodl-tmp/musa-/inputs/task_quality_sequences.jsonl",
+    "pdb": "/root/autodl-tmp/esm-baseline/data/1CRN.pdb"
+  },
+  {
+    "name": "crambin_sequence",
+    "task": "sequence",
+    "sample": "crambin_1CRN_A",
+    "inputs": "/root/autodl-tmp/musa-/inputs/task_quality_sequences.jsonl",
+    "pdb": "/root/autodl-tmp/esm-baseline/data/1CRN.pdb"
+  },
+  {
+    "name": "crambin_structure",
+    "task": "structure",
+    "sample": "crambin_1CRN_A",
+    "inputs": "/root/autodl-tmp/musa-/inputs/task_quality_sequences.jsonl",
+    "pdb": "/root/autodl-tmp/esm-baseline/data/1CRN.pdb"
+  },
+  {
+    "name": "crambin_inverse",
+    "task": "inverse",
+    "sample": "crambin_1CRN_A",
+    "inputs": "/root/autodl-tmp/musa-/inputs/task_quality_sequences.jsonl",
+    "pdb": "/root/autodl-tmp/esm-baseline/data/1CRN.pdb"
+  }
+]

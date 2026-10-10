@@ -1,0 +1,11 @@
+NSYS L256_warm
+NSYS L1024_warm
+NSYS mixed_B2_warm
+NSYS sequence_warm
+NSYS structure_warm
+NSYS inverse_warm
+NSYS L256_pipeline
+NSYS sequence_pipeline
+NSYS structure_pipeline
+NSYS inverse_pipeline
+Nsight partial: /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3/nsight/nsight_summary.json

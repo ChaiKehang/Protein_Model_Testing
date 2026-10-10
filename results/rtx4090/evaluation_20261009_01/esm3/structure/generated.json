@@ -1,0 +1,17 @@
+{
+  "reference_sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG",
+  "generated_sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG",
+  "coordinate_condition": false,
+  "coordinates_shape": [
+    76,
+    37,
+    3
+  ],
+  "finite_ca_count": 76,
+  "finite_ca_fraction": 1.0,
+  "ca_rmsd_angstrom": 1.3367212813438325,
+  "rmsd_matched_residues": 76,
+  "rmsd_scope": "1UBQ A; one-to-one sequence mapping; Kabsch CA alignment",
+  "plddt_mean": 0.9871250987052917,
+  "ptm_mean": 0.8957886695861816
+}

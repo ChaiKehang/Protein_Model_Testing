@@ -1,0 +1,1 @@
+PASS forward bf16 B=4 ['pg_AMFR_HUMAN', 'pg_RPC1_LAMBD', 'pg_ADRB2_HUMAN', 'pg_A0A192B1T2_9HIV1']: median=219.105ms allocated=15.30173635482788GiB; /root/autodl-tmp/musa-/outputs/evaluation_4090_20261009_01/esm3_standard/mixed_B4
